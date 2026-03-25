@@ -1,0 +1,67 @@
+{
+  "id": "build-beat",
+  "title": "Build a Beat",
+  "description": "Create a drum pattern using the step sequencer and real-time recording.",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "id": "step-1",
+      "title": "Select a Pattern",
+      "instruction": "Turn the pattern knob to select an empty pattern slot. The display shows the current pattern number (1-16).",
+      "diagramHighlights": ["pattern-knob", "display"],
+      "tip": "Pattern 1 is often used for your main beat. Try using pattern 16 for experiments."
+    },
+    {
+      "id": "step-2",
+      "title": "Set the Tempo",
+      "instruction": "Turn the BPM knob to set your desired tempo. The display shows the current BPM (60-240).",
+      "diagramHighlights": ["bpm-knob"],
+      "tip": "90-100 BPM is good for hip-hop, 120-130 for house music."
+    },
+    {
+      "id": "step-3",
+      "title": "Enter Write Mode",
+      "instruction": "Press the write button to enter step-sequencing mode. The display will show the current step number.",
+      "diagramHighlights": ["write-button", "display"]
+    },
+    {
+      "id": "step-4",
+      "title": "Add Kick Drums",
+      "instruction": "Turn the sound knob to step 1. Press pad 9 (or wherever your kick is) to add a kick. Turn to step 5, 9, and 13 and add kicks for a four-on-the-floor pattern.",
+      "diagramHighlights": ["sound-knob", "pad-9"],
+      "substeps": [
+        { "instruction": "Turn sound knob to step 1, press kick pad" },
+        { "instruction": "Turn to step 5, press kick pad" },
+        { "instruction": "Turn to step 9, press kick pad" },
+        { "instruction": "Turn to step 13, press kick pad" }
+      ],
+      "tip": "The sound knob navigates steps in write mode (1-16)."
+    },
+    {
+      "id": "step-5",
+      "title": "Add Snares",
+      "instruction": "Turn sound knob to step 5, press your snare pad. Turn to step 13, press snare again. This places snares on beats 2 and 4.",
+      "diagramHighlights": ["sound-knob", "pad-10"],
+      "tip": "Multiple sounds can be placed on the same step for layering."
+    },
+    {
+      "id": "step-6",
+      "title": "Add Hi-Hats",
+      "instruction": "Add hi-hats on every other step (1, 3, 5, 7, 9, 11, 13, 15) or every step for a busier feel. Navigate with the sound knob, press your hi-hat pad.",
+      "diagramHighlights": ["sound-knob", "pad-11"]
+    },
+    {
+      "id": "step-7",
+      "title": "Exit and Play",
+      "instruction": "Press write to exit write mode. Press play to hear your beat! Make adjustments by entering write mode again.",
+      "diagramHighlights": ["write-button", "play-button"],
+      "tip": "Hold write + press a pad to delete that sound from all steps if you make a mistake."
+    }
+  ],
+  "outcomes": [
+    "Created a complete drum pattern",
+    "Understanding of step-sequencing workflow",
+    "Ability to place sounds on specific steps",
+    "Knowledge of basic beat structure"
+  ]
+}

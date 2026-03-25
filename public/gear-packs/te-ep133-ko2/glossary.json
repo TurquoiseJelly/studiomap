@@ -1,0 +1,128 @@
+{
+  "terms": [
+    {
+      "id": "chop",
+      "term": "Chop",
+      "definition": "Automatically slicing a sample into multiple parts based on transient detection. Each slice becomes a separate playable sound assigned to different pads.",
+      "relatedTerms": ["sample", "slice", "transient"],
+      "linkedSections": [{ "sectionId": "sampling", "headingId": "chopping" }]
+    },
+    {
+      "id": "commit",
+      "term": "Commit",
+      "definition": "Saving changes permanently by holding MAIN/COMMIT. Changes to samples, patterns, and settings must be committed to persist after power off.",
+      "linkedSections": [{ "sectionId": "overview", "headingId": "navigation" }]
+    },
+    {
+      "id": "fader",
+      "term": "Fader",
+      "definition": "A slider control assignable to different parameters per group, including volume, pitch, filter, and effects. Fader movements can be recorded into the sequencer for automation.",
+      "linkedSections": [{ "sectionId": "fader" }]
+    },
+    {
+      "id": "group",
+      "term": "Group",
+      "definition": "One of four sound banks (A, B, C, D) in a project. Each group has 12 sounds and up to 99 patterns. All groups play simultaneously for layered arrangements.",
+      "relatedTerms": ["pattern", "sound", "scene"],
+      "linkedSections": [{ "sectionId": "groups-scenes", "headingId": "groups" }]
+    },
+    {
+      "id": "ko",
+      "term": "K.O. (Knock Out)",
+      "definition": "The product line name for Teenage Engineering's sampler series. The EP-133 K.O. II is the successor to the PO-33 K.O. Pocket Operator.",
+      "linkedSections": [{ "sectionId": "overview" }]
+    },
+    {
+      "id": "pattern",
+      "term": "Pattern",
+      "definition": "A sequence of notes and automation for one group. Each group can have up to 99 patterns, each 1-99 bars long. Patterns can be chained in Song Mode.",
+      "relatedTerms": ["group", "song-mode", "scene"],
+      "linkedSections": [{ "sectionId": "sequencer" }]
+    },
+    {
+      "id": "polyphony",
+      "term": "Polyphony",
+      "definition": "The number of sounds that can play simultaneously. The EP-133 supports 16 mono voices or 12 stereo voices thanks to OS 2.0 improvements.",
+      "linkedSections": [{ "sectionId": "overview", "headingId": "specifications" }]
+    },
+    {
+      "id": "punch-in-fx",
+      "term": "Punch-In FX",
+      "definition": "Performance effects that apply momentarily while holding a pad. Release the pad to return to normal sound. OS 2.0 added pressure sensitivity for dynamic control.",
+      "relatedTerms": ["effects"],
+      "linkedSections": [{ "sectionId": "effects", "headingId": "punch-in" }]
+    },
+    {
+      "id": "quantize",
+      "term": "Quantize",
+      "definition": "Automatic alignment of recorded notes to a timing grid. Options include OFF (no quantize), 1/8, 1/16, and 1/32 note resolution.",
+      "linkedSections": [{ "sectionId": "sequencer", "headingId": "quantize" }]
+    },
+    {
+      "id": "resample",
+      "term": "Resample",
+      "definition": "Recording the EP-133's audio output as a new sample (OS 2.0 feature). Captures all sounds, effects, and processing into a single sample for bouncing or creative use.",
+      "relatedTerms": ["sample"],
+      "linkedSections": [{ "sectionId": "sampling", "headingId": "resampling" }]
+    },
+    {
+      "id": "sample",
+      "term": "Sample",
+      "definition": "A recorded audio clip stored in one of 999 slots. Samples are recorded at 46.875 kHz / 16-bit and can be mono or stereo, using the 64 MB total memory.",
+      "relatedTerms": ["chop", "resample", "sound"],
+      "linkedSections": [{ "sectionId": "sampling" }]
+    },
+    {
+      "id": "scene",
+      "term": "Scene",
+      "definition": "A snapshot of which pattern is active in each of the four groups. Scenes are used in Song Mode to create arrangement sections like verse and chorus.",
+      "relatedTerms": ["song-mode", "pattern", "group"],
+      "linkedSections": [{ "sectionId": "groups-scenes", "headingId": "scenes" }]
+    },
+    {
+      "id": "sidechain",
+      "term": "Sidechain",
+      "definition": "A ducking effect where one sound (typically kick) reduces the volume of other sounds. Creates the classic pumping effect in electronic music. Added in OS 2.0.",
+      "linkedSections": [{ "sectionId": "effects", "headingId": "sidechain" }]
+    },
+    {
+      "id": "song-mode",
+      "term": "Song Mode",
+      "definition": "An arrangement mode (OS 2.0) for chaining scenes into a complete song. Supports up to 99 song positions for compositions up to 9,801 bars long.",
+      "relatedTerms": ["pattern", "scene"],
+      "linkedSections": [{ "sectionId": "song-mode" }]
+    },
+    {
+      "id": "sound",
+      "term": "Sound",
+      "definition": "A playable slot within a group. Each group has 12 sounds (pads 0-9, +, -). A sound references a sample plus parameter settings like filter, envelope, and pitch.",
+      "relatedTerms": ["sample", "group"],
+      "linkedSections": [{ "sectionId": "sound-edit" }]
+    },
+    {
+      "id": "swing",
+      "term": "Swing",
+      "definition": "A timing offset that delays every other note slightly, creating a shuffle or groove feel. Applied per-project and affects all groups equally.",
+      "linkedSections": [{ "sectionId": "sequencer", "headingId": "swing" }]
+    },
+    {
+      "id": "time-stretch",
+      "term": "Time Stretch",
+      "definition": "Changing a sample's length without affecting its pitch. Useful for matching sample tempo to project tempo or creating special effects.",
+      "linkedSections": [{ "sectionId": "sound-edit", "headingId": "time-stretch" }]
+    },
+    {
+      "id": "transient",
+      "term": "Transient",
+      "definition": "A sudden peak in audio signal, typically at the start of a drum hit or note. The EP-133's chop feature detects transients to automatically slice samples.",
+      "relatedTerms": ["chop"],
+      "linkedSections": [{ "sectionId": "sampling", "headingId": "chopping" }]
+    },
+    {
+      "id": "y-parameter",
+      "term": "Y Parameter",
+      "definition": "The function of the black Y knob, which is context-sensitive. In edit mode, it adjusts the selected parameter (filter, envelope, pitch, etc.).",
+      "linkedSections": [{ "sectionId": "sound-edit", "headingId": "y-parameter" }]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "id": "patterns",
+  "title": "Patterns & Sessions",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Patterns & Sessions",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "Circuit Tracks organizes your music into Patterns, Sessions, and Projects. Understanding this hierarchy helps you build complete songs."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Pattern View",
+      "id": "pattern-view"
+    },
+    {
+      "type": "paragraph",
+      "text": "Press the Pattern button to enter pattern view. The pads show your 8 available patterns per session. Press a pattern to switch to it immediately."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["pattern-button"],
+      "caption": "Pattern button"
+    },
+    {
+      "type": "table",
+      "headers": ["Pattern Color", "Meaning"],
+      "rows": [
+        ["White", "Currently playing/selected"],
+        ["Colored", "Contains data"],
+        ["Dim", "Empty pattern"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Pattern Structure",
+      "id": "structure"
+    },
+    {
+      "type": "paragraph",
+      "text": "Each pattern contains:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Up to 32 steps for each of the 6 tracks",
+        "Pattern length (can be different per track)",
+        "Tempo (shared across the session)",
+        "Swing amount"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Pattern Chaining",
+      "id": "chaining"
+    },
+    {
+      "type": "paragraph",
+      "text": "To create longer sequences, chain patterns together. Hold Pattern and press multiple pattern pads in order. They'll play back sequentially."
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Song Mode",
+      "text": "Chain all 8 patterns in order for a basic song arrangement. Pattern chains are saved with your project."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sessions",
+      "id": "sessions"
+    },
+    {
+      "type": "paragraph",
+      "text": "A Session contains 8 patterns plus all track settings (patches, samples, mix). Think of a session as one 'song' or 'scene.'"
+    },
+    {
+      "type": "paragraph",
+      "text": "To change sessions: Press Pattern, then Shift + Pattern to see the session overview. Select a new session."
+    },
+    {
+      "type": "callout",
+      "calloutType": "info",
+      "text": "Each project contains 8 sessions. That's 64 patterns total per project."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Changing Patterns Smoothly",
+      "id": "smooth-changes"
+    },
+    {
+      "type": "paragraph",
+      "text": "When you select a new pattern during playback, it will switch at the end of the current pattern. This ensures your transitions stay in time."
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "text": "Hold Shift while selecting a pattern to switch immediately on the next beat."
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "id": "song-mode",
+  "title": "Song Mode",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Song Mode",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "Song Mode (added in OS 2.0) allows you to chain scenes together into a complete song arrangement. With up to 99 song positions and patterns up to 99 bars long, you can create compositions up to 9,801 bars in length."
+    },
+    {
+      "type": "callout",
+      "calloutType": "info",
+      "text": "Song Mode was one of the most requested features and was added in the OS 2.0 'Champions' update."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Entering Song Mode",
+      "id": "entering"
+    },
+    {
+      "type": "paragraph",
+      "text": "To enter Song Mode, hold SHIFT and press TEMPO/LOOP. The display will show 'SONG' and the current song position. You can now arrange scenes into a complete song."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["tempo-loop-button", "shift-button"],
+      "caption": "SHIFT + TEMPO/LOOP enters Song Mode"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Song Structure",
+      "id": "structure"
+    },
+    {
+      "type": "paragraph",
+      "text": "A song is made up of song positions. Each position specifies:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Which scene (pattern combination) plays",
+        "How many times the scene repeats",
+        "Transition to the next position"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Adding Song Positions",
+      "id": "adding-positions"
+    },
+    {
+      "type": "paragraph",
+      "text": "In Song Mode, use the number keys to select a scene for the current position. Use +/- to navigate between song positions. The song plays through each position in order."
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Enter Song Mode (SHIFT + TEMPO/LOOP)",
+        "Navigate to the position you want to edit with +/-",
+        "Select a scene using number keys",
+        "Set the repeat count if desired",
+        "Move to the next position and repeat"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Song Playback",
+      "id": "playback"
+    },
+    {
+      "type": "paragraph",
+      "text": "Press PLAY in Song Mode to play the song from the current position. The EP-133 will progress through each position automatically. You can jump to any position during playback."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Creating Arrangements",
+      "id": "arrangements"
+    },
+    {
+      "type": "paragraph",
+      "text": "A typical song arrangement might look like:"
+    },
+    {
+      "type": "table",
+      "headers": ["Position", "Scene", "Section"],
+      "rows": [
+        ["1", "Scene 1", "Intro (4 bars)"],
+        ["2", "Scene 2", "Verse 1 (8 bars)"],
+        ["3", "Scene 3", "Chorus (8 bars)"],
+        ["4", "Scene 2", "Verse 2 (8 bars)"],
+        ["5", "Scene 3", "Chorus (8 bars)"],
+        ["6", "Scene 4", "Bridge (4 bars)"],
+        ["7", "Scene 3", "Final Chorus (8 bars)"],
+        ["8", "Scene 5", "Outro (4 bars)"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Loop Mode vs Song Mode",
+      "id": "loop-vs-song"
+    },
+    {
+      "type": "paragraph",
+      "text": "By default, patterns loop continuously (Loop Mode). Song Mode changes this behavior so the EP-133 progresses through your arranged song positions instead of looping a single scene."
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Live Performance",
+      "text": "You can still manually trigger scene changes during Song Mode playback for live improvisation."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Song Length",
+      "id": "length"
+    },
+    {
+      "type": "paragraph",
+      "text": "With 99 song positions and patterns up to 99 bars each, the theoretical maximum song length is 9,801 bars. At 120 BPM in 4/4 time, that's over 5 hours of music!"
+    }
+  ]
+}

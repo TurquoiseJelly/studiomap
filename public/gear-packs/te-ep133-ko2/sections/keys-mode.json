@@ -1,0 +1,139 @@
+{
+  "id": "keys-mode",
+  "title": "Keys Mode",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Keys Mode",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "Keys Mode transforms the number pads into a chromatic or scale-locked keyboard, allowing you to play melodies and chords with your samples. This is perfect for pitched instruments like synths, pianos, and bass sounds."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["keys-button"],
+      "caption": "KEYS button enters keyboard mode"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Entering Keys Mode",
+      "id": "entering"
+    },
+    {
+      "type": "paragraph",
+      "text": "Press the KEYS button to enter keyboard mode. The 12 pads (0-9, +, -) now play the currently selected sound at different pitches across one octave."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Chromatic Mode",
+      "id": "chromatic"
+    },
+    {
+      "type": "paragraph",
+      "text": "By default, Keys Mode is chromatic - each pad plays a semitone higher than the previous, covering a full octave. The pad layout follows a piano-like arrangement."
+    },
+    {
+      "type": "table",
+      "headers": ["Pad", "Note (in C)"],
+      "rows": [
+        ["1", "C"],
+        ["2", "D"],
+        ["3", "E"],
+        ["4", "F"],
+        ["5", "G"],
+        ["6", "A"],
+        ["7", "B"],
+        ["8", "C (octave up)"],
+        ["0", "C# / Db"],
+        ["-", "D# / Eb"],
+        ["+", "F# / Gb"],
+        ["9", "G# / Ab"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Changing Octave",
+      "id": "octave"
+    },
+    {
+      "type": "paragraph",
+      "text": "While in Keys Mode, use the +/- buttons (when not playing) or a key combination to shift the octave up or down. This extends your range beyond the 12 pads."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Scale Modes",
+      "id": "scales"
+    },
+    {
+      "type": "paragraph",
+      "text": "The EP-133 includes several scale modes that constrain notes to a specific musical scale. This makes it easier to play in key without hitting wrong notes."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Chromatic - All 12 semitones",
+        "Major - Happy, bright scale (Ionian)",
+        "Minor - Sad, dark scale (Aeolian)",
+        "Pentatonic Major - 5-note major scale",
+        "Pentatonic Minor - 5-note minor scale (blues-friendly)",
+        "Dorian - Minor with raised 6th",
+        "Mixolydian - Major with flat 7th",
+        "Blues - Minor pentatonic with blue note"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Root Note",
+      "id": "root-note"
+    },
+    {
+      "type": "paragraph",
+      "text": "Set the root note (key) for scale modes. This determines which note is the tonic. For example, setting root to 'G' with Minor scale gives you G minor."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Recording Melodies",
+      "id": "recording"
+    },
+    {
+      "type": "paragraph",
+      "text": "Keys Mode works with the sequencer. Enable RECORD and play melodies on the pads - your performance is recorded with the correct pitches. This is how you create melodic sequences."
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Melody Workflow",
+      "text": "1. Sample or load a melodic sound (synth, piano, etc.). 2. Enter Keys Mode. 3. Select a scale and root note. 4. Record your melody into the sequencer."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Playing Chords",
+      "id": "chords"
+    },
+    {
+      "type": "paragraph",
+      "text": "Press multiple pads simultaneously to play chords. The EP-133's polyphony (16 mono / 12 stereo voices) allows for rich chord voicings. Scale mode helps ensure your chords are in key."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Exiting Keys Mode",
+      "id": "exiting"
+    },
+    {
+      "type": "paragraph",
+      "text": "Press KEYS again or MAIN to exit Keys Mode and return to normal pad triggering where each pad plays a different sound."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "use-effects",
+  "title": "Apply Punch-In Effects",
+  "description": "Learn how to use the 16 real-time punch-in effects to add variation and excitement to your performance.",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "id": "step-1",
+      "title": "Start Playback",
+      "instruction": "Press the play button to start your pattern playing. Make sure you have a beat or pattern with some content to hear the effects.",
+      "diagramHighlights": ["play-button"],
+      "tip": "Effects work best with a rhythmic pattern playing so you can hear the transformations."
+    },
+    {
+      "id": "step-2",
+      "title": "Hold the FX Button",
+      "instruction": "Hold down the FX button. While holding it, you can trigger any of the 16 effects using the pads.",
+      "diagramHighlights": ["fx-button"],
+      "tip": "Keep holding FX throughout - releasing it doesn't activate effects, it just exits FX mode."
+    },
+    {
+      "id": "step-3",
+      "title": "Try Loop Effects (Pads 1-4)",
+      "instruction": "While holding FX, press and hold pad 1 for a tight stutter loop. Try pads 2, 3, and 4 for progressively longer loops. Release the pad to return to normal playback.",
+      "diagramHighlights": ["fx-button", "pad-1", "pad-2", "pad-3", "pad-4"],
+      "substeps": [
+        { "instruction": "Pad 1 = 1/16 note loop (very tight)", "hotspotId": "pad-1" },
+        { "instruction": "Pad 2 = 1/8 note loop", "hotspotId": "pad-2" },
+        { "instruction": "Pad 3 = 1/4 note loop", "hotspotId": "pad-3" },
+        { "instruction": "Pad 4 = 1/2 note loop", "hotspotId": "pad-4" }
+      ]
+    },
+    {
+      "id": "step-4",
+      "title": "Explore More Effects",
+      "instruction": "Continue holding FX and try other pads: pad 7 for scratch, pad 9-10 for filter sweeps, pad 12 for tape stop, pad 8 for reverse playback.",
+      "diagramHighlights": ["fx-button", "pad-7", "pad-9", "pad-10", "pad-12", "pad-8"],
+      "tip": "Each pad triggers a different effect. Experiment to find your favorites!"
+    }
+  ],
+  "outcomes": [
+    "Understanding of how punch-in effects work",
+    "Ability to apply loop/stutter effects",
+    "Knowledge of the different effect types",
+    "Skills for live performance FX"
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "id": "connections",
+  "title": "Connections",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Connections",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "Overview of all physical connections on Circuit Tracks and how to use them effectively."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Port Overview",
+      "id": "port-overview"
+    },
+    {
+      "type": "table",
+      "headers": ["Port", "Connector", "Function"],
+      "rows": [
+        ["USB-C", "USB Type-C", "Power, MIDI, firmware, Components"],
+        ["MIDI In", "5-pin DIN", "Receive MIDI from external gear"],
+        ["MIDI Out", "5-pin DIN", "Send MIDI to external synths/drums"],
+        ["MIDI Thru", "5-pin DIN", "Pass-through for daisy chaining"],
+        ["Input 1", "1/4\" (6.35mm)", "External audio input (line level)"],
+        ["Input 2", "1/4\" (6.35mm)", "External audio input (line level)"],
+        ["Output L/Mono", "1/4\" (6.35mm)", "Main left output (sums to mono)"],
+        ["Output R", "1/4\" (6.35mm)", "Main right output"],
+        ["Headphones", "3.5mm stereo", "Headphone monitoring"],
+        ["Sync", "3.5mm TRS", "Analog clock sync (modular/volcas)"],
+        ["Micro SD", "Micro SD slot", "Sample storage and project backup"]
+      ]
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["usb-port", "midi-in", "midi-out", "midi-thru", "input-1", "input-2", "output-left", "output-right", "headphone-output", "sync-port", "sd-card-slot"],
+      "caption": "All rear panel connections"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "USB-C Port",
+      "id": "usb"
+    },
+    {
+      "type": "paragraph",
+      "text": "The USB-C connection serves multiple purposes:"
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["usb-port"],
+      "caption": "USB-C port"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Power: Provides bus power from computer, wall adapter, or USB battery pack",
+        "MIDI: Class-compliant USB MIDI (no drivers needed)",
+        "Components: Connects to Novation Components for patch editing, sample management, and backup",
+        "Firmware: Updates the device firmware when available"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "MIDI Ports",
+      "id": "midi-ports"
+    },
+    {
+      "type": "paragraph",
+      "text": "Circuit Tracks features full-size 5-pin DIN MIDI ports for reliable hardware connectivity. Standard MIDI cables connect directly - no adapters required."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["midi-in", "midi-out", "midi-thru"],
+      "caption": "5-pin DIN MIDI ports"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "MIDI In: Receive notes, clock, and control from external sequencers or controllers",
+        "MIDI Out: Send sequences to external synths and drum machines",
+        "MIDI Thru: Pass incoming MIDI to additional devices in a chain"
+      ]
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Daisy Chaining",
+      "text": "Use the MIDI Thru port to send incoming MIDI to additional devices. This is useful when controlling Circuit Tracks from a DAW while also sending to other hardware."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Power Options",
+      "id": "power"
+    },
+    {
+      "type": "paragraph",
+      "text": "Circuit Tracks can be powered in two ways:"
+    },
+    {
+      "type": "table",
+      "headers": ["Power Source", "Details"],
+      "rows": [
+        ["USB-C", "5V USB power from computer, wall adapter, or battery pack"],
+        ["AA Batteries", "6x AA batteries for fully portable operation"]
+      ]
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Battery Life",
+      "text": "With good quality AA batteries, expect 4-6 hours of use. Rechargeable NiMH batteries work well and are more economical for regular use."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sync Port",
+      "id": "sync"
+    },
+    {
+      "type": "paragraph",
+      "text": "The 3.5mm sync port sends and receives analog clock signals for synchronizing with modular systems, Korg Volcas, Pocket Operators, and other gear that uses analog clock."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["sync-port"],
+      "caption": "Analog sync port (3.5mm)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Connection Setup Examples",
+      "id": "examples"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Basic Headphone Setup"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Connect USB-C for power (or insert 6x AA batteries)",
+        "Connect headphones to the 3.5mm headphone jack",
+        "Press the power button to turn on",
+        "Adjust Master Volume and start making music"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "With External Speakers"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Connect USB-C for power",
+        "Connect 1/4\" cables from Output L/Mono and Output R to powered speakers or a mixer",
+        "Start at low master volume and increase gradually"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "With External MIDI Gear"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Connect power via USB-C",
+        "Connect a 5-pin DIN MIDI cable from MIDI Out to your external synth's MIDI In",
+        "Set external synth to receive on the appropriate MIDI channel",
+        "Select a synth track (ch 1 or 2) or MIDI track (ch 3 or 4) on Circuit Tracks"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "With a DAW"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Connect USB-C to computer",
+        "Open your DAW and enable Circuit Tracks as a MIDI device",
+        "Connect 1/4\" audio outputs to your audio interface",
+        "Use Circuit Tracks for sequencing soft synths or as a MIDI controller"
+      ]
+    },
+    {
+      "type": "callout",
+      "calloutType": "note",
+      "text": "Circuit Tracks does not function as a USB audio interface. Audio must be routed separately via the analog 1/4\" outputs to your audio interface or mixer."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Processing External Audio"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Connect external audio source to Input 1 or Input 2 (1/4\" cables)",
+        "The external audio appears in the mixer and can be processed through delay/reverb",
+        "Adjust input level in the mixer view",
+        "Connect outputs to speakers or audio interface"
+      ]
+    }
+  ]
+}

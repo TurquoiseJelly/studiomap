@@ -1,0 +1,58 @@
+{
+  "id": "first-sample",
+  "title": "Record Your First Sample",
+  "description": "Learn the basics of sampling audio into the PO-33 using the built-in microphone or line input.",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "id": "step-1",
+      "title": "Choose Your Sound Slot",
+      "instruction": "Turn the sound knob to select the slot where you want to record your sample. Slots 1-8 are for melodic sounds (can be played at different pitches), slots 9-16 are for drums (fixed pitch).",
+      "diagramHighlights": ["sound-knob"],
+      "tip": "Start with slot 9 for your first drum sample, or slot 1 for a melodic sound."
+    },
+    {
+      "id": "step-2",
+      "title": "Prepare Your Audio Source",
+      "instruction": "Decide whether to use the built-in microphone or connect an external audio source via the line input jack.",
+      "diagramHighlights": ["microphone", "line-port"],
+      "substeps": [
+        { "instruction": "For microphone: Position sound source 6-12 inches away", "hotspotId": "microphone" },
+        { "instruction": "For line input: Connect a 3.5mm cable from your audio source", "hotspotId": "line-port" }
+      ],
+      "tip": "The line input gives cleaner recordings. The mic adds lo-fi character."
+    },
+    {
+      "id": "step-3",
+      "title": "Enter Sampling Mode",
+      "instruction": "Hold the record button. The display will show the input level meter - you'll see activity when sound is detected.",
+      "diagramHighlights": ["record-button", "display"],
+      "tip": "Keep holding record throughout the sampling process."
+    },
+    {
+      "id": "step-4",
+      "title": "Record the Sample",
+      "instruction": "While still holding record, press any pad to start recording. Play your audio source. Press the same pad again to stop recording.",
+      "diagramHighlights": ["record-button", "pad-9"],
+      "substeps": [
+        { "instruction": "Hold record button" },
+        { "instruction": "Press pad to start recording" },
+        { "instruction": "Play your audio source" },
+        { "instruction": "Press the same pad to stop" }
+      ],
+      "warning": "Recording to an existing sound slot will replace its contents!"
+    },
+    {
+      "id": "step-5",
+      "title": "Play Your Sample",
+      "instruction": "Release the record button to exit sample mode. Now press the pad corresponding to your selected sound slot to hear your sample play back.",
+      "diagramHighlights": ["pad-9", "display"],
+      "tip": "If it's a melodic sound (1-8), hold the pad and press other pads to change pitch!"
+    }
+  ],
+  "outcomes": [
+    "Recorded your first sample into the PO-33",
+    "Understanding of melodic vs drum sound slots",
+    "Ability to choose between microphone and line input"
+  ]
+}

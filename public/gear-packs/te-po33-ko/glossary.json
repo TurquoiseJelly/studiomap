@@ -1,0 +1,112 @@
+{
+  "terms": [
+    {
+      "id": "drum-sound",
+      "term": "Drum Sound",
+      "definition": "Sound slots 9-16 that play at fixed pitch. Optimized for drums, percussion, and one-shot samples that don't need pitch variation.",
+      "relatedTerms": ["melodic-sound", "sound-slot"],
+      "linkedSections": [{ "sectionId": "sampling", "headingId": "drum-sounds" }]
+    },
+    {
+      "id": "ko",
+      "term": "K.O. (Knock Out)",
+      "definition": "The product line name for Teenage Engineering's sampling Pocket Operators. The PO-33 K.O. was the original, followed by the EP-133 K.O. II.",
+      "linkedSections": [{ "sectionId": "overview" }]
+    },
+    {
+      "id": "melodic-sound",
+      "term": "Melodic Sound",
+      "definition": "Sound slots 1-8 that can be played chromatically by holding the pad and pressing other pads to change pitch. Ideal for bass, melodies, and tonal samples.",
+      "relatedTerms": ["drum-sound", "sound-slot"],
+      "linkedSections": [{ "sectionId": "sampling", "headingId": "melodic-sounds" }]
+    },
+    {
+      "id": "meter",
+      "term": "Meter",
+      "definition": "The number of steps in a pattern, set by the M knob. Options are 16, 12, 8, or 4 steps per pattern. 12 steps creates triplet-based rhythms.",
+      "linkedSections": [{ "sectionId": "sequencer", "headingId": "meter" }]
+    },
+    {
+      "id": "pattern",
+      "term": "Pattern",
+      "definition": "A sequence of up to 16 steps containing notes and their timing. The PO-33 stores 16 patterns that can be chained together.",
+      "relatedTerms": ["pattern-chain", "step"],
+      "linkedSections": [{ "sectionId": "patterns" }]
+    },
+    {
+      "id": "pattern-chain",
+      "term": "Pattern Chain",
+      "definition": "A mode that plays multiple consecutive patterns in sequence automatically, looping back to the start. Set by holding play and turning pattern knob.",
+      "relatedTerms": ["pattern"],
+      "linkedSections": [{ "sectionId": "patterns", "headingId": "pattern-chain" }]
+    },
+    {
+      "id": "po-sync",
+      "term": "PO Sync",
+      "definition": "Teenage Engineering's proprietary synchronization protocol using a 3.5mm stereo cable. Left channel carries 8 PPQ clock signal, right channel carries mono audio.",
+      "relatedTerms": ["sync-mode"],
+      "linkedSections": [{ "sectionId": "sync" }]
+    },
+    {
+      "id": "pocket-operator",
+      "term": "Pocket Operator",
+      "definition": "A series of ultra-portable, calculator-sized synthesizers and samplers from Teenage Engineering. Characterized by exposed PCB design, AAA batteries, and the PO sync system.",
+      "linkedSections": [{ "sectionId": "overview" }]
+    },
+    {
+      "id": "punch-in-fx",
+      "term": "Punch-In FX",
+      "definition": "Real-time performance effects that activate while holding FX + a pad. Effects include loops, filters, scratch, reverse, and more. Release to return to normal playback.",
+      "linkedSections": [{ "sectionId": "effects" }]
+    },
+    {
+      "id": "sample",
+      "term": "Sample",
+      "definition": "A recorded audio clip stored in one of the 16 sound slots. Total sample memory is 40 seconds shared across all slots.",
+      "relatedTerms": ["sound-slot", "trim"],
+      "linkedSections": [{ "sectionId": "sampling" }]
+    },
+    {
+      "id": "slice",
+      "term": "Slice",
+      "definition": "A portion of a sample that can be triggered independently. Slice mode automatically divides a melodic sample across the drum pads (9-16).",
+      "relatedTerms": ["sample"],
+      "linkedSections": [{ "sectionId": "sound-edit", "headingId": "slice-mode" }]
+    },
+    {
+      "id": "sound-slot",
+      "term": "Sound Slot",
+      "definition": "One of 16 memory locations (1-16) where samples are stored. Slots 1-8 are melodic, slots 9-16 are drums.",
+      "relatedTerms": ["melodic-sound", "drum-sound", "sample"],
+      "linkedSections": [{ "sectionId": "overview" }]
+    },
+    {
+      "id": "step",
+      "term": "Step",
+      "definition": "A single time position in the sequencer grid. Each pattern can have up to 16 steps. Multiple sounds can be placed on the same step.",
+      "relatedTerms": ["pattern", "write-mode"],
+      "linkedSections": [{ "sectionId": "sequencer" }]
+    },
+    {
+      "id": "sync-mode",
+      "term": "Sync Mode",
+      "definition": "Configuration for the sync port behavior (SY0-SY5). SY0=off, SY1=send clock, SY2=receive clock, SY3=pass-through, SY4/5=with level control.",
+      "relatedTerms": ["po-sync"],
+      "linkedSections": [{ "sectionId": "sync", "headingId": "sync-modes" }]
+    },
+    {
+      "id": "trim",
+      "term": "Trim",
+      "definition": "Adjusting the start and end points of a sample to remove unwanted portions. Done by holding record and turning the sound/pattern knobs.",
+      "relatedTerms": ["sample"],
+      "linkedSections": [{ "sectionId": "sampling", "headingId": "trimming" }]
+    },
+    {
+      "id": "write-mode",
+      "term": "Write Mode",
+      "definition": "Step-sequencing mode activated by pressing the write button. Navigate steps with the sound knob, add notes by pressing pads.",
+      "relatedTerms": ["step", "pattern"],
+      "linkedSections": [{ "sectionId": "sequencer", "headingId": "step-recording" }]
+    }
+  ]
+}

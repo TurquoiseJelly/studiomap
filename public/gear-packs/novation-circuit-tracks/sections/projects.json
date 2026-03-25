@@ -1,0 +1,122 @@
+{
+  "id": "projects",
+  "title": "Projects",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Projects",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "Projects are the top-level organizational unit in Circuit Tracks. Each project contains 8 sessions, and each session contains 8 patterns - giving you 64 patterns per project."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["projects-button"],
+      "caption": "Projects button"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Accessing Projects",
+      "id": "accessing"
+    },
+    {
+      "type": "paragraph",
+      "text": "Press the Projects button to enter project view. The display shows your project list, and the pads light up to indicate available projects."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Project Contents",
+      "id": "contents"
+    },
+    {
+      "type": "paragraph",
+      "text": "A project stores:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "8 sessions with all pattern data",
+        "All synth and sample assignments",
+        "Mix levels and effect settings",
+        "Tempo and swing settings",
+        "Pattern chains"
+      ]
+    },
+    {
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Samples Are Shared",
+      "text": "Samples are NOT stored in projects - they're global. If you change a sample, it changes in all projects that use it."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Saving Projects",
+      "id": "saving"
+    },
+    {
+      "type": "paragraph",
+      "text": "Circuit Tracks auto-saves frequently, but you should manually save before powering off:"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Press the Projects button",
+        "Hold Shift and press Projects to save",
+        "The display confirms 'Saving...'"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Creating New Projects",
+      "id": "creating"
+    },
+    {
+      "type": "paragraph",
+      "text": "To start fresh:"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Enter Projects view",
+        "Navigate to an empty slot using the pads or Macro 1",
+        "Press to select the empty slot",
+        "A new blank project is created"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Project Backup",
+      "id": "backup"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use Novation Components to backup projects to your computer. You can also share projects with other Circuit Tracks users."
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "text": "Regular backups are recommended. Projects can be restored if your Circuit Tracks has issues."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Storage Capacity",
+      "id": "capacity"
+    },
+    {
+      "type": "paragraph",
+      "text": "Circuit Tracks can store up to 256 projects internally. That's over 16,000 patterns of storage!"
+    }
+  ]
+}

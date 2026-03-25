@@ -1,0 +1,174 @@
+{
+  "id": "connections",
+  "title": "Connections",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Connections",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "The EP-133 features comprehensive connectivity on its top panel including audio I/O, MIDI, sync, and USB. All ports use 3.5mm or USB-C connectors for compact design."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Audio Output",
+      "id": "audio-output"
+    },
+    {
+      "type": "paragraph",
+      "text": "The OUTPUT port is a 3.5mm stereo jack providing the main audio output. Connect to headphones, powered speakers, a mixer, or an audio interface."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["output-port"],
+      "caption": "Audio output port (3.5mm stereo)"
+    },
+    {
+      "type": "table",
+      "headers": ["Specification", "Value"],
+      "rows": [
+        ["Connector", "3.5mm TRS stereo"],
+        ["Resolution", "24-bit"],
+        ["SNR", "98 dBA"],
+        ["Max Level", "5 dBu / 1.4 Vrms"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Audio Input",
+      "id": "audio-input"
+    },
+    {
+      "type": "paragraph",
+      "text": "The INPUT port (orange) accepts line-level audio for sampling. Connect phones, tablets, turntables (with preamp), synthesizers, or other audio sources."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["input-port"],
+      "caption": "Audio input port (3.5mm stereo, orange)"
+    },
+    {
+      "type": "table",
+      "headers": ["Specification", "Value"],
+      "rows": [
+        ["Connector", "3.5mm TRS stereo"],
+        ["Resolution", "24-bit"],
+        ["SNR", "96 dBA"],
+        ["Analog Gain", "0-12 dB"],
+        ["Max Level", "8 dBu / 2.0 Vrms"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Speaker",
+      "id": "speaker"
+    },
+    {
+      "type": "paragraph",
+      "text": "The built-in mono speaker provides monitoring without headphones. It's automatically disabled when headphones or line output is connected."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["speaker"],
+      "caption": "Built-in speaker grille"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "USB",
+      "id": "usb"
+    },
+    {
+      "type": "paragraph",
+      "text": "The USB-C port provides multiple functions: power, USB MIDI, firmware updates, and sample transfer. It's class-compliant for plug-and-play operation."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["usb-port"],
+      "caption": "USB-C port"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Power: Runs the EP-133 or charges alongside batteries",
+        "USB MIDI: Send and receive MIDI without additional interfaces",
+        "Firmware: Update to the latest OS version",
+        "Sample Transfer: Import/export samples via the EP-133 app"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Power",
+      "id": "power"
+    },
+    {
+      "type": "paragraph",
+      "text": "The EP-133 runs on 4x AAA batteries or USB power. Battery life is approximately 8 hours. The power switch is a physical slider on the top panel."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["power-switch"],
+      "caption": "Power switch"
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Power Options",
+      "text": "Use USB power for extended sessions. Batteries provide backup and portability. The EP-133 can run on USB while batteries are installed for hot-swap capability."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Connection Examples",
+      "id": "examples"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Headphone Setup",
+      "id": "headphone-setup"
+    },
+    {
+      "type": "paragraph",
+      "text": "Connect headphones to the OUTPUT port. Use the VOLUME knob to adjust listening level. This is the simplest setup for portable use."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Recording to a Computer",
+      "id": "computer-setup"
+    },
+    {
+      "type": "paragraph",
+      "text": "Connect OUTPUT to your audio interface's input. Connect USB for MIDI sync and control. Your DAW can record EP-133 audio while sending MIDI clock."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Live Performance",
+      "id": "live-setup"
+    },
+    {
+      "type": "paragraph",
+      "text": "Connect OUTPUT to a mixer or PA system. Use SYNC or MIDI to sync with other performers' gear. The built-in speaker is disabled when output is connected."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Sampling from Vinyl",
+      "id": "vinyl-setup"
+    },
+    {
+      "type": "paragraph",
+      "text": "Connect a turntable's preamp output (or a turntable with built-in preamp) to INPUT. Adjust GAIN for proper level, and sample directly from records."
+    }
+  ]
+}

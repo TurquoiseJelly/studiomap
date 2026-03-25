@@ -1,0 +1,72 @@
+{
+  "id": "create-song",
+  "title": "Create a Song",
+  "description": "Use Song Mode to arrange multiple patterns into a complete song structure with intro, verse, chorus, and outro.",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "id": "step-1",
+      "title": "Create Multiple Patterns",
+      "instruction": "Before using Song Mode, create at least 2-3 different patterns. Use pattern 1 for a verse, pattern 2 for a chorus, etc.",
+      "diagramHighlights": ["group-a-button", "plus-button"],
+      "substeps": [
+        { "instruction": "Create Pattern 1: Your verse or intro section" },
+        { "instruction": "Use + to go to Pattern 2" },
+        { "instruction": "Create Pattern 2: Your chorus or main section" },
+        { "instruction": "Optionally create Pattern 3: Bridge or breakdown" }
+      ],
+      "tip": "Patterns can be different lengths. A 4-bar intro, 8-bar verse, and 8-bar chorus is a good starting structure."
+    },
+    {
+      "id": "step-2",
+      "title": "Enter Song Mode",
+      "instruction": "Hold SHIFT and press TEMPO/LOOP to enter Song Mode. The display will show 'SONG' and the current song position.",
+      "diagramHighlights": ["shift-button", "tempo-loop-button", "display"]
+    },
+    {
+      "id": "step-3",
+      "title": "Set Position 1 (Intro)",
+      "instruction": "You're at song position 1. Use the number keys to select which pattern/scene plays here. For an intro, you might select pattern 1.",
+      "diagramHighlights": ["pad-1", "enter-button"],
+      "tip": "A scene combines all 4 groups. If Group A is on pattern 1 and Group B is on pattern 1, that's your scene."
+    },
+    {
+      "id": "step-4",
+      "title": "Move to Position 2",
+      "instruction": "Press + to move to song position 2. This is where you'll set your first verse or main section.",
+      "diagramHighlights": ["plus-button"]
+    },
+    {
+      "id": "step-5",
+      "title": "Set Position 2 (Verse)",
+      "instruction": "Select the pattern for position 2. If you want the verse to repeat, you can set it to play multiple times before moving to the next position.",
+      "diagramHighlights": ["pad-2", "enter-button"]
+    },
+    {
+      "id": "step-6",
+      "title": "Continue Building the Song",
+      "instruction": "Continue adding song positions for your complete arrangement. A typical song might have 8-12 positions.",
+      "diagramHighlights": ["plus-button"],
+      "substeps": [
+        { "instruction": "Position 3: Chorus" },
+        { "instruction": "Position 4: Verse 2" },
+        { "instruction": "Position 5: Chorus" },
+        { "instruction": "Position 6: Bridge" },
+        { "instruction": "Position 7: Final Chorus" },
+        { "instruction": "Position 8: Outro" }
+      ]
+    },
+    {
+      "id": "step-7",
+      "title": "Play the Song",
+      "instruction": "Press PLAY while in Song Mode to hear your complete song arrangement. The EP-133 will progress through each position automatically.",
+      "diagramHighlights": ["play-button"],
+      "tip": "You can still manually trigger pattern changes during playback for live performance variations."
+    }
+  ],
+  "outcomes": [
+    "Understanding of Song Mode and song positions",
+    "Ability to arrange patterns into a complete song",
+    "Knowledge of typical song structure (intro, verse, chorus, outro)"
+  ]
+}

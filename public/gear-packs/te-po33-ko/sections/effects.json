@@ -1,0 +1,105 @@
+{
+  "id": "effects",
+  "title": "Effects",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Punch-In Effects",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "The PO-33 features 16 real-time punch-in effects that activate while holding the FX button and pressing pads. Effects apply to the entire mix and create instant variations, glitches, and transitions. Release the pad to return to normal playback."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using Effects",
+      "id": "using-effects"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Start playback with the play button",
+        "Hold the FX button",
+        "While holding FX, press any pad (1-16) to activate that effect",
+        "Keep the pad held for continuous effect",
+        "Release the pad to stop the effect instantly"
+      ]
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["fx-button"],
+      "caption": "FX button with diagonal stripe pattern"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Effect List",
+      "id": "effect-list"
+    },
+    {
+      "type": "table",
+      "headers": ["Pad", "Effect", "Description"],
+      "rows": [
+        ["1", "Loop 1", "Short loop stutter (1/16 note)"],
+        ["2", "Loop 2", "Medium loop stutter (1/8 note)"],
+        ["3", "Loop 3", "Long loop stutter (1/4 note)"],
+        ["4", "Loop 4", "Longest loop (1/2 note)"],
+        ["5", "Stutter Down", "Loop with descending pitch"],
+        ["6", "Stutter Up", "Loop with ascending pitch"],
+        ["7", "Scratch", "Vinyl scratch simulation"],
+        ["8", "Reverse", "Plays the buffer in reverse"],
+        ["9", "Filter Down", "Low-pass filter sweep down"],
+        ["10", "Filter Up", "Low-pass filter sweep up"],
+        ["11", "Bit Crush", "Digital distortion / bit reduction"],
+        ["12", "Tape Stop", "Slows playback to a stop"],
+        ["13", "Retrigger", "Fast retriggering stutter"],
+        ["14", "Delay", "Rhythmic echo effect"],
+        ["15", "Filter + Loop", "Combined filter and loop"],
+        ["16", "Random", "Random effect each trigger"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Effect Tips",
+      "id": "tips"
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Performance Technique",
+      "text": "Practice timing your effect triggers to land on beats. Use loop effects for build-ups before drops. Use the scratch effect for transitions between patterns."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Effects can be combined by quickly switching between pads while holding FX",
+        "Loop effects are most effective when triggered on strong beats",
+        "Filter effects work well for transitions and breakdowns",
+        "The reverse effect is great for creating ear-candy fills",
+        "Tape stop creates dramatic endings when timed correctly"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Recording Effects",
+      "id": "recording-effects"
+    },
+    {
+      "type": "paragraph",
+      "text": "Effects are applied in real-time and cannot be recorded into patterns directly. However, you can use the sync output to record your performance (including effects) to an external device for later use."
+    },
+    {
+      "type": "callout",
+      "calloutType": "info",
+      "title": "Layering Effects",
+      "text": "While you can only use one pad-based effect at a time, you can create complex sounds by quickly tapping different effect pads in succession."
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "id": "sound-edit",
+  "title": "Sound Editing",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Sound Editing",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "The EP-133 provides comprehensive sound editing capabilities including sample trimming, envelope shaping, filtering, pitch adjustment, and time stretching. Access edit mode by pressing SOUND/EDIT or holding SHIFT + SOUND."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["sound-edit-button"],
+      "caption": "SOUND/EDIT button accesses sound selection and editing"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sound Selection",
+      "id": "selection"
+    },
+    {
+      "type": "paragraph",
+      "text": "Press SOUND/EDIT to enter sound mode. Use the number keys to enter a sound number (0-999), then press ENTER to load that sound. You can also use +/- to browse through sounds sequentially."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Y Parameter",
+      "id": "y-parameter"
+    },
+    {
+      "type": "paragraph",
+      "text": "The black Y knob is context-sensitive and controls different parameters depending on which edit function is selected. After selecting a parameter with a number key, turn Y to adjust its value."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["y-knob"],
+      "caption": "Y knob adjusts the selected parameter"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Edit Parameters",
+      "id": "parameters"
+    },
+    {
+      "type": "paragraph",
+      "text": "In edit mode (SHIFT + SOUND), the number keys access different parameters:"
+    },
+    {
+      "type": "table",
+      "headers": ["Key", "Parameter", "Function"],
+      "rows": [
+        ["1", "ATK (Attack)", "Envelope attack time - how quickly sound reaches full volume"],
+        ["2", "REL (Release)", "Envelope release time - how long sound fades after release"],
+        ["3", "PAN", "Stereo panning position - left to right placement"],
+        ["4", "LPF", "Low pass filter cutoff - removes high frequencies"],
+        ["5", "HPF", "High pass filter cutoff - removes low frequencies"],
+        ["6", ">FX", "Effect send - amount of signal sent to master effect"],
+        ["7", "LEVEL", "Sound volume level"],
+        ["8", "PITCH", "Pitch/transpose - semitone adjustment"],
+        ["9", "TIME", "Time stretch - change length without changing pitch"],
+        ["0", "MOD", "Modulation - LFO-style effect depth"],
+        ["-", "TUNE", "Fine tuning - cents adjustment"],
+        ["+", "VEL", "Velocity sensitivity - how velocity affects volume/timbre"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sample Trimming",
+      "id": "trimming"
+    },
+    {
+      "type": "paragraph",
+      "text": "Trim the start and end points of your samples to remove silence or unwanted audio. In edit mode, use the Y knob to adjust trim points. The display shows the waveform position."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Envelope",
+      "id": "envelope"
+    },
+    {
+      "type": "paragraph",
+      "text": "Shape the amplitude envelope using Attack (ATK) and Release (REL) parameters. Attack controls the fade-in time, while Release controls the fade-out time after the pad is released."
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Envelope Tips",
+      "text": "Short attack + short release = punchy hits. Long attack = swells. Long release = ambient tails."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Filters",
+      "id": "filters"
+    },
+    {
+      "type": "paragraph",
+      "text": "Two filter types are available: Low Pass Filter (LPF) removes high frequencies for a darker sound, while High Pass Filter (HPF) removes low frequencies for a thinner sound. Adjust cutoff frequency with the Y knob."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["pad-4", "pad-5"],
+      "caption": "Pads 4 and 5 access LPF and HPF in edit mode"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Time Stretch",
+      "id": "time-stretch"
+    },
+    {
+      "type": "paragraph",
+      "text": "Time stretching allows you to change the length of a sample without affecting its pitch. This is useful for matching sample tempo to your project tempo, or for creative effects."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Press 9 (TIME) in edit mode to access time stretch",
+        "Use Y knob to adjust stretch amount",
+        "Stretch to tempo: match sample BPM to project BPM",
+        "Stretch to bar: fit sample to a specific bar length"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Play Modes",
+      "id": "play-modes"
+    },
+    {
+      "type": "paragraph",
+      "text": "Each sound can be set to different play modes that affect how it responds to pad presses:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "One-shot: Sample plays fully when triggered, regardless of pad hold time",
+        "Gate: Sample plays while pad is held, stops when released",
+        "Legato: Overlapping triggers continue from current position instead of restarting"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Committing Changes",
+      "id": "committing"
+    },
+    {
+      "type": "paragraph",
+      "text": "After editing, hold MAIN/COMMIT to save your changes. If you want to discard changes and revert to the previous settings, simply press MAIN without holding."
+    },
+    {
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Remember to Commit",
+      "text": "Changes are not saved until you commit. Powering off without committing will lose your edits."
+    }
+  ]
+}

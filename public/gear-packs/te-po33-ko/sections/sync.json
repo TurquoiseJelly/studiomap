@@ -1,0 +1,118 @@
+{
+  "id": "sync",
+  "title": "Sync",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "PO Sync",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "The PO-33 uses Teenage Engineering's proprietary PO sync system via the 3.5mm stereo jack. This allows multiple Pocket Operators to play in sync, with clock on one channel and audio on the other."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sync Modes",
+      "id": "sync-modes"
+    },
+    {
+      "type": "paragraph",
+      "text": "The sync port can operate in different modes depending on whether the PO-33 is sending or receiving clock."
+    },
+    {
+      "type": "table",
+      "headers": ["Mode", "Behavior", "Setting"],
+      "rows": [
+        ["SY0", "Sync disabled", "Normal headphone output"],
+        ["SY1", "Sync output", "PO-33 sends clock, other devices follow"],
+        ["SY2", "Sync input", "PO-33 follows external clock"],
+        ["SY3", "Sync pass-through", "Receives and forwards clock"],
+        ["SY4", "Sync output + input volume", "Like SY1 but with input level control"],
+        ["SY5", "Sync input + output volume", "Like SY2 but with output level control"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Changing Sync Mode",
+      "id": "changing-mode"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Hold BPM knob pressed",
+        "While holding, press pads 1-5 to select sync mode (SY0-SY5)",
+        "Display shows the selected mode",
+        "Release BPM knob to confirm"
+      ]
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["sync-port", "bpm-knob"],
+      "caption": "Sync port and BPM knob for sync settings"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Connecting Multiple POs",
+      "id": "chaining"
+    },
+    {
+      "type": "paragraph",
+      "text": "To sync multiple Pocket Operators together, connect them in a chain using stereo 3.5mm cables."
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Set the first PO to SY1 (sync output / master)",
+        "Set middle POs to SY3 (pass-through)",
+        "Set the last PO to SY2 (sync input / slave)",
+        "Connect from each PO's sync port to the next",
+        "Press play on the master - all units start together"
+      ]
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Cable Tips",
+      "text": "Use stereo (TRS) cables for sync connections. Mono cables will only carry clock, not audio. A stereo Y-splitter lets you send audio to headphones while still syncing."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sync Technical Details",
+      "id": "technical"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Clock runs at 8 pulses per quarter note (8 PPQ)",
+        "Left channel carries sync clock signal",
+        "Right channel carries mono audio output",
+        "Voltage level is approximately 2V peak-to-peak"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Syncing with Non-PO Devices",
+      "id": "external-sync"
+    },
+    {
+      "type": "paragraph",
+      "text": "The PO sync format is not directly compatible with standard MIDI or analog sync. However, converter devices like the Teenage Engineering POM-400 or third-party solutions can bridge the formats."
+    },
+    {
+      "type": "callout",
+      "calloutType": "info",
+      "title": "Volca Sync",
+      "text": "Korg Volca series uses a similar sync format (2 PPQ) and can sometimes be connected with varying results. A sync converter is recommended for reliable timing."
+    }
+  ]
+}

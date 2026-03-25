@@ -1,0 +1,84 @@
+{
+  "id": "build-beat",
+  "title": "Build a Beat",
+  "description": "Create a drum pattern using the real-time recording feature with multiple sounds across the pads.",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "id": "step-1",
+      "title": "Select Group A",
+      "instruction": "Press the A button to select Group A. This will be your drum group with kick, snare, hi-hat, and percussion.",
+      "diagramHighlights": ["group-a-button"],
+      "tip": "Each group can have its own set of 12 sounds. Groups play simultaneously, so you can add bass in Group B later."
+    },
+    {
+      "id": "step-2",
+      "title": "Load Your Drum Sounds",
+      "instruction": "Make sure you have drum samples assigned to pads 1-4 (or use the factory sounds). Tap each pad to hear what sound is loaded.",
+      "diagramHighlights": ["pad-1", "pad-2", "pad-3", "pad-4"],
+      "substeps": [
+        { "instruction": "Pad 1: Kick drum", "hotspotId": "pad-1" },
+        { "instruction": "Pad 2: Snare drum", "hotspotId": "pad-2" },
+        { "instruction": "Pad 3: Closed hi-hat", "hotspotId": "pad-3" },
+        { "instruction": "Pad 4: Open hi-hat or percussion", "hotspotId": "pad-4" }
+      ]
+    },
+    {
+      "id": "step-3",
+      "title": "Set Your Tempo",
+      "instruction": "Tap the TEMPO/LOOP button repeatedly to tap in your desired tempo, or hold TEMPO and turn the Y knob to dial in an exact BPM.",
+      "diagramHighlights": ["tempo-loop-button", "y-knob"],
+      "tip": "90-100 BPM for hip-hop, 120-130 BPM for house, 140+ for drum & bass."
+    },
+    {
+      "id": "step-4",
+      "title": "Enable the Metronome",
+      "instruction": "Press SHIFT + TEMPO to turn on the metronome. This will help you play in time while recording.",
+      "diagramHighlights": ["shift-button", "tempo-loop-button", "metronome-led"]
+    },
+    {
+      "id": "step-5",
+      "title": "Start Recording",
+      "instruction": "Press RECORD to arm recording (it will light up), then press PLAY to start the sequencer with the metronome.",
+      "diagramHighlights": ["record-button", "play-button"]
+    },
+    {
+      "id": "step-6",
+      "title": "Record the Kick",
+      "instruction": "Play pad 1 (kick) on beats 1 and 3 as the pattern loops. Listen to the metronome and play on the downbeats.",
+      "diagramHighlights": ["pad-1"],
+      "substeps": [
+        { "instruction": "Wait for beat 1 (first click)" },
+        { "instruction": "Press pad 1 on beat 1" },
+        { "instruction": "Press pad 1 on beat 3" },
+        { "instruction": "Let the pattern loop to verify your timing" }
+      ]
+    },
+    {
+      "id": "step-7",
+      "title": "Add the Snare",
+      "instruction": "Now add the snare (pad 2) on beats 2 and 4. This creates the classic backbeat.",
+      "diagramHighlights": ["pad-2"],
+      "tip": "Beats 2 and 4 are the off-beats - the snare should hit right after each kick."
+    },
+    {
+      "id": "step-8",
+      "title": "Add Hi-Hats",
+      "instruction": "Add hi-hats (pad 3) on every eighth note (twice per beat) to fill out the rhythm. Play steadily!",
+      "diagramHighlights": ["pad-3"],
+      "tip": "Don't worry if your timing isn't perfect - quantize will help tighten things up."
+    },
+    {
+      "id": "step-9",
+      "title": "Stop Recording",
+      "instruction": "Press RECORD to disable recording, then let the pattern play to hear your beat. Press PLAY to stop when you're satisfied.",
+      "diagramHighlights": ["record-button", "play-button"],
+      "tip": "You can continue adding layers by enabling RECORD again - it overdubs onto the existing pattern."
+    }
+  ],
+  "outcomes": [
+    "Created a basic drum pattern with kick, snare, and hi-hats",
+    "Learned real-time recording with the metronome",
+    "Understanding of the overdub workflow for building patterns"
+  ]
+}

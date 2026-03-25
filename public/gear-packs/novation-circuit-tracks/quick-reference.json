@@ -1,0 +1,229 @@
+{
+  "categories": ["Transport", "Navigation", "Editing", "Sound Design", "Patterns", "Effects", "Utilities"],
+  "entries": [
+    {
+      "id": "play",
+      "category": "Transport",
+      "action": "Play / Stop",
+      "shortcut": "Play",
+      "description": "Start or stop playback",
+      "hotspotIds": ["play-button"]
+    },
+    {
+      "id": "stop-reset",
+      "category": "Transport",
+      "action": "Stop and Reset",
+      "shortcut": "Shift + Play",
+      "description": "Stop playback and return to step 1",
+      "hotspotIds": ["shift-button", "play-button"]
+    },
+    {
+      "id": "record",
+      "category": "Transport",
+      "action": "Record Enable",
+      "shortcut": "Record",
+      "description": "Toggle recording mode on/off",
+      "hotspotIds": ["record-button"]
+    },
+    {
+      "id": "metronome",
+      "category": "Transport",
+      "action": "Toggle Metronome",
+      "shortcut": "Shift + Record",
+      "description": "Turn metronome click on/off",
+      "hotspotIds": ["shift-button", "record-button"]
+    },
+    {
+      "id": "tap-tempo",
+      "category": "Transport",
+      "action": "Tap Tempo",
+      "shortcut": "Tap Tempo repeatedly",
+      "description": "Set tempo by tapping the beat",
+      "hotspotIds": ["tempo-button"]
+    },
+    {
+      "id": "set-tempo",
+      "category": "Transport",
+      "action": "Set Tempo Precisely",
+      "shortcut": "Hold Tempo + Macro 1",
+      "description": "Dial in exact BPM value",
+      "hotspotIds": ["tempo-button", "macro-knob-1"]
+    },
+    {
+      "id": "undo",
+      "category": "Utilities",
+      "action": "Undo",
+      "shortcut": "Shift + Oct -",
+      "description": "Undo the last action",
+      "hotspotIds": ["shift-button", "octave-down"]
+    },
+    {
+      "id": "redo",
+      "category": "Utilities",
+      "action": "Redo",
+      "shortcut": "Shift + Oct +",
+      "description": "Redo the last undone action",
+      "hotspotIds": ["shift-button", "octave-up"]
+    },
+    {
+      "id": "octave-down",
+      "category": "Navigation",
+      "action": "Octave Down",
+      "shortcut": "Oct -",
+      "description": "Shift keyboard down one octave",
+      "hotspotIds": ["octave-down"]
+    },
+    {
+      "id": "octave-up",
+      "category": "Navigation",
+      "action": "Octave Up",
+      "shortcut": "Oct +",
+      "description": "Shift keyboard up one octave",
+      "hotspotIds": ["octave-up"]
+    },
+    {
+      "id": "patch-browser",
+      "category": "Sound Design",
+      "action": "Open Patch Browser",
+      "shortcut": "Double-tap Synth 1/2",
+      "description": "Browse and select synth patches",
+      "hotspotIds": ["synth-1-button", "synth-2-button"]
+    },
+    {
+      "id": "sample-browser",
+      "category": "Sound Design",
+      "action": "Open Sample Browser",
+      "shortcut": "Double-tap Drum 1-4",
+      "description": "Browse and select samples",
+      "hotspotIds": ["drum-1-button"]
+    },
+    {
+      "id": "fine-adjust",
+      "category": "Sound Design",
+      "action": "Fine Adjust Parameter",
+      "shortcut": "Shift + turn knob",
+      "description": "Make smaller parameter changes",
+      "hotspotIds": ["shift-button"]
+    },
+    {
+      "id": "clear-step",
+      "category": "Editing",
+      "action": "Clear Step",
+      "shortcut": "Hold Clear + tap step",
+      "description": "Remove note from a step",
+      "hotspotIds": ["clear-button", "grid-pads"]
+    },
+    {
+      "id": "clear-track",
+      "category": "Editing",
+      "action": "Clear Track",
+      "shortcut": "Hold Clear + track button",
+      "description": "Clear all steps on a track",
+      "hotspotIds": ["clear-button"]
+    },
+    {
+      "id": "clear-pattern",
+      "category": "Editing",
+      "action": "Clear Pattern",
+      "shortcut": "Shift + Clear",
+      "description": "Clear the entire current pattern",
+      "hotspotIds": ["shift-button", "clear-button"]
+    },
+    {
+      "id": "duplicate",
+      "category": "Editing",
+      "action": "Duplicate",
+      "shortcut": "Hold Duplicate + source + dest",
+      "description": "Copy patterns, steps, or tracks",
+      "hotspotIds": ["duplicate-button"]
+    },
+    {
+      "id": "velocity-view",
+      "category": "Editing",
+      "action": "Velocity View",
+      "shortcut": "Velocity",
+      "description": "View/edit step velocities",
+      "hotspotIds": ["velocity-button"]
+    },
+    {
+      "id": "length-view",
+      "category": "Editing",
+      "action": "Gate Length View",
+      "shortcut": "Length",
+      "description": "View/edit step gate lengths",
+      "hotspotIds": ["length-button"]
+    },
+    {
+      "id": "select-pattern",
+      "category": "Patterns",
+      "action": "Select Pattern",
+      "shortcut": "Pattern + tap pad 1-8",
+      "description": "Switch to a different pattern",
+      "hotspotIds": ["pattern-button", "grid-pads"]
+    },
+    {
+      "id": "chain-patterns",
+      "category": "Patterns",
+      "action": "Chain Patterns",
+      "shortcut": "Hold Pattern + tap pads in order",
+      "description": "Create a pattern sequence",
+      "hotspotIds": ["pattern-button", "grid-pads"]
+    },
+    {
+      "id": "session-view",
+      "category": "Patterns",
+      "action": "Session View",
+      "shortcut": "Shift + Pattern",
+      "description": "View and select sessions",
+      "hotspotIds": ["shift-button", "pattern-button"]
+    },
+    {
+      "id": "fx-mode",
+      "category": "Effects",
+      "action": "Effects Mode",
+      "shortcut": "FX",
+      "description": "Enter effects editing mode",
+      "hotspotIds": ["fx-button"]
+    },
+    {
+      "id": "delay-send",
+      "category": "Effects",
+      "action": "Adjust Delay Send",
+      "shortcut": "FX mode + select Delay row + Macro 1-8",
+      "description": "Set each track's delay send amount using the corresponding macro knob",
+      "hotspotIds": ["fx-button", "grid-pads"]
+    },
+    {
+      "id": "reverb-send",
+      "category": "Effects",
+      "action": "Adjust Reverb Send",
+      "shortcut": "FX mode + select Reverb row + Macro 1-8",
+      "description": "Set each track's reverb send amount using the corresponding macro knob",
+      "hotspotIds": ["fx-button", "grid-pads"]
+    },
+    {
+      "id": "mixer-view",
+      "category": "Utilities",
+      "action": "Mixer View",
+      "shortcut": "Mixer",
+      "description": "View and adjust track volumes",
+      "hotspotIds": ["mixer-button"]
+    },
+    {
+      "id": "mute-track",
+      "category": "Utilities",
+      "action": "Mute Track",
+      "shortcut": "Mixer mode + double-tap track column",
+      "description": "Toggle track mute",
+      "hotspotIds": ["mixer-button", "grid-pads"]
+    },
+    {
+      "id": "save-project",
+      "category": "Utilities",
+      "action": "Save Project",
+      "shortcut": "Projects + Shift",
+      "description": "Save current project",
+      "hotspotIds": ["projects-button", "shift-button"]
+    }
+  ]
+}

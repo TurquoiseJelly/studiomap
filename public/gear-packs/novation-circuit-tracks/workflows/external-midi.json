@@ -1,0 +1,50 @@
+{
+  "id": "external-midi",
+  "title": "Connect External Synths via MIDI",
+  "description": "Learn to control external synthesizers and drum machines using Circuit Tracks' MIDI output.",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "id": "step-1",
+      "title": "Gather Cables",
+      "instruction": "You'll need a 3.5mm TRS to 5-pin DIN MIDI adapter (Type-A) and a standard MIDI cable.",
+      "warning": "Make sure you have a Type-A adapter. Type-B adapters are wired differently and won't work."
+    },
+    {
+      "id": "step-2",
+      "title": "Connect MIDI Out",
+      "instruction": "Connect the 3.5mm end to Circuit Tracks' MIDI Out. Connect the DIN end to your external synth's MIDI In.",
+      "diagramHighlights": ["midi-out"]
+    },
+    {
+      "id": "step-3",
+      "title": "Set Your Synth's MIDI Channel",
+      "instruction": "Configure your external synth to receive on MIDI channel 1 or 2 (matching Circuit Tracks' synth tracks).",
+      "tip": "Check your external synth's manual for how to set MIDI channel."
+    },
+    {
+      "id": "step-4",
+      "title": "Select Synth Track 1",
+      "instruction": "Press Synth 1 on Circuit Tracks. This track sends on MIDI channel 1.",
+      "diagramHighlights": ["synth-1-button"]
+    },
+    {
+      "id": "step-5",
+      "title": "Play Notes",
+      "instruction": "Play the pads. You should hear your external synth respond! Notes from Circuit Tracks trigger the external synth.",
+      "diagramHighlights": ["grid-pads"],
+      "tip": "If you hear both internal and external sounds, use the mixer to mute the internal synth."
+    },
+    {
+      "id": "step-6",
+      "title": "Sequence Your External Synth",
+      "instruction": "Program a pattern as normal. The sequencer plays both internal and external synths via MIDI.",
+      "diagramHighlights": ["grid-pads", "play-button"]
+    }
+  ],
+  "outcomes": [
+    "External synth controlled by Circuit Tracks",
+    "Sequenced patterns playing on external gear",
+    "Understanding of MIDI connections"
+  ]
+}

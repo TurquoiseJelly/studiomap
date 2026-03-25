@@ -1,0 +1,175 @@
+{
+  "id": "overview",
+  "title": "Overview",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "PO-33 K.O. Overview",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "The PO-33 K.O. is a pocket-sized micro sampler from Teenage Engineering's Pocket Operator series. Despite its calculator-like form factor, it packs 40 seconds of sample memory, 16 sound slots, 16 patterns, and 16 real-time punch-in effects. The built-in microphone and line input make it easy to sample from any source."
+    },
+    {
+      "type": "feature-block",
+      "name": "16 Sound Slots",
+      "description": "8 melodic slots (1-8) that play chromatically and 8 drum slots (9-16) that play at fixed pitch. Each slot can hold a sample up to the available memory limit.",
+      "hotspotId": "sound-button"
+    },
+    {
+      "type": "feature-block",
+      "name": "40 Seconds Sample Memory",
+      "description": "Total sample time shared across all 16 sound slots. Memory is allocated dynamically based on sample lengths.",
+      "hotspotId": "display"
+    },
+    {
+      "type": "feature-block",
+      "name": "16 Punch-In Effects",
+      "description": "Real-time performance effects including stutter, loop, scratch, filter sweeps, and more. Hold FX and press any pad to activate.",
+      "hotspotId": "fx-button"
+    },
+    {
+      "type": "feature-block",
+      "name": "Pattern Sequencer",
+      "description": "16 patterns with up to 16 steps each. Record in real-time or step-by-step using write mode. Patterns can be chained for longer sequences.",
+      "hotspotId": "pattern-button"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Technical Specifications",
+      "id": "specifications"
+    },
+    {
+      "type": "table",
+      "headers": ["Specification", "Value"],
+      "rows": [
+        ["Sample Memory", "40 seconds total"],
+        ["Sound Slots", "16 (8 melodic + 8 drum)"],
+        ["Patterns", "16"],
+        ["Steps per Pattern", "Up to 16"],
+        ["Effects", "16 punch-in FX"],
+        ["Sync", "PO sync (8 PPQ)"],
+        ["Power", "2x AAA batteries"],
+        ["Battery Life", "Approx. 20 hours"],
+        ["Dimensions", "60 x 107 x 8 mm"],
+        ["Weight", "61g (with batteries)"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Display Information",
+      "id": "display"
+    },
+    {
+      "type": "paragraph",
+      "text": "The LCD display shows essential information including the current sound number (SND), pattern number (PAT), tempo in BPM, step position during playback, and various mode indicators. The display content changes based on the current operation."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["display"],
+      "caption": "LCD display showing sound, pattern, and tempo information"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Control Layout",
+      "id": "controls"
+    },
+    {
+      "type": "paragraph",
+      "text": "The PO-33 uses a button + knob control scheme. The three main buttons (sound, pattern, bpm) are held while turning Knob A or B to adjust values. The two small rotary encoders on the right provide the actual value changes."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sound Button",
+      "id": "sound-button"
+    },
+    {
+      "type": "paragraph",
+      "text": "The sound button (with orange indicator ring) is the primary control for selecting sounds. Hold the sound button and turn Knob A to select sounds 1-16. Sounds 1-8 are melodic (can be played chromatically), while sounds 9-16 are drum sounds (fixed pitch)."
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Secondary Functions",
+      "text": "The sound button has many secondary functions when combined with knobs. Hold sound + turn Knob B to adjust filter. Hold sound + a pad + turn Knob A to adjust pitch."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Knobs A and B",
+      "id": "knobs"
+    },
+    {
+      "type": "paragraph",
+      "text": "The PO-33 has only two small rotary encoders located on the top-right. Knob A is the primary value encoder used with most button combinations. Knob B provides secondary parameter control."
+    },
+    {
+      "type": "table",
+      "headers": ["Button Held", "Knob A Function", "Knob B Function"],
+      "rows": [
+        ["sound", "Select sound (1-16)", "Filter cutoff"],
+        ["pattern", "Select pattern (1-16)", "Copy pattern"],
+        ["bpm", "Adjust tempo", "Meter (steps per bar)"],
+        ["record + sound", "Trim start point", "Trim end point"],
+        ["sound + pad", "Adjust pitch", "Adjust volume"]
+      ]
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["knob-a", "knob-b"],
+      "caption": "Knobs A and B are the two small rotary encoders on the top-right"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Lock Switch",
+      "id": "lock"
+    },
+    {
+      "type": "paragraph",
+      "text": "The lock switch on the left edge prevents accidental button presses during performance or transport. When locked, only the play button and knobs remain functional."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["lock-switch"],
+      "caption": "Lock switch location on left edge"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Ports",
+      "id": "ports"
+    },
+    {
+      "type": "paragraph",
+      "text": "The PO-33 has two 3.5mm jacks located on the TOP EDGE of the unit, facing the back. The left port is the line input for sampling from external sources. The right port is the line output / sync port that carries both audio and sync signal."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["line-port", "sync-port"],
+      "caption": "Both 3.5mm ports are on the top edge, facing backward"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Power and Battery",
+      "id": "power"
+    },
+    {
+      "type": "paragraph",
+      "text": "The PO-33 runs on 2x AAA batteries and provides approximately 20 hours of use. There is no power switch - the unit enters a low-power standby mode when not in use and wakes instantly when any button is pressed."
+    },
+    {
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Data Retention",
+      "text": "All samples and patterns are stored in volatile memory. Removing the batteries will erase all data. Always keep batteries installed or back up your work using the sync port."
+    }
+  ]
+}

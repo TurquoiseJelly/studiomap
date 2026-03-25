@@ -1,0 +1,333 @@
+{
+  "categories": ["Transport", "Sampling", "Sound Edit", "Sequencer", "Groups", "Effects", "Fader", "Keys", "System"],
+  "entries": [
+    {
+      "id": "play",
+      "category": "Transport",
+      "action": "Play / Stop",
+      "shortcut": "PLAY",
+      "description": "Start or stop playback",
+      "hotspotIds": ["play-button"]
+    },
+    {
+      "id": "restart",
+      "category": "Transport",
+      "action": "Restart from Beginning",
+      "shortcut": "SHIFT + PLAY",
+      "description": "Restart playback from bar 1",
+      "hotspotIds": ["shift-button", "play-button"]
+    },
+    {
+      "id": "record",
+      "category": "Transport",
+      "action": "Record Enable",
+      "shortcut": "RECORD",
+      "description": "Toggle recording mode on/off",
+      "hotspotIds": ["record-button"]
+    },
+    {
+      "id": "tap-tempo",
+      "category": "Transport",
+      "action": "Tap Tempo",
+      "shortcut": "Tap TEMPO repeatedly",
+      "description": "Set tempo by tapping the beat",
+      "hotspotIds": ["tempo-loop-button"]
+    },
+    {
+      "id": "fine-tempo",
+      "category": "Transport",
+      "action": "Fine Tempo Adjust",
+      "shortcut": "Hold TEMPO + Y knob",
+      "description": "Dial in exact BPM value",
+      "hotspotIds": ["tempo-loop-button", "y-knob"]
+    },
+    {
+      "id": "metronome",
+      "category": "Transport",
+      "action": "Toggle Metronome",
+      "shortcut": "SHIFT + TEMPO",
+      "description": "Turn metronome click on/off",
+      "hotspotIds": ["shift-button", "tempo-loop-button"]
+    },
+    {
+      "id": "song-mode",
+      "category": "Transport",
+      "action": "Enter Song Mode",
+      "shortcut": "SHIFT + LOOP (hold TEMPO)",
+      "description": "Enter song arrangement mode",
+      "hotspotIds": ["shift-button", "tempo-loop-button"]
+    },
+    {
+      "id": "sample-mode",
+      "category": "Sampling",
+      "action": "Enter Sampling Mode",
+      "shortcut": "SAMPLE/CHOP",
+      "description": "Prepare to record a new sample",
+      "hotspotIds": ["sample-chop-button"]
+    },
+    {
+      "id": "chop-mode",
+      "category": "Sampling",
+      "action": "Enter Chop Mode",
+      "shortcut": "Hold SAMPLE/CHOP",
+      "description": "Auto-slice sample by transients",
+      "hotspotIds": ["sample-chop-button"]
+    },
+    {
+      "id": "resample",
+      "category": "Sampling",
+      "action": "Resample",
+      "shortcut": "SHIFT + SAMPLE/CHOP",
+      "description": "Record output as a new sample",
+      "hotspotIds": ["shift-button", "sample-chop-button"]
+    },
+    {
+      "id": "hands-free",
+      "category": "Sampling",
+      "action": "Hands-Free Sampling",
+      "shortcut": "SHIFT + SAMPLE (hold)",
+      "description": "Auto-start recording on audio detection",
+      "hotspotIds": ["shift-button", "sample-chop-button"]
+    },
+    {
+      "id": "sound-select",
+      "category": "Sound Edit",
+      "action": "Select Sound",
+      "shortcut": "Number keys + ENTER",
+      "description": "Select a sound slot by number",
+      "hotspotIds": ["pad-1", "enter-button"]
+    },
+    {
+      "id": "edit-mode",
+      "category": "Sound Edit",
+      "action": "Enter Edit Mode",
+      "shortcut": "SHIFT + SOUND/EDIT",
+      "description": "Edit current sound parameters",
+      "hotspotIds": ["shift-button", "sound-edit-button"]
+    },
+    {
+      "id": "lpf",
+      "category": "Sound Edit",
+      "action": "Low Pass Filter",
+      "shortcut": "Edit mode + 4 + Y",
+      "description": "Adjust low pass filter cutoff",
+      "hotspotIds": ["sound-edit-button", "pad-4", "y-knob"]
+    },
+    {
+      "id": "hpf",
+      "category": "Sound Edit",
+      "action": "High Pass Filter",
+      "shortcut": "Edit mode + 5 + Y",
+      "description": "Adjust high pass filter cutoff",
+      "hotspotIds": ["sound-edit-button", "pad-5", "y-knob"]
+    },
+    {
+      "id": "fx-send",
+      "category": "Sound Edit",
+      "action": "Effect Send",
+      "shortcut": "Edit mode + 6 + Y",
+      "description": "Adjust effect send amount",
+      "hotspotIds": ["sound-edit-button", "pad-6", "y-knob"]
+    },
+    {
+      "id": "attack",
+      "category": "Sound Edit",
+      "action": "Envelope Attack",
+      "shortcut": "Edit mode + 1 + Y",
+      "description": "Adjust attack time",
+      "hotspotIds": ["sound-edit-button", "pad-1", "y-knob"]
+    },
+    {
+      "id": "release",
+      "category": "Sound Edit",
+      "action": "Envelope Release",
+      "shortcut": "Edit mode + 2 + Y",
+      "description": "Adjust release time",
+      "hotspotIds": ["sound-edit-button", "pad-2", "y-knob"]
+    },
+    {
+      "id": "pan",
+      "category": "Sound Edit",
+      "action": "Panning",
+      "shortcut": "Edit mode + 3 + Y",
+      "description": "Adjust stereo panning",
+      "hotspotIds": ["sound-edit-button", "pad-3", "y-knob"]
+    },
+    {
+      "id": "tune",
+      "category": "Sound Edit",
+      "action": "Tune/Pitch",
+      "shortcut": "Edit mode + - + Y",
+      "description": "Adjust sample pitch",
+      "hotspotIds": ["sound-edit-button", "minus-button", "y-knob"]
+    },
+    {
+      "id": "time-stretch",
+      "category": "Sound Edit",
+      "action": "Time Stretch",
+      "shortcut": "Edit mode + 9 + Y",
+      "description": "Adjust time stretch",
+      "hotspotIds": ["sound-edit-button", "pad-9", "y-knob"]
+    },
+    {
+      "id": "quantize",
+      "category": "Sequencer",
+      "action": "Set Quantize",
+      "shortcut": "TIMING + +/-",
+      "description": "Choose quantize resolution",
+      "hotspotIds": ["timing-correct-button", "plus-button", "minus-button"]
+    },
+    {
+      "id": "erase-step",
+      "category": "Sequencer",
+      "action": "Erase Notes",
+      "shortcut": "Hold ERASE + tap pad",
+      "description": "Delete notes during playback",
+      "hotspotIds": ["erase-system-button"]
+    },
+    {
+      "id": "erase-pattern",
+      "category": "Sequencer",
+      "action": "Erase Pattern",
+      "shortcut": "Hold ERASE + Group button",
+      "description": "Clear group's entire pattern",
+      "hotspotIds": ["erase-system-button", "group-a-button"]
+    },
+    {
+      "id": "select-group",
+      "category": "Groups",
+      "action": "Select Group",
+      "shortcut": "A / B / C / D",
+      "description": "Switch to a different group",
+      "hotspotIds": ["group-a-button", "group-b-button", "group-c-button", "group-d-button"]
+    },
+    {
+      "id": "mute-group",
+      "category": "Groups",
+      "action": "Mute/Unmute Group",
+      "shortcut": "SHIFT + Group button",
+      "description": "Toggle group mute",
+      "hotspotIds": ["shift-button", "group-a-button"]
+    },
+    {
+      "id": "next-pattern",
+      "category": "Groups",
+      "action": "Next Pattern",
+      "shortcut": "+",
+      "description": "Go to next pattern in group",
+      "hotspotIds": ["plus-button"]
+    },
+    {
+      "id": "prev-pattern",
+      "category": "Groups",
+      "action": "Previous Pattern",
+      "shortcut": "-",
+      "description": "Go to previous pattern in group",
+      "hotspotIds": ["minus-button"]
+    },
+    {
+      "id": "select-pattern",
+      "category": "Groups",
+      "action": "Select Pattern by Number",
+      "shortcut": "Number keys + ENTER",
+      "description": "Jump to specific pattern",
+      "hotspotIds": ["pad-1", "enter-button"]
+    },
+    {
+      "id": "fx-mode",
+      "category": "Effects",
+      "action": "Effects Mode",
+      "shortcut": "FX/OUTPUT",
+      "description": "Enter master effects editing",
+      "hotspotIds": ["fx-output-button"]
+    },
+    {
+      "id": "punch-in-fx",
+      "category": "Effects",
+      "action": "Punch-In Effect",
+      "shortcut": "Hold pad (1-9, 0, +, -) while playing",
+      "description": "Apply punch-in effect momentarily",
+      "hotspotIds": ["pad-1"]
+    },
+    {
+      "id": "fader-assign",
+      "category": "Fader",
+      "action": "Assign Fader Parameter",
+      "shortcut": "Hold FADER + number key",
+      "description": "Choose what fader controls",
+      "hotspotIds": ["fader-button"]
+    },
+    {
+      "id": "fader-reset",
+      "category": "Fader",
+      "action": "Reset Fader",
+      "shortcut": "SHIFT + FADER",
+      "description": "Reset fader to default position",
+      "hotspotIds": ["shift-button", "fader-button"]
+    },
+    {
+      "id": "erase-fader",
+      "category": "Fader",
+      "action": "Erase Fader Automation",
+      "shortcut": "ERASE + move fader (during playback)",
+      "description": "Clear recorded fader movements",
+      "hotspotIds": ["erase-system-button", "fader"]
+    },
+    {
+      "id": "keys-mode",
+      "category": "Keys",
+      "action": "Enter Keys Mode",
+      "shortcut": "KEYS",
+      "description": "Play pads as chromatic keyboard",
+      "hotspotIds": ["keys-button"]
+    },
+    {
+      "id": "octave-up",
+      "category": "Keys",
+      "action": "Octave Up",
+      "shortcut": "KEYS mode + +",
+      "description": "Shift keyboard up one octave",
+      "hotspotIds": ["keys-button", "plus-button"]
+    },
+    {
+      "id": "octave-down",
+      "category": "Keys",
+      "action": "Octave Down",
+      "shortcut": "KEYS mode + -",
+      "description": "Shift keyboard down one octave",
+      "hotspotIds": ["keys-button", "minus-button"]
+    },
+    {
+      "id": "system-menu",
+      "category": "System",
+      "action": "System Menu",
+      "shortcut": "SHIFT + ERASE",
+      "description": "Access MIDI, sync, and global settings",
+      "hotspotIds": ["shift-button", "erase-system-button"]
+    },
+    {
+      "id": "commit",
+      "category": "System",
+      "action": "Commit/Save",
+      "shortcut": "Hold MAIN/COMMIT",
+      "description": "Save current changes",
+      "hotspotIds": ["main-commit-button"]
+    },
+    {
+      "id": "return-main",
+      "category": "System",
+      "action": "Return to Main",
+      "shortcut": "MAIN/COMMIT (tap)",
+      "description": "Exit current mode, return to main view",
+      "hotspotIds": ["main-commit-button"]
+    },
+    {
+      "id": "select-project",
+      "category": "System",
+      "action": "Select Project",
+      "shortcut": "MAIN + number (1-9)",
+      "description": "Switch to a different project",
+      "hotspotIds": ["main-commit-button", "pad-1"]
+    }
+  ]
+}

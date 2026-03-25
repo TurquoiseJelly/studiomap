@@ -1,0 +1,52 @@
+{
+  "id": "record-melody",
+  "title": "Record a Synth Melody",
+  "description": "Learn to record notes in real-time using the synth tracks.",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "id": "step-1",
+      "title": "Select Synth Track 1",
+      "instruction": "Press the Synth 1 button to select the first synthesizer track.",
+      "diagramHighlights": ["synth-1-button"]
+    },
+    {
+      "id": "step-2",
+      "title": "Find a Sound",
+      "instruction": "Double-tap the Synth 1 button to enter the patch browser. Press pads to preview sounds, then press Synth 1 again to select.",
+      "diagramHighlights": ["synth-1-button", "grid-pads"],
+      "tip": "Turn Macro 1 to scroll through more patches."
+    },
+    {
+      "id": "step-3",
+      "title": "Test the Pads",
+      "instruction": "Play some notes on the pads. They're arranged chromatically. Use Octave +/- to change octaves.",
+      "diagramHighlights": ["grid-pads", "octave-up", "octave-down"]
+    },
+    {
+      "id": "step-4",
+      "title": "Enable Recording",
+      "instruction": "Press the Record button. It will light red to show recording is armed.",
+      "diagramHighlights": ["record-button"],
+      "warning": "Don't press Play yet - you can record while stopped."
+    },
+    {
+      "id": "step-5",
+      "title": "Record Your Melody",
+      "instruction": "Press Play to start the sequence, then play notes on the pads. Your notes will be recorded and quantized to the steps.",
+      "diagramHighlights": ["play-button", "grid-pads"],
+      "tip": "If you make a mistake, press Shift + Octave Down to undo."
+    },
+    {
+      "id": "step-6",
+      "title": "Stop Recording",
+      "instruction": "Press Record again to disable recording. Your melody will continue to loop.",
+      "diagramHighlights": ["record-button"]
+    }
+  ],
+  "outcomes": [
+    "A recorded synth melody that loops",
+    "Understanding of real-time recording",
+    "Knowledge of the patch browser"
+  ]
+}

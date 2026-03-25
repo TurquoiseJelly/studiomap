@@ -1,0 +1,54 @@
+{
+  "id": "sync-pos",
+  "title": "Sync with Other Pocket Operators",
+  "description": "Connect multiple Pocket Operators together so they play in perfect sync.",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "id": "step-1",
+      "title": "Gather Your Equipment",
+      "instruction": "You'll need: two or more Pocket Operators, stereo 3.5mm cables (one less than the number of POs), and optionally a splitter cable for monitoring.",
+      "tip": "Make sure to use stereo (TRS) cables, not mono (TS) cables. Mono cables won't carry the sync signal properly."
+    },
+    {
+      "id": "step-2",
+      "title": "Set Master PO to SY1",
+      "instruction": "On the PO that will be the master (controls tempo): Hold the BPM knob and press pad 1 to set sync mode to SY1 (sync output).",
+      "diagramHighlights": ["bpm-knob", "pad-1"],
+      "substeps": [
+        { "instruction": "Hold BPM knob pressed", "hotspotId": "bpm-knob" },
+        { "instruction": "Press pad 1 while holding", "hotspotId": "pad-1" },
+        { "instruction": "Display shows 'SY1'" },
+        { "instruction": "Release BPM knob" }
+      ],
+      "tip": "The master PO controls the tempo - other units will follow its BPM."
+    },
+    {
+      "id": "step-3",
+      "title": "Set Slave PO to SY2",
+      "instruction": "On the PO that will follow (slave): Hold BPM knob and press pad 2 to set sync mode to SY2 (sync input).",
+      "diagramHighlights": ["bpm-knob", "pad-2"],
+      "tip": "If you have more than 2 POs, set middle units to SY3 (pass-through) and only the last one to SY2."
+    },
+    {
+      "id": "step-4",
+      "title": "Connect the Cable",
+      "instruction": "Connect a stereo cable from the master PO's sync port to the slave PO's sync port.",
+      "diagramHighlights": ["sync-port"],
+      "warning": "The sync port carries both clock (left channel) and audio (right channel). Audio from the master will be heard through the slave's output."
+    },
+    {
+      "id": "step-5",
+      "title": "Start Playback",
+      "instruction": "Press play on the master PO. The slave PO should start automatically and stay locked to the master's tempo. Adjust BPM on the master - slave follows!",
+      "diagramHighlights": ["play-button"],
+      "tip": "If sync isn't working, double-check that both units are in the correct sync modes and using a stereo cable."
+    }
+  ],
+  "outcomes": [
+    "Successfully synced two or more Pocket Operators",
+    "Understanding of sync modes (SY0-SY5)",
+    "Knowledge of master/slave sync relationships",
+    "Ability to create multi-PO jams"
+  ]
+}

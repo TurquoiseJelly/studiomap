@@ -1,0 +1,355 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
+  <defs>
+    <style>
+      .body { fill: #e8e4dc; }
+      .body-dark { fill: #2a2a2a; }
+      .knob-white { fill: #f5f5f5; stroke: #cccccc; stroke-width: 3; cursor: pointer; }
+      .knob-white:hover { fill: #ffffff; stroke: #aaaaaa; }
+      .knob-orange { fill: #ff6b35; stroke: #cc5528; stroke-width: 3; cursor: pointer; }
+      .knob-orange:hover { fill: #ff7f4d; stroke: #dd6633; }
+      .knob-black { fill: #1a1a1a; stroke: #333333; stroke-width: 3; cursor: pointer; }
+      .knob-black:hover { fill: #2a2a2a; stroke: #444444; }
+      .knob-indicator { fill: #333333; }
+      .knob-indicator-white { fill: #ff6b35; }
+      .button { fill: #d0ccc4; stroke: #a8a4a0; stroke-width: 1; cursor: pointer; }
+      .button:hover { fill: #ddd9d1; stroke: #b8b4b0; }
+      .button-orange { fill: #ff6b35; stroke: #cc5528; stroke-width: 1; cursor: pointer; }
+      .button-orange:hover { fill: #ff7f4d; }
+      .button-dark { fill: #3a3a3a; stroke: #555555; stroke-width: 1; cursor: pointer; }
+      .button-dark:hover { fill: #4a4a4a; }
+      .pad { fill: #c8c4bc; stroke: #a8a4a0; stroke-width: 1; cursor: pointer; }
+      .pad:hover { fill: #d8d4cc; }
+      .fader-track { fill: #2a2a2a; rx: 3; }
+      .fader-handle { fill: #4a4a4a; stroke: #666666; stroke-width: 1; cursor: pointer; }
+      .fader-handle:hover { fill: #5a5a5a; }
+      .display { fill: #1a2a1a; stroke: #333333; stroke-width: 2; }
+      .display-text { fill: #88ff88; font-family: 'Courier New', monospace; font-size: 14px; }
+      .display-segment { fill: #88ff88; }
+      .port { fill: #1a1a1a; stroke: #333333; stroke-width: 1; cursor: pointer; }
+      .port:hover { stroke: #ff6b35; }
+      .port-orange { fill: #ff6b35; stroke: #cc5528; stroke-width: 1; cursor: pointer; }
+      .port-orange:hover { fill: #ff7f4d; }
+      .speaker-hole { fill: #1a1a1a; }
+      .label { fill: #555555; font-family: system-ui, -apple-system, sans-serif; font-size: 9px; text-anchor: middle; pointer-events: none; }
+      .label-secondary { fill: #888888; font-size: 7px; text-anchor: middle; pointer-events: none; }
+      .label-white { fill: #ffffff; font-size: 8px; text-anchor: middle; pointer-events: none; }
+      .label-dark { fill: #1a1a1a; font-size: 9px; font-weight: 600; text-anchor: middle; pointer-events: none; }
+      .branding { fill: #1a1a1a; font-family: system-ui, -apple-system, sans-serif; font-weight: 700; font-size: 18px; }
+      .branding-sub { fill: #555555; font-family: system-ui, sans-serif; font-size: 10px; }
+      .hotspot { cursor: pointer; }
+      .hotspot:focus { outline: 2px solid #ff6b35; outline-offset: 2px; }
+      .led { fill: #ff6b35; }
+      .led-off { fill: #4a3a35; }
+    </style>
+  </defs>
+
+  <!-- Main body -->
+  <rect class="body" x="5" y="5" width="890" height="690" rx="16"/>
+
+  <!-- Top dark section -->
+  <rect class="body-dark" x="5" y="5" width="890" height="130" rx="16"/>
+  <rect class="body" x="5" y="120" width="890" height="20"/>
+
+  <!-- Top panel ports -->
+  <g id="output-port" class="hotspot" tabindex="0" role="button" aria-label="Audio output port">
+    <rect class="port" x="30" y="25" width="50" height="20" rx="3"/>
+    <text class="label-white" x="55" y="38">OUTPUT</text>
+  </g>
+
+  <g id="input-port" class="hotspot" tabindex="0" role="button" aria-label="Audio input port">
+    <rect class="port-orange" x="95" y="25" width="45" height="20" rx="3"/>
+    <text class="label-dark" x="117" y="38">INPUT</text>
+  </g>
+
+  <g id="sync-port" class="hotspot" tabindex="0" role="button" aria-label="Sync port">
+    <rect class="port" x="155" y="25" width="40" height="20" rx="3"/>
+    <text class="label-white" x="175" y="38">SYNC</text>
+  </g>
+
+  <g id="midi-port" class="hotspot" tabindex="0" role="button" aria-label="MIDI port">
+    <rect class="port" x="210" y="25" width="35" height="20" rx="3"/>
+    <text class="label-white" x="227" y="38">MIDI</text>
+  </g>
+
+  <g id="usb-port" class="hotspot" tabindex="0" role="button" aria-label="USB-C port">
+    <rect class="port" x="260" y="25" width="35" height="20" rx="3"/>
+    <text class="label-white" x="277" y="38">USB</text>
+  </g>
+
+  <g id="power-switch" class="hotspot" tabindex="0" role="button" aria-label="Power switch">
+    <rect class="port" x="310" y="25" width="50" height="20" rx="3"/>
+    <text class="label-white" x="335" y="38">POWER</text>
+  </g>
+
+  <!-- Speaker grille -->
+  <g id="speaker" class="hotspot" tabindex="0" role="button" aria-label="Built-in speaker">
+    <rect fill="#222222" x="580" y="20" width="180" height="100" rx="8"/>
+    <!-- Speaker holes pattern -->
+    <g fill="#1a1a1a">
+      <!-- Row 1 -->
+      <circle cx="600" cy="40" r="4"/><circle cx="620" cy="40" r="4"/><circle cx="640" cy="40" r="4"/><circle cx="660" cy="40" r="4"/><circle cx="680" cy="40" r="4"/><circle cx="700" cy="40" r="4"/><circle cx="720" cy="40" r="4"/><circle cx="740" cy="40" r="4"/>
+      <!-- Row 2 -->
+      <circle cx="600" cy="58" r="4"/><circle cx="620" cy="58" r="4"/><circle cx="640" cy="58" r="4"/><circle cx="660" cy="58" r="4"/><circle cx="680" cy="58" r="4"/><circle cx="700" cy="58" r="4"/><circle cx="720" cy="58" r="4"/><circle cx="740" cy="58" r="4"/>
+      <!-- Row 3 -->
+      <circle cx="600" cy="76" r="4"/><circle cx="620" cy="76" r="4"/><circle cx="640" cy="76" r="4"/><circle cx="660" cy="76" r="4"/><circle cx="680" cy="76" r="4"/><circle cx="700" cy="76" r="4"/><circle cx="720" cy="76" r="4"/><circle cx="740" cy="76" r="4"/>
+      <!-- Row 4 -->
+      <circle cx="600" cy="94" r="4"/><circle cx="620" cy="94" r="4"/><circle cx="640" cy="94" r="4"/><circle cx="660" cy="94" r="4"/><circle cx="680" cy="94" r="4"/><circle cx="700" cy="94" r="4"/><circle cx="720" cy="94" r="4"/><circle cx="740" cy="94" r="4"/>
+    </g>
+  </g>
+
+  <!-- Branding -->
+  <text class="branding" x="40" y="85" fill="#ffffff">K.O. II</text>
+  <text class="branding-sub" x="40" y="100" fill="#888888">サンプラー</text>
+  <text class="label-white" x="40" y="115" font-size="8">64 Bit Sampler Composer</text>
+
+  <!-- Display -->
+  <g id="display" class="hotspot" tabindex="0" role="button" aria-label="LCD display">
+    <rect class="display" x="130" y="55" width="420" height="70" rx="4"/>
+    <!-- Display content -->
+    <text class="display-text" x="145" y="80" font-size="10">BAR</text>
+    <text class="display-text" x="180" y="95" font-size="28">193</text>
+    <!-- Icons -->
+    <circle class="display-segment" cx="270" cy="75" r="8" opacity="0.8"/>
+    <text class="display-text" x="300" y="80" font-size="12">▶</text>
+    <text class="display-text" x="340" y="80" font-size="10">FX</text>
+    <text class="display-text" x="380" y="95" font-size="10">SOUND</text>
+    <!-- Right side indicators -->
+    <text class="display-text" x="450" y="75" font-size="9">STEREO</text>
+    <text class="display-text" x="520" y="80" font-size="10">Q</text>
+    <text class="display-text" x="450" y="110" font-size="9">SWING</text>
+  </g>
+
+  <!-- Microphone indicator -->
+  <g id="microphone" class="hotspot" tabindex="0" role="button" aria-label="Built-in microphone">
+    <circle class="port" cx="800" y="70" r="6"/>
+    <text class="label-white" x="800" y="85" font-size="6">MIC</text>
+  </g>
+
+  <!-- ========== MAIN CONTROL SURFACE ========== -->
+
+  <!-- Volume knob (white, large) -->
+  <g id="volume-knob" class="hotspot" tabindex="0" role="button" aria-label="Volume knob">
+    <circle class="knob-white" cx="70" cy="190" r="38"/>
+    <circle class="knob-indicator-white" cx="70" cy="158" r="5"/>
+    <text class="label" x="70" y="145">VOLUME</text>
+  </g>
+
+  <!-- Mode buttons row 1 -->
+  <g id="sound-edit-button" class="hotspot" tabindex="0" role="button" aria-label="Sound/Edit button">
+    <rect class="button" x="130" y="160" width="70" height="30" rx="3"/>
+    <text class="label" x="165" y="173">SOUND</text>
+    <text class="label-secondary" x="165" y="183">EDIT</text>
+  </g>
+
+  <g id="main-commit-button" class="hotspot" tabindex="0" role="button" aria-label="Main/Commit button">
+    <rect class="button" x="210" y="160" width="70" height="30" rx="3"/>
+    <text class="label" x="245" y="173">MAIN</text>
+    <text class="label-secondary" x="245" y="183">COMMIT</text>
+  </g>
+
+  <g id="tempo-loop-button" class="hotspot" tabindex="0" role="button" aria-label="Tempo/Loop button">
+    <rect class="button" x="290" y="160" width="70" height="30" rx="3"/>
+    <text class="label" x="325" y="173">TEMPO</text>
+    <text class="label-secondary" x="325" y="183">LOOP</text>
+  </g>
+
+  <!-- BPM/Metronome LEDs -->
+  <g id="bpm-led" class="hotspot" tabindex="0" role="button" aria-label="BPM indicator LED">
+    <circle class="led" cx="755" cy="160" r="6"/>
+    <text class="label" x="755" y="175">BPM</text>
+  </g>
+
+  <g id="metronome-led" class="hotspot" tabindex="0" role="button" aria-label="Metronome indicator LED">
+    <circle class="led-off" cx="805" cy="160" r="6"/>
+    <text class="label" x="805" y="175">METRONOME</text>
+  </g>
+
+  <!-- Gain knob (orange) -->
+  <g id="gain-knob" class="hotspot" tabindex="0" role="button" aria-label="Gain knob">
+    <circle class="knob-orange" cx="755" cy="220" r="32"/>
+    <circle class="knob-indicator" cx="755" cy="193" r="4"/>
+    <text class="label-secondary" x="720" y="205">GAIN</text>
+    <text class="label" x="720" y="215">X</text>
+  </g>
+
+  <!-- Y knob (black) -->
+  <g id="y-knob" class="hotspot" tabindex="0" role="button" aria-label="Y parameter knob">
+    <circle class="knob-black" cx="835" cy="220" r="24"/>
+    <circle fill="#555555" cx="835" cy="200" r="3"/>
+    <text class="label" x="860" y="210">Y</text>
+  </g>
+
+  <!-- Swing indicator -->
+  <g id="swing-indicator" class="hotspot" tabindex="0" role="button" aria-label="Swing indicator">
+    <text class="label-secondary" x="835" y="260">SWING</text>
+  </g>
+
+  <!-- Row 2: KEYS, FADER button, FADER, Groups -->
+  <g id="keys-button" class="hotspot" tabindex="0" role="button" aria-label="Keys button">
+    <rect class="button" x="30" y="245" width="60" height="35" rx="3"/>
+    <text class="label" x="60" y="267">KEYS</text>
+  </g>
+
+  <g id="fader-button" class="hotspot" tabindex="0" role="button" aria-label="Fader mode button">
+    <rect class="button" x="30" y="290" width="60" height="35" rx="3"/>
+    <text class="label" x="60" y="312">FADER</text>
+  </g>
+
+  <!-- Fader -->
+  <g id="fader" class="hotspot" tabindex="0" role="button" aria-label="Fader slider">
+    <rect class="fader-track" x="175" y="245" width="15" height="150"/>
+    <rect class="fader-handle" x="170" y="300" width="25" height="40" rx="3"/>
+  </g>
+
+  <!-- Group buttons A, B, C, D -->
+  <g id="group-a-button" class="hotspot" tabindex="0" role="button" aria-label="Group A button">
+    <rect class="button" x="210" y="245" width="55" height="35" rx="3"/>
+    <text class="label-dark" x="237" y="267" font-size="14" font-weight="700">A</text>
+  </g>
+
+  <g id="group-b-button" class="hotspot" tabindex="0" role="button" aria-label="Group B button">
+    <rect class="button" x="210" y="290" width="55" height="35" rx="3"/>
+    <text class="label-dark" x="237" y="312" font-size="14" font-weight="700">B</text>
+  </g>
+
+  <g id="group-c-button" class="hotspot" tabindex="0" role="button" aria-label="Group C button">
+    <rect class="button" x="210" y="335" width="55" height="35" rx="3"/>
+    <text class="label-dark" x="237" y="357" font-size="14" font-weight="700">C</text>
+  </g>
+
+  <g id="group-d-button" class="hotspot" tabindex="0" role="button" aria-label="Group D button">
+    <rect class="button" x="210" y="380" width="55" height="35" rx="3"/>
+    <text class="label-dark" x="237" y="402" font-size="14" font-weight="700">D</text>
+  </g>
+
+  <!-- ========== NUMBER PAD SECTION ========== -->
+
+  <!-- Row 1: 7, 8, 9 -->
+  <g id="pad-7" class="hotspot" tabindex="0" role="button" aria-label="Pad 7 / Level">
+    <rect class="pad" x="370" y="245" width="70" height="50" rx="4"/>
+    <text class="label-dark" x="405" y="270" font-size="18" font-weight="600">7</text>
+    <text class="label-secondary" x="405" y="287">LEVEL</text>
+  </g>
+
+  <g id="pad-8" class="hotspot" tabindex="0" role="button" aria-label="Pad 8 / Pitch">
+    <rect class="pad" x="450" y="245" width="70" height="50" rx="4"/>
+    <text class="label-dark" x="485" y="270" font-size="18" font-weight="600">8</text>
+    <text class="label-secondary" x="485" y="287">PITCH</text>
+  </g>
+
+  <g id="pad-9" class="hotspot" tabindex="0" role="button" aria-label="Pad 9 / Time">
+    <rect class="pad" x="530" y="245" width="70" height="50" rx="4"/>
+    <text class="label-dark" x="565" y="270" font-size="18" font-weight="600">9</text>
+    <text class="label-secondary" x="565" y="287">TIME</text>
+  </g>
+
+  <!-- SAMPLE/CHOP, TIMING/CORRECT -->
+  <g id="sample-chop-button" class="hotspot" tabindex="0" role="button" aria-label="Sample/Chop button">
+    <rect class="button-orange" x="620" y="245" width="70" height="50" rx="4"/>
+    <text class="label-dark" x="655" y="267">SAMPLE</text>
+    <text class="label-dark" x="655" y="282">CHOP</text>
+  </g>
+
+  <g id="timing-correct-button" class="hotspot" tabindex="0" role="button" aria-label="Timing/Correct button">
+    <rect class="button" x="700" y="245" width="70" height="50" rx="4"/>
+    <text class="label" x="735" y="267">TIMING</text>
+    <text class="label-secondary" x="735" y="282">CORRECT</text>
+  </g>
+
+  <!-- Row 2: 4, 5, 6 -->
+  <g id="pad-4" class="hotspot" tabindex="0" role="button" aria-label="Pad 4 / LPF">
+    <rect class="pad" x="370" y="305" width="70" height="50" rx="4"/>
+    <text class="label-dark" x="405" y="330" font-size="18" font-weight="600">4</text>
+    <text class="label-secondary" x="405" y="347">LPF</text>
+  </g>
+
+  <g id="pad-5" class="hotspot" tabindex="0" role="button" aria-label="Pad 5 / HPF">
+    <rect class="pad" x="450" y="305" width="70" height="50" rx="4"/>
+    <text class="label-dark" x="485" y="330" font-size="18" font-weight="600">5</text>
+    <text class="label-secondary" x="485" y="347">HPF</text>
+  </g>
+
+  <g id="pad-6" class="hotspot" tabindex="0" role="button" aria-label="Pad 6 / FX Send">
+    <rect class="pad" x="530" y="305" width="70" height="50" rx="4"/>
+    <text class="label-dark" x="565" y="330" font-size="18" font-weight="600">6</text>
+    <text class="label-secondary" x="565" y="347">>FX</text>
+  </g>
+
+  <!-- FX/OUTPUT, ERASE/SYSTEM -->
+  <g id="fx-output-button" class="hotspot" tabindex="0" role="button" aria-label="FX/Output button">
+    <rect class="button" x="620" y="305" width="70" height="50" rx="4"/>
+    <text class="label" x="655" y="327">FX</text>
+    <text class="label-secondary" x="655" y="342">OUTPUT</text>
+  </g>
+
+  <g id="erase-system-button" class="hotspot" tabindex="0" role="button" aria-label="Erase/System button">
+    <rect class="button" x="700" y="305" width="70" height="50" rx="4"/>
+    <text class="label" x="735" y="327">ERASE</text>
+    <text class="label-secondary" x="735" y="342">SYSTEM</text>
+  </g>
+
+  <!-- Row 3: 1, 2, 3 -->
+  <g id="pad-1" class="hotspot" tabindex="0" role="button" aria-label="Pad 1 / Attack">
+    <rect class="pad" x="370" y="365" width="70" height="50" rx="4"/>
+    <text class="label-dark" x="405" y="390" font-size="18" font-weight="600">1</text>
+    <text class="label-secondary" x="405" y="407">ATK</text>
+  </g>
+
+  <g id="pad-2" class="hotspot" tabindex="0" role="button" aria-label="Pad 2 / Release">
+    <rect class="pad" x="450" y="365" width="70" height="50" rx="4"/>
+    <text class="label-dark" x="485" y="390" font-size="18" font-weight="600">2</text>
+    <text class="label-secondary" x="485" y="407">REL</text>
+  </g>
+
+  <g id="pad-3" class="hotspot" tabindex="0" role="button" aria-label="Pad 3 / Pan">
+    <rect class="pad" x="530" y="365" width="70" height="50" rx="4"/>
+    <text class="label-dark" x="565" y="390" font-size="18" font-weight="600">3</text>
+    <text class="label-secondary" x="565" y="407">PAN</text>
+  </g>
+
+  <!-- Minus, Plus -->
+  <g id="minus-button" class="hotspot" tabindex="0" role="button" aria-label="Minus / Tune button">
+    <rect class="button-dark" x="620" y="365" width="70" height="50" rx="4"/>
+    <text class="label-white" x="655" y="390" font-size="20" font-weight="600">-</text>
+    <text class="label-secondary" x="655" y="407" fill="#888888">TUNE</text>
+  </g>
+
+  <g id="plus-button" class="hotspot" tabindex="0" role="button" aria-label="Plus / Velocity button">
+    <rect class="button-dark" x="700" y="365" width="70" height="50" rx="4"/>
+    <text class="label-white" x="735" y="390" font-size="20" font-weight="600">+</text>
+    <text class="label-secondary" x="735" y="407" fill="#888888">VEL</text>
+  </g>
+
+  <!-- Row 4: 0, ENTER -->
+  <g id="pad-0" class="hotspot" tabindex="0" role="button" aria-label="Pad 0 / Modulation">
+    <rect class="pad" x="370" y="425" width="150" height="50" rx="4"/>
+    <text class="label-dark" x="445" y="455" font-size="18" font-weight="600">0</text>
+    <text class="label-secondary" x="445" y="470">MOD</text>
+  </g>
+
+  <g id="enter-button" class="hotspot" tabindex="0" role="button" aria-label="Enter button">
+    <rect class="button" x="530" y="425" width="70" height="50" rx="4"/>
+    <text class="label" x="565" y="455">ENTER</text>
+  </g>
+
+  <!-- RECORD, PLAY -->
+  <g id="record-button" class="hotspot" tabindex="0" role="button" aria-label="Record button">
+    <rect class="button-orange" x="620" y="425" width="70" height="50" rx="4"/>
+    <text class="label-dark" x="655" y="455">RECORD</text>
+  </g>
+
+  <g id="play-button" class="hotspot" tabindex="0" role="button" aria-label="Play/Stop button">
+    <rect class="button" x="700" y="425" width="70" height="50" rx="4"/>
+    <text class="label" x="735" y="455">PLAY</text>
+  </g>
+
+  <!-- SHIFT button -->
+  <g id="shift-button" class="hotspot" tabindex="0" role="button" aria-label="Shift button">
+    <rect class="button-dark" x="30" y="425" width="60" height="35" rx="3"/>
+    <text class="label-white" x="60" y="447">SHIFT</text>
+  </g>
+
+  <!-- Bottom section label -->
+  <text class="label" x="450" y="510" font-size="8" fill="#999999">EP-133 K.O. II - OS 2.0.5</text>
+
+</svg>

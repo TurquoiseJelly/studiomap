@@ -1,0 +1,64 @@
+{
+  "id": "first-sample",
+  "title": "Record Your First Sample",
+  "description": "Learn how to sample external audio into the EP-133 and play it back using the pads.",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "id": "step-1",
+      "title": "Connect Your Audio Source",
+      "instruction": "Connect your audio source (phone, tablet, turntable, or synthesizer) to the orange INPUT jack using a 3.5mm stereo cable.",
+      "diagramHighlights": ["input-port"],
+      "tip": "Use a stereo cable for best results. If sampling from a phone, use a cable without a microphone (TRRS to TRS)."
+    },
+    {
+      "id": "step-2",
+      "title": "Enter Sampling Mode",
+      "instruction": "Press the SAMPLE/CHOP button to enter sampling mode. The display will show input level meters.",
+      "diagramHighlights": ["sample-chop-button", "display"]
+    },
+    {
+      "id": "step-3",
+      "title": "Adjust Input Gain",
+      "instruction": "Turn the orange GAIN knob while your audio source plays. Watch the input meter on the display and aim for a strong signal without clipping (red).",
+      "diagramHighlights": ["gain-knob", "display"],
+      "substeps": [
+        { "instruction": "Start with GAIN at 12 o'clock position" },
+        { "instruction": "Play your source audio at the loudest part" },
+        { "instruction": "Adjust until peaks reach about 80% of the meter" }
+      ],
+      "tip": "If the signal clips, turn GAIN down. If the meter barely moves, turn GAIN up."
+    },
+    {
+      "id": "step-4",
+      "title": "Select a Sound Slot",
+      "instruction": "Use the number keys to enter a sound number (0-999), then press ENTER to select that slot for your new sample.",
+      "diagramHighlights": ["pad-1", "enter-button"],
+      "tip": "Start with a low number like 1. If the slot already has a sample, it will be replaced."
+    },
+    {
+      "id": "step-5",
+      "title": "Record the Sample",
+      "instruction": "Press RECORD to arm recording. Recording starts automatically when audio is detected (threshold mode), or press any pad to start manually. Press RECORD again to stop.",
+      "diagramHighlights": ["record-button"],
+      "substeps": [
+        { "instruction": "Press RECORD - it will blink, indicating armed" },
+        { "instruction": "Play your audio source - recording starts automatically" },
+        { "instruction": "Press RECORD again when you have enough material" }
+      ],
+      "warning": "Watch your remaining memory on the display. Long samples use more of the 64 MB available."
+    },
+    {
+      "id": "step-6",
+      "title": "Play Your Sample",
+      "instruction": "Press MAIN/COMMIT to return to the main view. Now press the pad corresponding to your sound number (e.g., pad 1 for sound 1). Your sample plays!",
+      "diagramHighlights": ["main-commit-button", "pad-1"],
+      "tip": "The sample is automatically saved to RAM. Hold MAIN/COMMIT to permanently save (commit) your work."
+    }
+  ],
+  "outcomes": [
+    "Successfully recorded a sample into the EP-133",
+    "Understanding of the sampling workflow and gain staging",
+    "Ability to play back samples using the pads"
+  ]
+}

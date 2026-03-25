@@ -1,0 +1,155 @@
+{
+  "id": "groups-scenes",
+  "title": "Groups & Scenes",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Groups & Scenes",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "The EP-133 organizes sounds and patterns into 4 groups (A, B, C, D). Each group has 12 sounds and up to 99 patterns. Groups play simultaneously, allowing you to layer drums, bass, melody, and effects."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Groups",
+      "id": "groups"
+    },
+    {
+      "type": "paragraph",
+      "text": "Press A, B, C, or D to select that group. The selected group determines which sounds the pads trigger and which pattern is edited. All four groups play back together, each with their own pattern."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["group-a-button", "group-b-button", "group-c-button", "group-d-button"],
+      "caption": "Group selection buttons A, B, C, D"
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Suggested Group Organization",
+      "text": "A common setup: Group A for drums, Group B for bass, Group C for chords/pads, Group D for melody/FX. But use whatever organization works for your workflow!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Group Contents",
+      "id": "group-contents"
+    },
+    {
+      "type": "paragraph",
+      "text": "Each group contains:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "12 sounds (assigned to pads 0-9, +, -)",
+        "Up to 99 patterns (each 1-99 bars long)",
+        "Fader assignment (what parameter the fader controls)",
+        "Mute state (can be muted independently)"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Muting Groups",
+      "id": "muting"
+    },
+    {
+      "type": "paragraph",
+      "text": "Mute or unmute a group by pressing SHIFT + the group button (A, B, C, or D). Muted groups are silenced but continue to play internally - unmuting brings them back in time."
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Performance Technique",
+      "text": "Use group muting for live performance: mute the drums for a breakdown, then bring them back for impact."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Patterns",
+      "id": "patterns"
+    },
+    {
+      "type": "paragraph",
+      "text": "Each group can store up to 99 patterns. Use +/- to switch between patterns in the current group. Enter a pattern number directly with the number keys and ENTER."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Pattern 1-99 per group (396 patterns total per project)",
+        "Variable length: 1-99 bars per pattern",
+        "Independent pattern for each group",
+        "Pattern changes can be queued during playback"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Scenes",
+      "id": "scenes"
+    },
+    {
+      "type": "paragraph",
+      "text": "A scene is a snapshot of which pattern is active in each group. Scenes allow you to switch all four group patterns simultaneously, creating arrangement sections like verse, chorus, and bridge."
+    },
+    {
+      "type": "callout",
+      "calloutType": "info",
+      "text": "Scenes are used in Song Mode to arrange your composition. Each song position specifies a scene to play."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Selecting Patterns",
+      "id": "selecting-patterns"
+    },
+    {
+      "type": "paragraph",
+      "text": "To select a pattern for the current group:"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Make sure you're in the main view (press MAIN if needed)",
+        "Select the group you want to change (A, B, C, or D)",
+        "Use +/- to scroll through patterns, or",
+        "Enter a pattern number with number keys and press ENTER",
+        "The new pattern starts at the next bar (queued change)"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Copying Patterns",
+      "id": "copying"
+    },
+    {
+      "type": "paragraph",
+      "text": "Copy a pattern to another slot to create variations. This preserves your original while letting you experiment with changes."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Projects",
+      "id": "projects"
+    },
+    {
+      "type": "paragraph",
+      "text": "The EP-133 stores 9 projects. Each project contains all 4 groups with their sounds, patterns, and song arrangement. Switch projects with MAIN + number key (1-9)."
+    },
+    {
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Save Before Switching",
+      "text": "Commit your current project (hold MAIN/COMMIT) before switching to another project to avoid losing work."
+    }
+  ]
+}

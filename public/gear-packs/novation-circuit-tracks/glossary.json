@@ -1,0 +1,215 @@
+{
+  "terms": [
+    {
+      "id": "bpm",
+      "term": "BPM",
+      "definition": "Beats Per Minute - the tempo of your music. Circuit Tracks supports 40-240 BPM.",
+      "relatedTerms": ["tempo", "clock"],
+      "linkedSections": [{ "sectionId": "sequencer", "headingId": "tempo" }]
+    },
+    {
+      "id": "chain",
+      "term": "Chain",
+      "definition": "A sequence of patterns that play in order, creating a song structure.",
+      "relatedTerms": ["pattern", "session"],
+      "linkedSections": [{ "sectionId": "patterns", "headingId": "chaining" }]
+    },
+    {
+      "id": "clock",
+      "term": "Clock",
+      "definition": "MIDI timing signal that keeps multiple devices in sync. Circuit Tracks can send or receive clock.",
+      "relatedTerms": ["bpm", "midi"],
+      "linkedSections": [{ "sectionId": "midi", "headingId": "clock" }]
+    },
+    {
+      "id": "components",
+      "term": "Components",
+      "definition": "Novation's free software for deep editing, patch creation, sample management, and backup.",
+      "linkedSections": [{ "sectionId": "synth-tracks", "headingId": "components" }]
+    },
+    {
+      "id": "cutoff",
+      "term": "Cutoff",
+      "definition": "The frequency at which a filter begins to reduce volume. Controls the brightness of a sound.",
+      "relatedTerms": ["filter", "resonance"],
+      "linkedSections": [{ "sectionId": "synth-tracks", "headingId": "filter" }]
+    },
+    {
+      "id": "delay",
+      "term": "Delay",
+      "definition": "An effect that creates echo repeats of the audio signal. Circuit Tracks has one global delay.",
+      "relatedTerms": ["effects", "reverb"],
+      "linkedSections": [{ "sectionId": "effects", "headingId": "delay" }]
+    },
+    {
+      "id": "effects",
+      "term": "Effects",
+      "definition": "Audio processing that modifies sound. Circuit Tracks has delay and reverb.",
+      "relatedTerms": ["delay", "reverb", "send"],
+      "linkedSections": [{ "sectionId": "effects" }]
+    },
+    {
+      "id": "filter",
+      "term": "Filter",
+      "definition": "Removes frequencies from a sound. The Filter knob controls the cutoff frequency.",
+      "relatedTerms": ["cutoff", "resonance"],
+      "linkedSections": [{ "sectionId": "synth-tracks", "headingId": "filter" }]
+    },
+    {
+      "id": "gate",
+      "term": "Gate",
+      "definition": "The duration a note is held. A short gate creates staccato; a long gate creates sustained notes.",
+      "relatedTerms": ["velocity", "step"],
+      "linkedSections": [{ "sectionId": "sequencer", "headingId": "gate-length" }]
+    },
+    {
+      "id": "groovebox",
+      "term": "Groovebox",
+      "definition": "An all-in-one music production device combining synthesizers, samplers, sequencer, and effects.",
+      "linkedSections": [{ "sectionId": "overview" }]
+    },
+    {
+      "id": "hotspot",
+      "term": "Hotspot",
+      "definition": "A clickable region on a diagram that provides information about a control or feature."
+    },
+    {
+      "id": "macro",
+      "term": "Macro",
+      "definition": "A knob that controls multiple parameters at once. Each patch has custom macro assignments.",
+      "relatedTerms": ["patch"],
+      "linkedSections": [{ "sectionId": "synth-tracks", "headingId": "macros" }]
+    },
+    {
+      "id": "midi",
+      "term": "MIDI",
+      "definition": "Musical Instrument Digital Interface - a protocol for sending note and control data between devices.",
+      "relatedTerms": ["clock", "channel"],
+      "linkedSections": [{ "sectionId": "midi" }]
+    },
+    {
+      "id": "midi-channel",
+      "term": "MIDI Channel",
+      "definition": "One of 16 channels for MIDI data. Synth 1 uses channel 1, Synth 2 uses channel 2, drums use channel 10.",
+      "relatedTerms": ["midi"],
+      "linkedSections": [{ "sectionId": "midi", "headingId": "channels" }]
+    },
+    {
+      "id": "patch",
+      "term": "Patch",
+      "definition": "A saved synth sound with all its parameter settings. Also called a preset.",
+      "relatedTerms": ["macro"],
+      "linkedSections": [{ "sectionId": "synth-tracks", "headingId": "patches" }]
+    },
+    {
+      "id": "pattern",
+      "term": "Pattern",
+      "definition": "A sequence of notes and steps for all tracks. Up to 32 steps long. Sessions contain 8 patterns.",
+      "relatedTerms": ["session", "step", "chain"],
+      "linkedSections": [{ "sectionId": "patterns" }]
+    },
+    {
+      "id": "polyphony",
+      "term": "Polyphony",
+      "definition": "The ability to play multiple notes simultaneously. Circuit Tracks synths have 6-voice polyphony.",
+      "linkedSections": [{ "sectionId": "synth-tracks" }]
+    },
+    {
+      "id": "project",
+      "term": "Project",
+      "definition": "The top-level storage unit containing 8 sessions. Circuit Tracks stores up to 256 projects.",
+      "relatedTerms": ["session", "pattern"],
+      "linkedSections": [{ "sectionId": "projects" }]
+    },
+    {
+      "id": "quantize",
+      "term": "Quantize",
+      "definition": "Aligning notes to the grid. Recorded notes are automatically quantized to the nearest step.",
+      "relatedTerms": ["step"],
+      "linkedSections": [{ "sectionId": "sequencer", "headingId": "recording" }]
+    },
+    {
+      "id": "resonance",
+      "term": "Resonance",
+      "definition": "Emphasis at the filter cutoff frequency. High resonance creates a whistling or ringing effect.",
+      "relatedTerms": ["filter", "cutoff"],
+      "linkedSections": [{ "sectionId": "synth-tracks", "headingId": "filter" }]
+    },
+    {
+      "id": "reverb",
+      "term": "Reverb",
+      "definition": "An effect that simulates room acoustics, adding space and depth to sounds.",
+      "relatedTerms": ["effects", "delay"],
+      "linkedSections": [{ "sectionId": "effects", "headingId": "reverb" }]
+    },
+    {
+      "id": "sample",
+      "term": "Sample",
+      "definition": "A recorded audio file. Circuit Tracks' four sample tracks play back samples for drums and sounds.",
+      "relatedTerms": ["sample-track"],
+      "linkedSections": [{ "sectionId": "sample-tracks" }]
+    },
+    {
+      "id": "sample-track",
+      "term": "Sample Track",
+      "definition": "One of four tracks (Drum 1-4) that play back audio samples, typically used for drums.",
+      "relatedTerms": ["sample", "synth-track"],
+      "linkedSections": [{ "sectionId": "sample-tracks" }]
+    },
+    {
+      "id": "send",
+      "term": "Send",
+      "definition": "The amount of a track's signal routed to an effect. Each track has independent delay and reverb sends.",
+      "relatedTerms": ["effects"],
+      "linkedSections": [{ "sectionId": "effects", "headingId": "sends" }]
+    },
+    {
+      "id": "session",
+      "term": "Session",
+      "definition": "A collection of 8 patterns plus all track settings. Think of it as one 'song' or 'scene'.",
+      "relatedTerms": ["pattern", "project"],
+      "linkedSections": [{ "sectionId": "patterns", "headingId": "sessions" }]
+    },
+    {
+      "id": "step",
+      "term": "Step",
+      "definition": "One position in the sequence. Each pattern has up to 32 steps per track.",
+      "relatedTerms": ["pattern", "velocity", "gate"],
+      "linkedSections": [{ "sectionId": "sequencer", "headingId": "step-editing" }]
+    },
+    {
+      "id": "swing",
+      "term": "Swing",
+      "definition": "A timing offset that adds groove by delaying every other step slightly.",
+      "linkedSections": [{ "sectionId": "sequencer" }]
+    },
+    {
+      "id": "synth-track",
+      "term": "Synth Track",
+      "definition": "One of two synthesizer tracks (Synth 1-2) that generate sound using the built-in synth engine.",
+      "relatedTerms": ["patch", "sample-track"],
+      "linkedSections": [{ "sectionId": "synth-tracks" }]
+    },
+    {
+      "id": "tempo",
+      "term": "Tempo",
+      "definition": "The speed of the music, measured in BPM. Tap the Tempo button or hold it and turn Macro 1.",
+      "relatedTerms": ["bpm", "clock"],
+      "linkedSections": [{ "sectionId": "sequencer", "headingId": "tempo" }]
+    },
+    {
+      "id": "trs",
+      "term": "TRS",
+      "definition": "Tip-Ring-Sleeve - a 3.5mm connector type used for Circuit Tracks' MIDI ports. Requires Type-A adapters.",
+      "relatedTerms": ["midi"],
+      "linkedSections": [{ "sectionId": "midi", "headingId": "connections" }]
+    },
+    {
+      "id": "velocity",
+      "term": "Velocity",
+      "definition": "How hard a note is played. Affects volume and often brightness. Range: 1-127.",
+      "relatedTerms": ["gate", "step"],
+      "linkedSections": [{ "sectionId": "sequencer", "headingId": "velocity" }]
+    }
+  ]
+}

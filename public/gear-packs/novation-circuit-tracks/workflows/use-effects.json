@@ -1,0 +1,53 @@
+{
+  "id": "use-effects",
+  "title": "Add Delay and Reverb",
+  "description": "Learn to use the built-in effects to add space and depth to your sounds.",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "id": "step-1",
+      "title": "Start with a Pattern",
+      "instruction": "Make sure you have a pattern playing with some notes. Use a previous workflow if needed.",
+      "diagramHighlights": ["play-button"]
+    },
+    {
+      "id": "step-2",
+      "title": "Enter Effects Mode",
+      "instruction": "Press the FX button. The macro knobs now control effect parameters.",
+      "diagramHighlights": ["fx-button"],
+      "tip": "Macros 1-4 control Delay, Macros 5-8 control Reverb."
+    },
+    {
+      "id": "step-3",
+      "title": "Add Delay to a Track",
+      "instruction": "In FX mode, the pads show send levels. Tap the Delay row (lower pads) to select it, then use Macro knobs 1-8 to set delay send for each track.",
+      "diagramHighlights": ["grid-pads", "macro-knob-1"],
+      "substeps": [
+        { "instruction": "Tap a pad in the Delay row to select delay sends" },
+        { "instruction": "Turn the Macro knob corresponding to your track (1=Synth1, 2=Synth2, etc.) to increase delay send" }
+      ]
+    },
+    {
+      "id": "step-4",
+      "title": "Adjust Delay Settings",
+      "instruction": "Use Macro knobs 1-4 to shape the delay sound.",
+      "diagramHighlights": ["macro-knob-1", "macro-knob-2"],
+      "substeps": [
+        { "instruction": "Macro 1: Delay time (try syncing to tempo)" },
+        { "instruction": "Macro 2: Feedback (number of repeats)" }
+      ]
+    },
+    {
+      "id": "step-5",
+      "title": "Add Reverb",
+      "instruction": "Tap the Reverb row (upper pads) to select it, then use Macro knobs 1-8 to set reverb send for each track. The macro knobs become context-sensitive to the selected row.",
+      "diagramHighlights": ["grid-pads", "macro-knob-5", "macro-knob-6"],
+      "tip": "Toggle between Reverb and Delay rows to adjust both effect sends."
+    }
+  ],
+  "outcomes": [
+    "Understanding of how to access and adjust effects",
+    "Ability to add delay and reverb to individual tracks",
+    "Knowledge of effect send levels"
+  ]
+}

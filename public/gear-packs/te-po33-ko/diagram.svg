@@ -1,0 +1,298 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 700">
+  <defs>
+    <style>
+      .body { fill: #1a1a1a; }
+      .body-edge { fill: none; stroke: #333333; stroke-width: 2; }
+      .button-base { fill: #555555; stroke: #444444; stroke-width: 1; cursor: pointer; }
+      .button-base:hover { fill: #666666; }
+      .button-center { fill: #2a2a2a; }
+      .button-orange-ring { fill: none; stroke: #ff6b35; stroke-width: 3; }
+      .knob-base { fill: #666666; stroke: #444444; stroke-width: 1; cursor: pointer; }
+      .knob-base:hover { fill: #777777; }
+      .knob-indicator { fill: #888888; }
+      .pad { fill: #555555; stroke: #444444; stroke-width: 1; cursor: pointer; }
+      .pad:hover { fill: #666666; }
+      .pad-center { fill: #2a2a2a; cursor: pointer; }
+      .pad-center:hover { fill: #3a3a3a; }
+      .button-stripe { fill: #444444; stroke: #333333; stroke-width: 1; cursor: pointer; }
+      .button-stripe:hover { fill: #555555; }
+      .stripe-pattern { fill: none; stroke: #222222; stroke-width: 2; }
+      .display { fill: #c8d4c8; stroke: #333333; stroke-width: 2; }
+      .display-dark { fill: #1a2a1a; }
+      .display-text { fill: #2a3a2a; font-family: 'Courier New', monospace; }
+      .port { fill: #0a0a0a; stroke: #333333; stroke-width: 1; cursor: pointer; }
+      .port:hover { stroke: #ff6b35; }
+      .port-inner { fill: #222222; }
+      .switch { fill: #222222; stroke: #444444; stroke-width: 1; cursor: pointer; }
+      .switch:hover { fill: #333333; }
+      .switch-handle { fill: #555555; }
+      .label { fill: #888888; font-family: system-ui, -apple-system, sans-serif; font-size: 7px; text-anchor: middle; pointer-events: none; }
+      .label-white { fill: #ffffff; font-family: system-ui, sans-serif; font-size: 10px; text-anchor: middle; pointer-events: none; }
+      .label-section { fill: #666666; font-size: 6px; text-anchor: start; pointer-events: none; letter-spacing: 0.5px; }
+      .branding { fill: #ff6b35; font-family: system-ui, -apple-system, sans-serif; font-weight: 700; font-size: 14px; }
+      .branding-xo { fill: #e6a832; font-family: system-ui, sans-serif; font-weight: 900; font-size: 20px; }
+      .branding-sub { fill: #666666; font-family: system-ui, sans-serif; font-size: 8px; }
+      .hanging-hole { fill: #0a0a0a; stroke: #333333; stroke-width: 2; }
+      .hotspot { cursor: pointer; }
+      .hotspot:focus { outline: 2px solid #ff6b35; outline-offset: 2px; }
+      .mic-bg { fill: #ff6b35; }
+      .mic-icon { fill: #1a1a1a; }
+      .mic-grid { fill: #cc5528; }
+    </style>
+  </defs>
+
+  <!-- Main body -->
+  <rect class="body" x="10" y="30" width="380" height="660" rx="8"/>
+  <rect class="body-edge" x="10" y="30" width="380" height="660" rx="8"/>
+
+  <!-- Hanging hole -->
+  <rect class="hanging-hole" x="150" y="10" width="100" height="35" rx="15"/>
+  <rect fill="#1a1a1a" x="160" y="30" width="80" height="20"/>
+
+  <!-- ========== TOP PORTS (on back, shown as edge indicators) ========== -->
+
+  <!-- Line Input port (left side, top edge, facing back) -->
+  <g id="line-port" class="hotspot" tabindex="0" role="button" aria-label="Line audio input (3.5mm)">
+    <rect class="port" x="30" y="30" width="20" height="8" rx="2"/>
+    <text class="label" x="40" y="50" font-size="5">LINE IN</text>
+  </g>
+
+  <!-- Line Output/Sync port (right side, top edge, facing back) -->
+  <g id="sync-port" class="hotspot" tabindex="0" role="button" aria-label="Line output / Sync port (3.5mm)">
+    <rect class="port" x="350" y="30" width="20" height="8" rx="2"/>
+    <text class="label" x="360" y="50" font-size="5">OUT</text>
+  </g>
+
+  <!-- ========== BRANDING SECTION ========== -->
+
+  <!-- K.O! Branding (left) -->
+  <text class="branding" x="30" y="75">K.O!</text>
+
+  <!-- XO Logo (center) -->
+  <text class="branding-xo" x="180" y="80">XO</text>
+
+  <!-- Microphone (top right corner) -->
+  <g id="microphone" class="hotspot" tabindex="0" role="button" aria-label="Built-in microphone">
+    <circle class="mic-bg" cx="360" cy="70" r="14"/>
+    <rect class="mic-icon" x="355" y="62" width="10" height="12" rx="3"/>
+    <rect class="mic-icon" x="357" y="74" width="6" height="4"/>
+    <line class="mic-icon" x1="354" y1="78" x2="366" y2="78" stroke="#1a1a1a" stroke-width="2"/>
+    <!-- Grid pattern -->
+    <circle class="mic-grid" cx="360" cy="66" r="1.5"/>
+    <circle class="mic-grid" cx="357" cy="68" r="1"/>
+    <circle class="mic-grid" cx="363" cy="68" r="1"/>
+  </g>
+
+  <!-- Pocket Operator text (right side, vertical) -->
+  <text class="branding-sub" x="375" y="120" text-anchor="middle" transform="rotate(90 375 120)">pocket operator</text>
+
+  <!-- ========== DISPLAY ========== -->
+
+  <g id="display" class="hotspot" tabindex="0" role="button" aria-label="LCD display">
+    <rect class="display" x="45" y="95" width="280" height="70" rx="2"/>
+    <!-- Display content simulation -->
+    <text class="display-text" x="60" y="115" font-size="8">HIP-HOP</text>
+    <text class="display-text" x="110" y="115" font-size="8">DISCO</text>
+    <text class="display-text" x="65" y="150" font-size="12" font-weight="bold">K.O!</text>
+    <text class="display-text" x="130" y="145" font-size="8">IN</text>
+    <text class="display-text" x="280" y="145" font-size="8">OUT</text>
+    <text class="display-text" x="250" y="135" font-size="16">120</text>
+    <text class="display-text" x="285" y="115" font-size="8">bpm</text>
+  </g>
+
+  <!-- Lock switch (left edge) -->
+  <g id="lock-switch" class="hotspot" tabindex="0" role="button" aria-label="Lock switch">
+    <rect class="switch" x="10" y="120" width="8" height="30" rx="2"/>
+    <rect class="switch-handle" x="12" y="122" width="4" height="12" rx="1"/>
+    <text class="label" x="5" y="165" font-size="5" text-anchor="start" transform="rotate(-90 5 165)">lock</text>
+  </g>
+
+  <!-- ========== CONTROL ROW (below display) ========== -->
+
+  <!-- Sound button (with orange ring and clock icon) -->
+  <g id="sound-button" class="hotspot" tabindex="0" role="button" aria-label="Sound selection button">
+    <circle class="button-orange-ring" cx="65" cy="210" r="22"/>
+    <rect class="button-base" x="47" y="192" width="36" height="36" rx="3"/>
+    <circle class="button-center" cx="65" cy="210" r="10"/>
+    <!-- Clock icon above -->
+    <circle fill="none" stroke="#666666" stroke-width="1" cx="65" cy="182" r="5"/>
+    <line x1="65" y1="180" x2="65" y2="182" stroke="#666666" stroke-width="1"/>
+    <line x1="65" y1="182" x2="67" y2="184" stroke="#666666" stroke-width="1"/>
+    <text class="label" x="65" y="245">sound</text>
+  </g>
+
+  <!-- Pattern button -->
+  <g id="pattern-button" class="hotspot" tabindex="0" role="button" aria-label="Pattern selection button">
+    <rect class="button-base" x="112" y="192" width="36" height="36" rx="3"/>
+    <circle class="button-center" cx="130" cy="210" r="10"/>
+    <text class="label" x="130" y="245">pattern</text>
+  </g>
+
+  <!-- BPM button -->
+  <g id="bpm-button" class="hotspot" tabindex="0" role="button" aria-label="BPM tempo button">
+    <rect class="button-base" x="177" y="192" width="36" height="36" rx="3"/>
+    <circle class="button-center" cx="195" cy="210" r="10"/>
+    <text class="label" x="195" y="245">bpm</text>
+    <text class="label" x="215" y="245" font-style="italic">m</text>
+  </g>
+
+  <!-- Knob A (small rotary) -->
+  <g id="knob-a" class="hotspot" tabindex="0" role="button" aria-label="Knob A - secondary control">
+    <circle class="knob-base" cx="270" cy="210" r="16"/>
+    <circle class="knob-indicator" cx="270" cy="198" r="2"/>
+  </g>
+
+  <!-- Knob B (small rotary) -->
+  <g id="knob-b" class="hotspot" tabindex="0" role="button" aria-label="Knob B - secondary control">
+    <circle class="knob-base" cx="320" cy="210" r="16"/>
+    <circle class="knob-indicator" cx="320" cy="198" r="2"/>
+  </g>
+
+  <!-- ========== SECTION LABELS ========== -->
+  <text class="label-section" x="22" y="275">MELODIC</text>
+  <text class="label-section" x="22" y="445">DRUM</text>
+
+  <!-- ========== PAD GRID ========== -->
+
+  <!-- Row 1: Pads 1-4 (Melodic) -->
+  <g id="pad-1" class="hotspot" tabindex="0" role="button" aria-label="Pad 1 - Melodic sound 1">
+    <rect class="pad" x="45" y="280" width="55" height="50" rx="2"/>
+    <circle class="pad-center" cx="72" cy="305" r="12"/>
+    <text class="label-white" x="72" y="340">1</text>
+  </g>
+
+  <g id="pad-2" class="hotspot" tabindex="0" role="button" aria-label="Pad 2 - Melodic sound 2">
+    <rect class="pad" x="108" y="280" width="55" height="50" rx="2"/>
+    <circle class="pad-center" cx="135" cy="305" r="12"/>
+    <text class="label-white" x="135" y="340">2</text>
+  </g>
+
+  <g id="pad-3" class="hotspot" tabindex="0" role="button" aria-label="Pad 3 - Melodic sound 3">
+    <rect class="pad" x="171" y="280" width="55" height="50" rx="2"/>
+    <circle class="pad-center" cx="198" cy="305" r="12"/>
+    <text class="label-white" x="198" y="340">3</text>
+  </g>
+
+  <g id="pad-4" class="hotspot" tabindex="0" role="button" aria-label="Pad 4 - Melodic sound 4">
+    <rect class="pad" x="234" y="280" width="55" height="50" rx="2"/>
+    <circle class="pad-center" cx="261" cy="305" r="12"/>
+    <text class="label-white" x="261" y="340">4</text>
+  </g>
+
+  <!-- Record button (right of row 1) -->
+  <g id="record-button" class="hotspot" tabindex="0" role="button" aria-label="Record button">
+    <circle class="button-orange-ring" cx="330" cy="305" r="22"/>
+    <rect class="button-base" x="312" y="287" width="36" height="36" rx="3"/>
+    <circle class="button-center" cx="330" cy="305" r="10"/>
+    <text class="label" x="330" y="342" fill="#ff6b35">record</text>
+  </g>
+
+  <!-- Row 2: Pads 5-8 (Melodic) -->
+  <g id="pad-5" class="hotspot" tabindex="0" role="button" aria-label="Pad 5 - Melodic sound 5">
+    <rect class="pad" x="45" y="355" width="55" height="50" rx="2"/>
+    <circle class="pad-center" cx="72" cy="380" r="12"/>
+    <text class="label-white" x="72" y="415">5</text>
+  </g>
+
+  <g id="pad-6" class="hotspot" tabindex="0" role="button" aria-label="Pad 6 - Melodic sound 6">
+    <rect class="pad" x="108" y="355" width="55" height="50" rx="2"/>
+    <circle class="pad-center" cx="135" cy="380" r="12"/>
+    <text class="label-white" x="135" y="415">6</text>
+  </g>
+
+  <g id="pad-7" class="hotspot" tabindex="0" role="button" aria-label="Pad 7 - Melodic sound 7">
+    <rect class="pad" x="171" y="355" width="55" height="50" rx="2"/>
+    <circle class="pad-center" cx="198" cy="380" r="12"/>
+    <text class="label-white" x="198" y="415">7</text>
+  </g>
+
+  <g id="pad-8" class="hotspot" tabindex="0" role="button" aria-label="Pad 8 - Melodic sound 8">
+    <rect class="pad" x="234" y="355" width="55" height="50" rx="2"/>
+    <circle class="pad-center" cx="261" cy="380" r="12"/>
+    <text class="label-white" x="261" y="415">8</text>
+  </g>
+
+  <!-- FX button (right of row 2, striped) -->
+  <g id="fx-button" class="hotspot" tabindex="0" role="button" aria-label="FX effects button">
+    <rect class="button-stripe" x="308" y="357" width="44" height="46" rx="3"/>
+    <circle class="button-center" cx="330" cy="380" r="10"/>
+    <!-- Diagonal stripes -->
+    <line class="stripe-pattern" x1="312" y1="365" x2="348" y2="395"/>
+    <line class="stripe-pattern" x1="312" y1="375" x2="338" y2="399"/>
+    <line class="stripe-pattern" x1="322" y1="359" x2="348" y2="385"/>
+    <text class="label" x="330" y="417">FX</text>
+  </g>
+
+  <!-- Row 3: Pads 9-12 (Drum) -->
+  <g id="pad-9" class="hotspot" tabindex="0" role="button" aria-label="Pad 9 - Drum sound 1">
+    <rect class="pad" x="45" y="455" width="55" height="50" rx="2"/>
+    <circle class="pad-center" cx="72" cy="480" r="12"/>
+    <text class="label-white" x="72" y="515">9</text>
+  </g>
+
+  <g id="pad-10" class="hotspot" tabindex="0" role="button" aria-label="Pad 10 - Drum sound 2">
+    <rect class="pad" x="108" y="455" width="55" height="50" rx="2"/>
+    <circle class="pad-center" cx="135" cy="480" r="12"/>
+    <text class="label-white" x="135" y="515">10</text>
+  </g>
+
+  <g id="pad-11" class="hotspot" tabindex="0" role="button" aria-label="Pad 11 - Drum sound 3">
+    <rect class="pad" x="171" y="455" width="55" height="50" rx="2"/>
+    <circle class="pad-center" cx="198" cy="480" r="12"/>
+    <text class="label-white" x="198" y="515">11</text>
+  </g>
+
+  <g id="pad-12" class="hotspot" tabindex="0" role="button" aria-label="Pad 12 - Drum sound 4">
+    <rect class="pad" x="234" y="455" width="55" height="50" rx="2"/>
+    <circle class="pad-center" cx="261" cy="480" r="12"/>
+    <text class="label-white" x="261" y="515">12</text>
+  </g>
+
+  <!-- Play button (right of row 3) -->
+  <g id="play-button" class="hotspot" tabindex="0" role="button" aria-label="Play button">
+    <circle class="button-orange-ring" cx="330" cy="480" r="22"/>
+    <rect class="button-base" x="312" y="462" width="36" height="36" rx="3"/>
+    <circle class="button-center" cx="330" cy="480" r="10"/>
+    <text class="label" x="330" y="517">play</text>
+  </g>
+
+  <!-- Row 4: Pads 13-16 (Drum) -->
+  <g id="pad-13" class="hotspot" tabindex="0" role="button" aria-label="Pad 13 - Drum sound 5">
+    <rect class="pad" x="45" y="530" width="55" height="50" rx="2"/>
+    <circle class="pad-center" cx="72" cy="555" r="12"/>
+    <text class="label-white" x="72" y="590">13</text>
+  </g>
+
+  <g id="pad-14" class="hotspot" tabindex="0" role="button" aria-label="Pad 14 - Drum sound 6">
+    <rect class="pad" x="108" y="530" width="55" height="50" rx="2"/>
+    <circle class="pad-center" cx="135" cy="555" r="12"/>
+    <text class="label-white" x="135" y="590">14</text>
+  </g>
+
+  <g id="pad-15" class="hotspot" tabindex="0" role="button" aria-label="Pad 15 - Drum sound 7">
+    <rect class="pad" x="171" y="530" width="55" height="50" rx="2"/>
+    <circle class="pad-center" cx="198" cy="555" r="12"/>
+    <text class="label-white" x="198" y="590">15</text>
+  </g>
+
+  <g id="pad-16" class="hotspot" tabindex="0" role="button" aria-label="Pad 16 - Drum sound 8">
+    <rect class="pad" x="234" y="530" width="55" height="50" rx="2"/>
+    <circle class="pad-center" cx="261" cy="555" r="12"/>
+    <text class="label-white" x="261" y="590">16</text>
+  </g>
+
+  <!-- Write button (right of row 4, striped) -->
+  <g id="write-button" class="hotspot" tabindex="0" role="button" aria-label="Write mode button">
+    <rect class="button-stripe" x="308" y="532" width="44" height="46" rx="3"/>
+    <circle class="button-center" cx="330" cy="555" r="10"/>
+    <!-- Diagonal stripes -->
+    <line class="stripe-pattern" x1="312" y1="540" x2="348" y2="570"/>
+    <line class="stripe-pattern" x1="312" y1="550" x2="338" y2="574"/>
+    <line class="stripe-pattern" x1="322" y1="534" x2="348" y2="560"/>
+    <text class="label" x="330" y="592">write</text>
+  </g>
+
+  <!-- ========== BOTTOM BRANDING ========== -->
+  <text class="branding-sub" x="200" y="670" text-anchor="middle">PO-33 K.O. - teenage engineering</text>
+
+</svg>

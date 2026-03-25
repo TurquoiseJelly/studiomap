@@ -1,0 +1,52 @@
+{
+  "id": "use-effects",
+  "title": "Use Punch-In Effects",
+  "description": "Learn to use the EP-133's Punch-In FX 2.0 for live performance effects and transitions.",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "id": "step-1",
+      "title": "Start a Pattern Playing",
+      "instruction": "Make sure you have a pattern with some sounds in it. Press PLAY to start playback.",
+      "diagramHighlights": ["play-button"],
+      "tip": "Use the beat you created in the 'Build a Beat' workflow, or load any project with sounds."
+    },
+    {
+      "id": "step-2",
+      "title": "Try Beat Repeat",
+      "instruction": "While the pattern plays, hold pad 1 to engage the Beat Repeat effect. The audio will loop a short section. Release to return to normal.",
+      "diagramHighlights": ["pad-1"],
+      "tip": "Press harder for shorter, more intense loops. Lighter pressure gives longer loops."
+    },
+    {
+      "id": "step-3",
+      "title": "Try Tape Stop",
+      "instruction": "Hold pad 3 to engage Tape Stop. The audio will slow down dramatically like stopping a tape machine. Release to snap back to normal.",
+      "diagramHighlights": ["pad-3"],
+      "tip": "Great for creating tension before a drop!"
+    },
+    {
+      "id": "step-4",
+      "title": "Try Filter Sweep",
+      "instruction": "Hold pad 5 to engage Filter Sweep. A dramatic filter movement will be applied to the mix. Pressure controls the intensity.",
+      "diagramHighlights": ["pad-5"],
+      "tip": "Use this for build-ups or to add movement to a static pattern."
+    },
+    {
+      "id": "step-5",
+      "title": "Combine Effects with Timing",
+      "instruction": "Practice triggering Punch-In FX at musical moments: before a new section, on the 4th bar, or during transitions. Timing is everything!",
+      "diagramHighlights": ["pad-1", "pad-3", "pad-5"],
+      "substeps": [
+        { "instruction": "Try Beat Repeat (1) to build tension before a drop" },
+        { "instruction": "Use Tape Stop (3) right before introducing a new element" },
+        { "instruction": "Apply Filter Sweep (5) over 4 bars for a gradual build" }
+      ]
+    }
+  ],
+  "outcomes": [
+    "Understanding of Punch-In FX 2.0 and pressure sensitivity",
+    "Ability to apply live performance effects",
+    "Knowledge of when to use effects for musical impact"
+  ]
+}

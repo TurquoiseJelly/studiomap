@@ -1,0 +1,155 @@
+{
+  "id": "connections",
+  "title": "Connections",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Connections",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "The PO-33 has minimal but versatile connectivity: two 3.5mm jacks on the top edge (line input and line output/sync), a built-in microphone, and a built-in speaker. Understanding how these work together is key to getting the most from the device."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Port Locations",
+      "id": "port-locations"
+    },
+    {
+      "type": "paragraph",
+      "text": "Both 3.5mm ports are located on the TOP EDGE of the PO-33, facing the back of the unit. The line input is on the left side, and the line output/sync port is on the right side. This placement keeps cables out of the way during operation."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["line-port", "sync-port"],
+      "caption": "Both ports are on the top edge, facing backward"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Line Output / Sync Port",
+      "id": "sync-output"
+    },
+    {
+      "type": "paragraph",
+      "text": "The right-side port (marked OUT) serves double duty as both the audio output and sync I/O. The left channel carries sync clock, the right channel carries mono audio."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Use stereo headphones directly for monitoring",
+        "Connect to speakers or mixer using a stereo cable",
+        "Use a Y-splitter to separate sync and audio",
+        "Chain to other Pocket Operators for synchronized jamming"
+      ]
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["sync-port"],
+      "caption": "Line output / sync port on top-right edge"
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Headphone Output",
+      "text": "When in SY0 mode (sync off), the output port sends stereo audio through both channels for normal headphone use."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Line Input",
+      "id": "line-input"
+    },
+    {
+      "type": "paragraph",
+      "text": "The left-side port (marked LINE IN) accepts mono audio from external sources for sampling. When a cable is connected, it automatically disables the built-in microphone."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "3.5mm mono or stereo input (left channel used if stereo)",
+        "Line-level signals from phones, computers, synths",
+        "No gain control - use source volume to adjust level",
+        "Provides cleaner recordings than built-in mic"
+      ]
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["line-port"],
+      "caption": "Line input port on top-left edge"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Built-in Microphone",
+      "id": "microphone"
+    },
+    {
+      "type": "paragraph",
+      "text": "The red microphone icon in the top-right corner of the front panel indicates the built-in electret microphone. It's always available for sampling when no line input is connected."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["microphone"],
+      "caption": "Built-in microphone (red icon in top-right)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Built-in Speaker",
+      "id": "speaker"
+    },
+    {
+      "type": "paragraph",
+      "text": "The small onboard speaker provides mono audio output for quick monitoring without external gear. It's automatically muted when headphones or other devices are connected to the output port."
+    },
+    {
+      "type": "callout",
+      "calloutType": "note",
+      "title": "Speaker Limitations",
+      "text": "The built-in speaker is useful for portability but lacks bass response and volume. Use headphones or external speakers for serious production."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Recording to External Devices",
+      "id": "recording-external"
+    },
+    {
+      "type": "paragraph",
+      "text": "To record the PO-33's output to a computer, phone, or other recording device:"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Set sync mode to SY0 (for stereo output) or SY1 (if you want sync clock on left channel)",
+        "Connect output port to recording device's line input",
+        "Adjust input gain on the recording device",
+        "Press play and record your performance"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Typical Setups",
+      "id": "setups"
+    },
+    {
+      "type": "table",
+      "headers": ["Setup", "Connections", "Sync Mode"],
+      "rows": [
+        ["Headphone practice", "Headphones to output port", "SY0"],
+        ["Recording to phone", "Output port to phone input", "SY0"],
+        ["Two POs synced", "Master output to slave input", "SY1 / SY2"],
+        ["PO chain (3+)", "First SY1, middle SY3, last SY2", "Mixed"],
+        ["Live PA", "Output port to mixer", "SY0 or SY1"]
+      ]
+    }
+  ]
+}

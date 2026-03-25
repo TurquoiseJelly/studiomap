@@ -1,0 +1,137 @@
+{
+  "id": "effects",
+  "title": "Effects",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Effects",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "The EP-133 features master effects with six effect types plus Punch-In FX 2.0 for live performance. Effects can be applied globally or punched in momentarily during performance."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["fx-output-button"],
+      "caption": "FX/OUTPUT button accesses effects settings"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Master Effects",
+      "id": "master-fx"
+    },
+    {
+      "type": "paragraph",
+      "text": "Press FX/OUTPUT to access master effects. The EP-133 has one global send effect slot. Use +/- to select the effect type, and Y knob to adjust the main parameter."
+    },
+    {
+      "type": "table",
+      "headers": ["Effect", "Description"],
+      "rows": [
+        ["Delay", "Tempo-synced echo with feedback and mix control"],
+        ["Reverb", "Room and hall ambience simulation"],
+        ["Distortion", "Saturation and overdrive for grit"],
+        ["Filter", "Resonant low/high pass filter sweep"],
+        ["Compressor", "Dynamic range compression for punch"],
+        ["Chorus", "Modulated doubling for width and movement"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Effect Send",
+      "id": "fx-send"
+    },
+    {
+      "type": "paragraph",
+      "text": "Each sound can have its own effect send amount. In Edit mode (SHIFT + SOUND), press pad 6 (>FX) and use the Y knob to set how much of that sound is sent to the master effect."
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Mix Tip",
+      "text": "Keep drums relatively dry (low FX send) and add more reverb/delay to melodic elements for depth without muddiness."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Punch-In FX 2.0",
+      "id": "punch-in"
+    },
+    {
+      "type": "paragraph",
+      "text": "Punch-In FX are performance effects that apply instantly while holding a pad. OS 2.0 enhanced these effects with pressure sensitivity - press harder for more intense effects."
+    },
+    {
+      "type": "paragraph",
+      "text": "To use Punch-In FX, hold any number pad during playback. The effect is applied to the entire mix while held, and releases when you let go."
+    },
+    {
+      "type": "table",
+      "headers": ["Pad", "Punch-In Effect"],
+      "rows": [
+        ["1", "Beat Repeat - Loop a short section of audio"],
+        ["2", "Vinyl Brake - Slow-down turntable effect"],
+        ["3", "Tape Stop - Pitch drops to silence"],
+        ["4", "Stutter - Rapid retriggering"],
+        ["5", "Filter Sweep - Dramatic filter movement"],
+        ["6", "Reverb Freeze - Infinite reverb tail"],
+        ["7", "Reverse - Play audio backwards"],
+        ["8", "Bit Crush - Lo-fi degradation"],
+        ["9", "Pitch Up - Temporary pitch increase"],
+        ["0", "Pitch Down - Temporary pitch decrease"],
+        ["+", "Gate - Rhythmic volume chop"],
+        ["-", "Wobble - LFO modulation effect"]
+      ]
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Performance Technique",
+      "text": "Punch-In FX are perfect for drops and transitions. Try Tape Stop (3) before a chorus, or Beat Repeat (1) to build tension."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sidechain",
+      "id": "sidechain"
+    },
+    {
+      "type": "paragraph",
+      "text": "OS 2.0 introduced sidechain ducking. This automatically reduces the volume of other sounds when a trigger sound (typically kick drum) plays, creating the classic pumping effect."
+    },
+    {
+      "type": "paragraph",
+      "text": "To set up sidechain:"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Enter FX/OUTPUT menu",
+        "Navigate to Sidechain settings",
+        "Select the trigger sound (usually kick)",
+        "Adjust the ducking amount and release time",
+        "Sounds with FX send will now duck when the trigger plays"
+      ]
+    },
+    {
+      "type": "callout",
+      "calloutType": "info",
+      "text": "Sidechain works well with bass and pad sounds. The kick triggers ducking, making the bass 'pump' in time with the beat."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Live Input Effects",
+      "id": "live-input"
+    },
+    {
+      "type": "paragraph",
+      "text": "The audio input can be routed through the master effects for processing external audio. This is useful for adding effects to instruments connected to the EP-133."
+    }
+  ]
+}

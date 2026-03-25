@@ -1,0 +1,70 @@
+{
+  "id": "connect-gear",
+  "title": "Connect External Gear",
+  "description": "Learn how to integrate the EP-133 with other equipment including MIDI devices, Pocket Operators, and your computer.",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "id": "step-1",
+      "title": "Connect to a Mixer or Speakers",
+      "instruction": "Connect the OUTPUT port to your mixer, audio interface, or powered speakers using a 3.5mm stereo cable.",
+      "diagramHighlights": ["output-port"],
+      "tip": "Use the VOLUME knob to adjust the output level. Start low and increase gradually."
+    },
+    {
+      "id": "step-2",
+      "title": "Connect a MIDI Device",
+      "instruction": "For MIDI, you'll need a 3.5mm TRS to 5-pin DIN adapter (Type-A). Connect the EP-133's MIDI port to your synth or drum machine.",
+      "diagramHighlights": ["midi-port"],
+      "substeps": [
+        { "instruction": "Use a Type-A TRS-to-DIN adapter cable" },
+        { "instruction": "Connect to your synth's MIDI IN to trigger it from the EP-133" },
+        { "instruction": "Or connect to MIDI OUT to control the EP-133 from a controller" }
+      ],
+      "tip": "Type-A is the MMA standard. Check your adapter - Type-B won't work correctly!"
+    },
+    {
+      "id": "step-3",
+      "title": "Configure MIDI Settings",
+      "instruction": "Press SHIFT + ERASE to open the System menu. Navigate to MIDI settings to configure channels and clock behavior.",
+      "diagramHighlights": ["shift-button", "erase-system-button"],
+      "substeps": [
+        { "instruction": "Set MIDI output channel (1-16)" },
+        { "instruction": "Set MIDI input channel (1-16 or Omni)" },
+        { "instruction": "Enable/disable MIDI clock send" },
+        { "instruction": "Enable MIDI Thru if chaining devices" }
+      ]
+    },
+    {
+      "id": "step-4",
+      "title": "Connect a Pocket Operator",
+      "instruction": "Connect a Pocket Operator to the SYNC port using a standard 3.5mm stereo cable. The EP-133 sends sync on the right channel and receives audio on the left.",
+      "diagramHighlights": ["sync-port"],
+      "tip": "Set the EP-133 to PO-8 or PO-16 sync mode in the System menu."
+    },
+    {
+      "id": "step-5",
+      "title": "Connect to Your Computer",
+      "instruction": "Connect the USB-C port to your computer. The EP-133 appears as a class-compliant MIDI device - no drivers needed.",
+      "diagramHighlights": ["usb-port"],
+      "substeps": [
+        { "instruction": "Connect USB-C cable to computer" },
+        { "instruction": "EP-133 appears as a MIDI device in your DAW" },
+        { "instruction": "Enable USB as clock source if syncing to DAW" },
+        { "instruction": "Record audio from OUTPUT to a separate audio input" }
+      ]
+    },
+    {
+      "id": "step-6",
+      "title": "Set Clock Source",
+      "instruction": "In the System menu, set the clock source based on your setup: Internal (EP-133 is master), MIDI (external hardware is master), or USB (computer/DAW is master).",
+      "diagramHighlights": ["erase-system-button"],
+      "tip": "Only one device should be the clock master. All others should follow to stay in sync."
+    }
+  ],
+  "outcomes": [
+    "Understanding of EP-133 connectivity options",
+    "Ability to integrate with MIDI devices and Pocket Operators",
+    "Knowledge of clock sync for multi-device setups"
+  ]
+}

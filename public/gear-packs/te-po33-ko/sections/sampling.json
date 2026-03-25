@@ -1,0 +1,142 @@
+{
+  "id": "sampling",
+  "title": "Sampling",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Sampling",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "The PO-33 can sample from two sources: the built-in microphone for quick captures, or the line input for higher quality recordings from external devices. With 40 seconds of total sample memory shared across 16 slots, careful management of sample length is key."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Recording a Sample",
+      "id": "recording"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Select the sound slot (1-16) using the sound knob",
+        "Hold the record button - display shows input level",
+        "While holding record, press any pad to start recording",
+        "Press the same pad again to stop recording",
+        "Release record button to exit sample mode"
+      ]
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["record-button", "sound-knob"],
+      "caption": "Recording uses the record button and sound knob together"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Built-in Microphone",
+      "id": "microphone"
+    },
+    {
+      "type": "paragraph",
+      "text": "The electret microphone on the front panel captures ambient sounds, voice, and acoustic instruments. While convenient for quick ideas, the mic adds lo-fi character due to its small size and automatic gain."
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Mic Technique",
+      "text": "Position sound sources 6-12 inches from the microphone for best results. Too close causes distortion, too far captures room noise."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["microphone"],
+      "caption": "Built-in microphone location"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Line Input",
+      "id": "line-input"
+    },
+    {
+      "type": "paragraph",
+      "text": "The 3.5mm line input accepts standard line-level signals from phones, computers, synthesizers, and other audio sources. Use this input for cleaner, higher-fidelity samples."
+    },
+    {
+      "type": "callout",
+      "calloutType": "info",
+      "title": "Input Priority",
+      "text": "When a cable is connected to the line input, the built-in microphone is automatically disabled."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Melodic Sounds (1-8)",
+      "id": "melodic-sounds"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sound slots 1-8 are designated as melodic sounds. These can be played chromatically by holding a sound pad and pressing other pads to change pitch. Ideal for bass lines, melodies, and tonal samples."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Hold the sound's pad to sustain playback",
+        "Press other pads (1-16) to transpose pitch",
+        "Higher pad numbers = higher pitch",
+        "Pitch range spans approximately 2 octaves"
+      ]
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["pad-1", "pad-2", "pad-3", "pad-4", "pad-5", "pad-6", "pad-7", "pad-8"],
+      "caption": "Melodic pads (1-8) in the upper section"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Drum Sounds (9-16)",
+      "id": "drum-sounds"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sound slots 9-16 are designated as drum sounds. These always play at their original recorded pitch, making them ideal for drums, percussion, and one-shot samples."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["pad-9", "pad-10", "pad-11", "pad-12", "pad-13", "pad-14", "pad-15", "pad-16"],
+      "caption": "Drum pads (9-16) in the lower section"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sample Trimming",
+      "id": "trimming"
+    },
+    {
+      "type": "paragraph",
+      "text": "After recording, you can trim the sample to remove unwanted silence or adjust the start and end points."
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Hold record button",
+        "Turn sound knob to adjust start point",
+        "Turn pattern knob to adjust end point",
+        "Press the sound's pad to preview the trimmed region",
+        "Release record to confirm"
+      ]
+    },
+    {
+      "type": "callout",
+      "calloutType": "note",
+      "title": "Memory Management",
+      "text": "Trimming doesn't free up memory - the full original sample remains stored. To reclaim space, you need to re-record the slot."
+    }
+  ]
+}

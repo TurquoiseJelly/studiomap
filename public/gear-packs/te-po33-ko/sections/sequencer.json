@@ -1,0 +1,149 @@
+{
+  "id": "sequencer",
+  "title": "Sequencer",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Sequencer",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "The PO-33's step sequencer lets you record and arrange patterns using real-time recording or step-by-step entry. Each pattern can be up to 16 steps long, and patterns can be chained together for longer arrangements."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Transport Controls",
+      "id": "transport"
+    },
+    {
+      "type": "paragraph",
+      "text": "The play button starts and stops pattern playback. When playing, the current step is shown on the display and the pads light up to indicate triggered sounds."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["play-button"],
+      "caption": "Play button with orange ring accent"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Tempo Control",
+      "id": "tempo"
+    },
+    {
+      "type": "paragraph",
+      "text": "The BPM knob controls the playback tempo from 60 to 240 BPM. The current tempo is displayed when the knob is turned."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["bpm-knob"],
+      "caption": "BPM knob for tempo control"
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Fine Tempo",
+      "text": "Hold the BPM knob pressed and turn the sound knob for fine tempo adjustment in smaller increments."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Meter / Time Signature",
+      "id": "meter"
+    },
+    {
+      "type": "paragraph",
+      "text": "The meter knob (M) sets the number of steps in a pattern. Options include 16, 12, 8, and 4 steps."
+    },
+    {
+      "type": "table",
+      "headers": ["Setting", "Steps", "Use Case"],
+      "rows": [
+        ["16", "16 steps", "Standard 4/4 patterns"],
+        ["12", "12 steps", "Triplet-based patterns, 3/4 time"],
+        ["8", "8 steps", "Short loops, half-time feels"],
+        ["4", "4 steps", "Very short loops, quick fills"]
+      ]
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["meter-knob"],
+      "caption": "Meter knob for pattern length"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Real-Time Recording",
+      "id": "realtime-recording"
+    },
+    {
+      "type": "paragraph",
+      "text": "Record patterns by playing the pads while the sequencer runs. Notes are recorded with their timing intact."
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Press play to start the sequencer",
+        "Press record (it will flash to show armed)",
+        "Play the pads in time with the beat",
+        "Press record again to stop recording",
+        "Press play to stop playback"
+      ]
+    },
+    {
+      "type": "callout",
+      "calloutType": "info",
+      "title": "Overdubbing",
+      "text": "Recording adds to existing pattern content. To erase and start fresh, hold write + record to clear the pattern first."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Step Recording (Write Mode)",
+      "id": "step-recording"
+    },
+    {
+      "type": "paragraph",
+      "text": "Write mode lets you enter notes step-by-step for precise pattern programming."
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Press write to enter write mode",
+        "Turn sound knob to navigate to the desired step (1-16)",
+        "Press pads to add sounds at the current step",
+        "Multiple sounds can be added to the same step",
+        "Press write again to exit write mode"
+      ]
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["write-button"],
+      "caption": "Write button for step recording"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Deleting Notes",
+      "id": "deleting"
+    },
+    {
+      "type": "paragraph",
+      "text": "To remove notes from a pattern:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "In write mode: Hold write + press the pad to delete that sound from all steps",
+        "During playback: Hold record + press pad at the moment you want to erase",
+        "Clear entire pattern: Hold write + press record"
+      ]
+    }
+  ]
+}

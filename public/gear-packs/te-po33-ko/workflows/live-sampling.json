@@ -1,0 +1,68 @@
+{
+  "id": "live-sampling",
+  "title": "Live Microphone Sampling",
+  "description": "Techniques for sampling vocals, beatboxing, and environmental sounds using the built-in microphone.",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "id": "step-1",
+      "title": "Prepare the Environment",
+      "instruction": "Find a quiet space for recording. The built-in microphone picks up ambient noise easily. Turn off fans, close windows, and minimize background sounds.",
+      "tip": "The PO-33's mic has automatic gain, so it amplifies quiet sounds - including unwanted noise."
+    },
+    {
+      "id": "step-2",
+      "title": "Select a Sound Slot",
+      "instruction": "Turn the sound knob to choose where to record. Use slots 1-8 for melodic samples (vocals, tonal sounds) or 9-16 for drums (beatbox, percussion).",
+      "diagramHighlights": ["sound-knob"],
+      "tip": "Melodic slots let you play samples at different pitches afterward."
+    },
+    {
+      "id": "step-3",
+      "title": "Position and Test",
+      "instruction": "Hold the PO-33 6-12 inches from your sound source. Hold record to see the input level on the display. Test your levels before committing.",
+      "diagramHighlights": ["record-button", "microphone", "display"],
+      "substeps": [
+        { "instruction": "Hold record button", "hotspotId": "record-button" },
+        { "instruction": "Watch the level meter on display", "hotspotId": "display" },
+        { "instruction": "Make your sound to check levels" },
+        { "instruction": "Adjust distance if needed" }
+      ],
+      "tip": "Too close = distortion. Too far = noisy. Find the sweet spot!"
+    },
+    {
+      "id": "step-4",
+      "title": "Record Your Sample",
+      "instruction": "While holding record, press a pad to start. Make your sound (sing, speak, beatbox). Press the pad again to stop. Release record.",
+      "diagramHighlights": ["record-button", "pad-1"],
+      "substeps": [
+        { "instruction": "Hold record", "hotspotId": "record-button" },
+        { "instruction": "Press pad to start recording" },
+        { "instruction": "Perform your sound" },
+        { "instruction": "Press pad to stop" },
+        { "instruction": "Release record to exit" }
+      ],
+      "warning": "Memory is limited! Keep samples short and punchy for best results."
+    },
+    {
+      "id": "step-5",
+      "title": "Trim the Sample",
+      "instruction": "If your sample has unwanted silence at the start or end, trim it. Hold record, turn sound knob to adjust start point, turn pattern knob to adjust end point.",
+      "diagramHighlights": ["record-button", "sound-knob", "pattern-knob"],
+      "tip": "Press the sound's pad while adjusting to preview the trimmed region."
+    },
+    {
+      "id": "step-6",
+      "title": "Use Your Sample",
+      "instruction": "Your sample is ready! Press its pad to play it. If it's a melodic sample (1-8), hold the pad and press other pads to change pitch for melodies.",
+      "diagramHighlights": ["pad-1"],
+      "tip": "Layer multiple vocal samples across different slots for harmonies and ad-libs."
+    }
+  ],
+  "outcomes": [
+    "Mastered live microphone sampling technique",
+    "Understanding of gain staging with the built-in mic",
+    "Ability to trim samples for clean playback",
+    "Skills for sampling vocals, beatbox, and found sounds"
+  ]
+}

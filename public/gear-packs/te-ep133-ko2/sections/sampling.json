@@ -1,0 +1,151 @@
+{
+  "id": "sampling",
+  "title": "Sampling",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Sampling",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "The EP-133 can sample from the 3.5mm line input, the built-in microphone, or via resampling (OS 2.0). Samples are recorded at 46.875 kHz / 16-bit with a 24-bit ADC for high-quality capture."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Audio Input",
+      "id": "audio-input"
+    },
+    {
+      "type": "paragraph",
+      "text": "Connect your audio source to the orange INPUT jack (3.5mm stereo) on the top panel. The input accepts line-level signals from phones, tablets, turntables (with preamp), synthesizers, and other audio sources."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["input-port", "gain-knob"],
+      "caption": "Input port (orange) and Gain knob for level control"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Gain Control",
+      "id": "gain"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the orange GAIN knob (also labeled X) to adjust the input level. Monitor the input meter on the display while adjusting - aim for a strong signal that doesn't clip (peaks around 80% of the meter)."
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Optimal Levels",
+      "text": "Set the gain so peaks reach about 80% of the meter. This leaves headroom while minimizing noise floor."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Built-in Microphone",
+      "id": "microphone"
+    },
+    {
+      "type": "paragraph",
+      "text": "When no external source is connected to the INPUT jack, the EP-133 uses its built-in microphone for sampling. This is convenient for quick captures of environmental sounds, voice, or acoustic instruments."
+    },
+    {
+      "type": "callout",
+      "calloutType": "info",
+      "text": "The built-in microphone is useful for quick captures, but use the line input for higher quality recordings."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Recording a Sample",
+      "id": "recording"
+    },
+    {
+      "type": "paragraph",
+      "text": "Follow these steps to record a new sample:"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Press SAMPLE/CHOP to enter sampling mode",
+        "Adjust GAIN to set the input level (watch the meter)",
+        "Select a sound slot using number keys + ENTER",
+        "Press RECORD to arm recording",
+        "Recording starts automatically when audio is detected, or press any pad to start manually",
+        "Press RECORD again or any pad to stop recording",
+        "The sample is automatically assigned to the selected sound slot"
+      ]
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["sample-chop-button", "record-button"],
+      "caption": "SAMPLE/CHOP button enters sampling mode, RECORD arms/stops recording"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Hands-Free Sampling",
+      "id": "hands-free"
+    },
+    {
+      "type": "paragraph",
+      "text": "OS 2.0 introduces hands-free sampling with automatic threshold detection. Hold SHIFT and press SAMPLE to enable this mode. The EP-133 starts recording when audio exceeds the threshold and stops after a period of silence."
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Great for Musicians",
+      "text": "Hands-free sampling is perfect when you need both hands to play an instrument while sampling."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Resampling",
+      "id": "resampling"
+    },
+    {
+      "type": "paragraph",
+      "text": "Resampling (OS 2.0) lets you record the EP-133's audio output as a new sample. This captures everything: sounds, effects, and fader automation. To resample, hold SHIFT and press SAMPLE/CHOP."
+    },
+    {
+      "type": "callout",
+      "calloutType": "info",
+      "text": "Resampling is useful for: bouncing multiple sounds to free up polyphony, capturing effects processing, creating new sounds from processed material, or making stems of your patterns."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Chopping Samples",
+      "id": "chopping"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hold SAMPLE/CHOP to enter chop mode. The EP-133 automatically detects transients in the sample and splits it into multiple slices. Each slice is assigned to a different pad, allowing you to trigger individual hits from a longer recording."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Automatic transient detection for drum loops and phrases",
+        "Slices are distributed across pads 0-9, +, -",
+        "Adjust slice points manually with +/- and Y knob",
+        "Great for chopping drum breaks, vocal phrases, and melodic loops"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sample Management",
+      "id": "management"
+    },
+    {
+      "type": "paragraph",
+      "text": "Samples can be transferred to and from a computer via USB using the Teenage Engineering EP-133 app. This allows you to backup your samples, organize your library, and import audio files."
+    }
+  ]
+}

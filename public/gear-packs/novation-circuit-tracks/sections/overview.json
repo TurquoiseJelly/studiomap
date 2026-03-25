@@ -1,0 +1,186 @@
+{
+  "id": "overview",
+  "title": "Overview",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Circuit Tracks Overview",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "Circuit Tracks is a standalone groovebox that combines two polyphonic synth tracks with four sample-based drum tracks, two dedicated MIDI tracks, a powerful 32-step sequencer, and built-in effects. It's designed for making complete tracks without a computer."
+    },
+    {
+      "type": "feature-block",
+      "name": "Two Synth Tracks",
+      "description": "Polyphonic synthesizer tracks with 128 factory patches and room for your own sounds via Novation Components.",
+      "hotspotId": "synth-1-button"
+    },
+    {
+      "type": "feature-block",
+      "name": "Four Sample Tracks",
+      "description": "Sample-based tracks for drums and percussion. Each track can play one sample at a time with independent pitch, amp, and filter controls.",
+      "hotspotId": "drum-1-button"
+    },
+    {
+      "type": "feature-block",
+      "name": "Two MIDI Tracks",
+      "description": "Dedicated tracks for sequencing external synthesizers and drum machines. Full 32-step sequencing with parameter locks, velocity, and gate length.",
+      "hotspotId": "midi-1-button"
+    },
+    {
+      "type": "feature-block",
+      "name": "32-Step Sequencer",
+      "description": "Each track has its own 32-step sequencer with per-step parameter locks, probability, and micro-timing.",
+      "hotspotId": "grid-pads"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Technical Specifications",
+      "id": "specifications"
+    },
+    {
+      "type": "table",
+      "headers": ["Specification", "Value"],
+      "rows": [
+        ["Synth Tracks", "2 (polyphonic, 6 voices each)"],
+        ["Sample Tracks", "4 (monophonic)"],
+        ["MIDI Tracks", "2 (for external gear)"],
+        ["Sequencer", "32 steps per pattern"],
+        ["Patterns per Session", "8"],
+        ["Sessions per Project", "8"],
+        ["Projects", "256 (64 factory + 192 user)"],
+        ["Synth Patches", "128 factory + user via Components"],
+        ["Sample Memory", "60MB (user samples via SD card)"],
+        ["Effects", "Reverb & Delay (global send)"],
+        ["Audio Outputs", "2x 1/4\" (6.35mm) stereo L/R"],
+        ["Audio Inputs", "2x 1/4\" (6.35mm) mono"],
+        ["Headphone Output", "1x 3.5mm stereo"],
+        ["MIDI", "5-pin DIN In/Out/Thru + USB"],
+        ["Sync", "3.5mm analog clock in/out"],
+        ["Storage", "Micro SD card slot"],
+        ["Power", "USB-C or 6x AA batteries"],
+        ["Dimensions", "245 x 176 x 33 mm"],
+        ["Weight", "690g (without batteries)"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Firmware & Components",
+      "id": "firmware"
+    },
+    {
+      "type": "paragraph",
+      "text": "Circuit Tracks receives regular firmware updates that add new features and improvements. Use Novation Components (available as a web app or standalone desktop application) to update firmware, manage patches and samples, back up projects, and access deep editing parameters."
+    },
+    {
+      "type": "callout",
+      "calloutType": "info",
+      "title": "Staying Up to Date",
+      "text": "Check Novation's website or open Components to see if firmware updates are available. Updates have added features like improved MIDI routing, new effects, and performance enhancements."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Master Controls",
+      "id": "master-controls"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Master Volume knob controls the overall output level for both headphones and line outputs. This is an analog control that doesn't affect recording levels or saved settings."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["master-volume"],
+      "caption": "Master volume knob location"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The 32-Pad Grid",
+      "id": "grid"
+    },
+    {
+      "type": "paragraph",
+      "text": "The velocity-sensitive RGB pads serve multiple purposes depending on the current mode:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Note Mode: Play notes chromatically (synth tracks) or trigger samples (drum tracks)",
+        "Step Mode: Program the sequencer with note data",
+        "Velocity Mode: View and edit velocity values for each step",
+        "Length Mode: Adjust gate length for each step",
+        "Pattern Mode: Select from 8 patterns per session",
+        "Mixer Mode: Adjust track levels visually"
+      ]
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["grid-pads"],
+      "caption": "32-pad velocity-sensitive grid"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Master Filter",
+      "id": "master-filter"
+    },
+    {
+      "type": "paragraph",
+      "text": "The large Master Filter knob is a DJ-style filter that sweeps across the entire mix output. Turn left for low-pass (bass only), turn right for high-pass (treble only). The center detent position is neutral/bypass."
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Performance Tip",
+      "text": "Use the Master Filter for dramatic transitions between patterns or to create drops and builds during live performance."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["master-filter"],
+      "caption": "Master Filter knob (top-right)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Shift Functions",
+      "id": "shift-functions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hold the Shift button to access secondary functions. Many buttons have alternate behaviors when Shift is held."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["shift-button"],
+      "caption": "Shift button"
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Essential Shortcuts",
+      "text": "Shift + Octave Down = Undo. Shift + Octave Up = Redo. Shift + Save = Setup menu. These work across most operations."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Octave Controls",
+      "id": "octave-controls"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the Octave +/- buttons to shift the keyboard range up or down. The current octave is indicated by the RGB LED colors on the pads when playing notes."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["octave-down", "octave-up"],
+      "caption": "Octave control buttons"
+    }
+  ]
+}

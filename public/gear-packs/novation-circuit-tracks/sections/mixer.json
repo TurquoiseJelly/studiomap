@@ -1,0 +1,103 @@
+{
+  "id": "mixer",
+  "title": "Mixer",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Mixer",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Mixer view lets you see and adjust the volume levels of all tracks simultaneously. It's essential for balancing your mix."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["mixer-button"],
+      "caption": "Mixer button"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Accessing the Mixer",
+      "id": "accessing"
+    },
+    {
+      "type": "paragraph",
+      "text": "Press the Mixer button to enter mixer view. The pads display the current level of each track as vertical meter columns."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Track Layout",
+      "id": "layout"
+    },
+    {
+      "type": "paragraph",
+      "text": "In mixer view, tracks are arranged left to right:"
+    },
+    {
+      "type": "table",
+      "headers": ["Column", "Track"],
+      "rows": [
+        ["1-2", "Synth 1 (stereo)"],
+        ["3-4", "Synth 2 (stereo)"],
+        ["5", "Drum 1"],
+        ["6", "Drum 2"],
+        ["7", "Drum 3"],
+        ["8", "Drum 4"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Adjusting Levels",
+      "id": "levels"
+    },
+    {
+      "type": "paragraph",
+      "text": "Tap a column to select that track, then use the Filter knob to adjust its level. Or simply tap and drag on the pad column to set the level directly."
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "text": "The display shows the exact dB value as you adjust levels for precise mixing."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Muting Tracks",
+      "id": "muting"
+    },
+    {
+      "type": "paragraph",
+      "text": "In mixer view, press a track's column twice quickly to mute it. The column will dim to show it's muted. Tap again to unmute."
+    },
+    {
+      "type": "callout",
+      "calloutType": "info",
+      "text": "Mutes are temporary and not saved. They reset when you change patterns or power off."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "External Audio",
+      "id": "external"
+    },
+    {
+      "type": "paragraph",
+      "text": "When using the audio input, an additional column appears in the mixer for the external audio level. You can process external audio through the effects."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Saving Mix Levels",
+      "id": "saving"
+    },
+    {
+      "type": "paragraph",
+      "text": "Mix levels are saved per-session. Each session can have completely different volume balances for its tracks."
+    }
+  ]
+}

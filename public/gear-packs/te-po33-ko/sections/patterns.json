@@ -1,0 +1,126 @@
+{
+  "id": "patterns",
+  "title": "Patterns",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Patterns",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "The PO-33 stores 16 independent patterns, each containing its own sequence of notes and automation. Patterns can be selected on the fly for live performance or chained together for longer song arrangements."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Pattern Selection",
+      "id": "pattern-selection"
+    },
+    {
+      "type": "paragraph",
+      "text": "Turn the pattern knob to select patterns 1-16. The current pattern number is shown on the display. Pattern changes can be made while stopped or during playback."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["pattern-knob"],
+      "caption": "Pattern knob for selecting patterns 1-16"
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Live Pattern Changes",
+      "text": "When changing patterns during playback, the new pattern starts at the beginning of the next bar for seamless transitions."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Copying Patterns",
+      "id": "copy-pattern"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can copy the contents of one pattern to another for creating variations."
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Select the source pattern you want to copy",
+        "Hold record button",
+        "Turn pattern knob to the destination pattern number",
+        "Release record - the pattern is now copied"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Pattern Chain Mode",
+      "id": "pattern-chain"
+    },
+    {
+      "type": "paragraph",
+      "text": "Pattern chain mode lets you arrange multiple patterns into a sequence that plays automatically. This is useful for creating longer song structures without manual pattern changes."
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Hold play button",
+        "While holding play, turn pattern knob to select start pattern",
+        "Continue holding play, turn pattern knob to select end pattern",
+        "Release play - chain is now set",
+        "Press play to start - patterns play in sequence and loop"
+      ]
+    },
+    {
+      "type": "callout",
+      "calloutType": "info",
+      "title": "Chain Range",
+      "text": "Pattern chains always play consecutive patterns from start to end. For example, chaining patterns 1-4 plays: 1, 2, 3, 4, 1, 2, 3, 4..."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Clearing Patterns",
+      "id": "clear-pattern"
+    },
+    {
+      "type": "paragraph",
+      "text": "To clear all notes from a pattern and start fresh:"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Select the pattern you want to clear",
+        "Hold write button",
+        "Press record while holding write",
+        "All notes are removed from the pattern"
+      ]
+    },
+    {
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "No Undo",
+      "text": "Clearing a pattern cannot be undone. Make sure you've selected the correct pattern before clearing."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Pattern Tips",
+      "id": "tips"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Use pattern 16 as a 'scratch pad' for experimenting before copying to other slots",
+        "Create variations by copying a pattern and making small changes",
+        "Chain patterns in performance order for complete song arrangements",
+        "Keep some patterns empty as breaks or transitions"
+      ]
+    }
+  ]
+}

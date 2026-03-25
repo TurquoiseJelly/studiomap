@@ -1,0 +1,112 @@
+{
+  "id": "sample-tracks",
+  "title": "Sample Tracks",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Sample Tracks",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "Circuit Tracks has four sample tracks (often called Drum tracks) that play back audio samples. While optimized for drums, they can play any type of sample including melodic one-shots, effects, and loops."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Selecting a Sample Track",
+      "id": "selecting"
+    },
+    {
+      "type": "paragraph",
+      "text": "Press one of the four Drum buttons (1-4) to select that sample track. The pads will show the available samples, and the macro knobs will control that track's parameters."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["drum-1-button", "drum-2-button", "drum-3-button", "drum-4-button"],
+      "caption": "Four sample track buttons"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Default Sample Assignments",
+      "id": "defaults"
+    },
+    {
+      "type": "table",
+      "headers": ["Track", "Typical Use", "Factory Samples"],
+      "rows": [
+        ["Drum 1", "Kick drums", "Bass drums and sub hits"],
+        ["Drum 2", "Snares", "Snares, claps, and rimshots"],
+        ["Drum 3", "Hi-hats", "Closed/open hats and cymbals"],
+        ["Drum 4", "Percussion", "Percussion and effects"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browsing Samples",
+      "id": "browsing"
+    },
+    {
+      "type": "paragraph",
+      "text": "Double-tap a drum track button to enter the sample browser. The pads show available samples - press one to preview it. Turn Macro 1 to scroll through more samples. Press the drum button again to confirm."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sample Parameters",
+      "id": "parameters"
+    },
+    {
+      "type": "paragraph",
+      "text": "Each sample track has dedicated parameters accessible via the macro knobs:"
+    },
+    {
+      "type": "table",
+      "headers": ["Macro", "Parameter", "Description"],
+      "rows": [
+        ["1", "Pitch", "Transpose the sample up/down"],
+        ["2", "Decay", "Sample playback length"],
+        ["3", "Distortion", "Add grit and saturation"],
+        ["4", "Start Point", "Where sample playback begins"],
+        ["5", "Attack", "Fade-in time"],
+        ["6", "Release", "Fade-out after note off"],
+        ["7", "Reverb Send", "Amount of reverb effect"],
+        ["8", "Delay Send", "Amount of delay effect"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Filter on Sample Tracks",
+      "id": "filter"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Filter and Resonance knobs work on sample tracks too. Use the filter to remove frequencies, create sweeps, or add resonant character to your drums."
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Creative Tip",
+      "text": "Try automating the filter cutoff on hi-hat patterns to create evolving textures."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Loading Custom Samples",
+      "id": "custom"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use Novation Components to load your own samples. Samples should be WAV format, mono or stereo. The sample pool is shared across all projects."
+    },
+    {
+      "type": "callout",
+      "calloutType": "info",
+      "text": "Circuit Tracks can hold up to 64 samples. Each sample can be up to 16 seconds in length."
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "id": "overview",
+  "title": "Overview",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "EP-133 K.O. II Overview",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "The EP-133 K.O. II is a 64 MB sampler and composer from Teenage Engineering. It features 999 sample slots, 16 mono or 12 stereo voice polyphony, and a unique calculator-inspired interface. OS 2.0 introduces song mode, resampling, hands-free sampling, and enhanced punch-in effects."
+    },
+    {
+      "type": "feature-block",
+      "name": "999 Sample Slots",
+      "description": "Store up to 999 samples across all projects. Samples are recorded at 46.875 kHz / 16-bit with a 32-bit float signal chain.",
+      "hotspotId": "sound-edit-button"
+    },
+    {
+      "type": "feature-block",
+      "name": "4 Groups with 12 Sounds Each",
+      "description": "Each project has 4 groups (A-D), and each group has 12 assignable pads (0-9, +, -). Groups play simultaneously for layered arrangements.",
+      "hotspotId": "group-a-button"
+    },
+    {
+      "type": "feature-block",
+      "name": "Song Mode",
+      "description": "Chain up to 99 song positions with different pattern arrangements to create complete songs up to 9,801 bars long.",
+      "hotspotId": "tempo-loop-button"
+    },
+    {
+      "type": "feature-block",
+      "name": "Punch-In FX 2.0",
+      "description": "12 pressure-sensitive punch-in effects for live performance. Hold number keys to instantly apply beat repeat, filter sweeps, reverb freeze, and more.",
+      "hotspotId": "fx-output-button"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Technical Specifications",
+      "id": "specifications"
+    },
+    {
+      "type": "table",
+      "headers": ["Specification", "Value"],
+      "rows": [
+        ["Sample Memory", "64 MB"],
+        ["Sample Slots", "999"],
+        ["Sample Rate", "46.875 kHz / 16-bit"],
+        ["Signal Chain", "32-bit float"],
+        ["ADC/DAC", "24-bit"],
+        ["Polyphony", "16 mono / 12 stereo voices"],
+        ["Projects", "9"],
+        ["Groups per Project", "4 (A, B, C, D)"],
+        ["Sounds per Group", "12 (0-9, +, -)"],
+        ["Patterns per Group", "99"],
+        ["Notes per Project", "80,000"],
+        ["Song Positions", "99 (up to 9,801 bars)"],
+        ["Power", "4x AAA batteries or USB-C"],
+        ["Dimensions", "240 x 176 x 16 mm"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Display Information",
+      "id": "display"
+    },
+    {
+      "type": "paragraph",
+      "text": "The LCD display shows key information including the current bar position (BAR), tempo in BPM, stereo/mono indicator, current sound number, FX status, quantize setting (Q), and swing amount. The display content changes based on the current mode and operation."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["display"],
+      "caption": "LCD display showing bar position, tempo, and status indicators"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Main Controls",
+      "id": "main-controls"
+    },
+    {
+      "type": "paragraph",
+      "text": "The EP-133 has three main knobs with distinct colors indicating their function: the white VOLUME knob controls output level, the orange GAIN knob (also labeled X) controls input level for sampling, and the black Y knob is a context-sensitive parameter control."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["volume-knob", "gain-knob", "y-knob"],
+      "caption": "The three main knobs: Volume (white), Gain/X (orange), and Y (black)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Navigation",
+      "id": "navigation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use MAIN/COMMIT to return to the main view at any time. The +/- buttons navigate between values, patterns, sounds, and menu items. Press ENTER to confirm selections after entering numbers."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "MAIN/COMMIT - Return to main view (tap) or save changes (hold)",
+        "+ / - - Increment or decrement values, navigate menus",
+        "ENTER - Confirm selection or numeric entry",
+        "Number keys (0-9) - Direct entry for sounds, patterns, and values"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Shift Functions",
+      "id": "shift-functions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hold the SHIFT button (bottom-left corner) to access secondary functions on most buttons. The secondary function is typically printed below the primary function label in smaller text."
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Essential Shift Combinations",
+      "text": "SHIFT + ERASE opens System menu. SHIFT + Group button mutes/unmutes that group. SHIFT + SAMPLE enables resampling mode."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["shift-button"],
+      "caption": "SHIFT button location (bottom-left)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Erase Functions",
+      "id": "erase"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ERASE button is used to delete notes, sounds, and patterns. Hold ERASE and press a pad to delete that step from the sequence. Hold ERASE and press a group button to clear that group's entire pattern."
+    },
+    {
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Caution",
+      "text": "Erased data cannot be recovered unless you have not committed the changes. Press MAIN without holding (don't commit) to discard changes."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "OS 2.0 Features",
+      "id": "os-2-features"
+    },
+    {
+      "type": "paragraph",
+      "text": "The EP-133 received a major OS 2.0 update (current version 2.0.5) that added several significant features:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Resampling - Record the EP-133's output as a new sample",
+        "Song Mode - Chain patterns into complete song arrangements",
+        "Hands-Free Sampling - Automatic recording triggered by audio threshold",
+        "Sidechain - Ducking effect between sounds for pumping bass",
+        "Enhanced Polyphony - 16 mono or 12 stereo voices (up from 12/6)",
+        "MIDI Thru - Pass MIDI through to other devices",
+        "Punch-In FX 2.0 - Improved pressure-sensitive performance effects"
+      ]
+    }
+  ]
+}

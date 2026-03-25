@@ -1,0 +1,402 @@
+{
+  "id": "te-po33-ko",
+  "version": "1.0.0",
+  "metadata": {
+    "name": "PO-33 K.O.",
+    "manufacturer": "Teenage Engineering",
+    "category": "sampler",
+    "description": "Pocket-sized micro sampler with 40 seconds of sample memory, 8 melodic and 8 drum sounds, 16 patterns, 16 effects, and built-in microphone.",
+    "tags": ["sampler", "pocket-operator", "micro-sampler", "portable", "beat-maker"],
+    "year": 2018,
+    "website": "https://teenage.engineering/products/po-33"
+  },
+  "diagram": {
+    "width": 400,
+    "height": 700,
+    "hotspots": {
+      "display": {
+        "id": "display",
+        "label": "Display",
+        "type": "display",
+        "tooltip": {
+          "title": "LCD Display",
+          "description": "Shows current sound number, pattern number, BPM, step position, and various status indicators. The display changes based on the current mode.",
+          "tip": "Watch the display for visual feedback during sampling and pattern editing."
+        },
+        "linkedSection": { "sectionId": "overview", "headingId": "display" },
+        "ariaLabel": "LCD display"
+      },
+      "sound-button": {
+        "id": "sound-button",
+        "label": "sound",
+        "type": "button",
+        "tooltip": {
+          "title": "Sound Button",
+          "description": "Hold and turn Knob A to select sound slots (1-16). The orange ring indicates this is a primary control. Upper sounds (1-8) are melodic, lower sounds (9-16) are drums.",
+          "tip": "Press sound + turn Knob A for quick sound selection. Hold sound + turn Knob B for secondary parameters."
+        },
+        "linkedSection": { "sectionId": "overview", "headingId": "sound-button" },
+        "ariaLabel": "Sound selection button"
+      },
+      "pattern-button": {
+        "id": "pattern-button",
+        "label": "pattern",
+        "type": "button",
+        "tooltip": {
+          "title": "Pattern Button",
+          "description": "Hold and turn Knob A to select patterns (1-16). Each pattern stores a unique sequence that can be up to 16 steps long.",
+          "tip": "Patterns can be chained together for longer sequences. Hold pattern + turn Knob B for pattern copy."
+        },
+        "linkedSection": { "sectionId": "patterns", "headingId": "pattern-selection" },
+        "ariaLabel": "Pattern selection button"
+      },
+      "bpm-button": {
+        "id": "bpm-button",
+        "label": "bpm",
+        "type": "button",
+        "tooltip": {
+          "title": "BPM Button",
+          "description": "Hold and turn Knob A to adjust tempo (60-240 BPM). The 'm' indicates meter/time signature mode when combined with Knob B.",
+          "tip": "Hold bpm + turn Knob B to change the meter (steps per bar): 16, 12, 8, or 4."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "tempo" },
+        "ariaLabel": "BPM tempo button"
+      },
+      "knob-a": {
+        "id": "knob-a",
+        "label": "A",
+        "type": "knob",
+        "tooltip": {
+          "title": "Knob A",
+          "description": "Primary rotary encoder. Turn while holding sound, pattern, or bpm buttons to adjust their values. Also used for trim, pitch, and filter adjustments.",
+          "tip": "Knob A is the main value knob - it's used with most button combinations for primary adjustments."
+        },
+        "linkedSection": { "sectionId": "overview", "headingId": "knobs" },
+        "ariaLabel": "Knob A - primary control"
+      },
+      "knob-b": {
+        "id": "knob-b",
+        "label": "B",
+        "type": "knob",
+        "tooltip": {
+          "title": "Knob B",
+          "description": "Secondary rotary encoder. Turn while holding buttons for secondary parameters like filter, pitch, volume, and pan adjustments.",
+          "tip": "Knob B handles secondary parameters - try holding sound + turning Knob B for filter control."
+        },
+        "linkedSection": { "sectionId": "overview", "headingId": "knobs" },
+        "ariaLabel": "Knob B - secondary control"
+      },
+      "pad-1": {
+        "id": "pad-1",
+        "label": "1",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 1 (Melodic)",
+          "description": "Triggers melodic sound slot 1. Melodic sounds can be played chromatically - press multiple pads to change pitch.",
+          "tip": "In write mode, this triggers step 1 of the current pattern."
+        },
+        "linkedSection": { "sectionId": "sampling", "headingId": "melodic-sounds" },
+        "ariaLabel": "Pad 1 - Melodic sound 1"
+      },
+      "pad-2": {
+        "id": "pad-2",
+        "label": "2",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 2 (Melodic)",
+          "description": "Triggers melodic sound slot 2. Melodic sounds can be played chromatically.",
+          "tip": "In write mode, this triggers step 2 of the current pattern."
+        },
+        "linkedSection": { "sectionId": "sampling", "headingId": "melodic-sounds" },
+        "ariaLabel": "Pad 2 - Melodic sound 2"
+      },
+      "pad-3": {
+        "id": "pad-3",
+        "label": "3",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 3 (Melodic)",
+          "description": "Triggers melodic sound slot 3. Melodic sounds can be played chromatically.",
+          "tip": "In write mode, this triggers step 3 of the current pattern."
+        },
+        "linkedSection": { "sectionId": "sampling", "headingId": "melodic-sounds" },
+        "ariaLabel": "Pad 3 - Melodic sound 3"
+      },
+      "pad-4": {
+        "id": "pad-4",
+        "label": "4",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 4 (Melodic)",
+          "description": "Triggers melodic sound slot 4. Melodic sounds can be played chromatically.",
+          "tip": "In write mode, this triggers step 4 of the current pattern."
+        },
+        "linkedSection": { "sectionId": "sampling", "headingId": "melodic-sounds" },
+        "ariaLabel": "Pad 4 - Melodic sound 4"
+      },
+      "pad-5": {
+        "id": "pad-5",
+        "label": "5",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 5 (Melodic)",
+          "description": "Triggers melodic sound slot 5. Melodic sounds can be played chromatically.",
+          "tip": "In write mode, this triggers step 5 of the current pattern."
+        },
+        "linkedSection": { "sectionId": "sampling", "headingId": "melodic-sounds" },
+        "ariaLabel": "Pad 5 - Melodic sound 5"
+      },
+      "pad-6": {
+        "id": "pad-6",
+        "label": "6",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 6 (Melodic)",
+          "description": "Triggers melodic sound slot 6. Melodic sounds can be played chromatically.",
+          "tip": "In write mode, this triggers step 6 of the current pattern."
+        },
+        "linkedSection": { "sectionId": "sampling", "headingId": "melodic-sounds" },
+        "ariaLabel": "Pad 6 - Melodic sound 6"
+      },
+      "pad-7": {
+        "id": "pad-7",
+        "label": "7",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 7 (Melodic)",
+          "description": "Triggers melodic sound slot 7. Melodic sounds can be played chromatically.",
+          "tip": "In write mode, this triggers step 7 of the current pattern."
+        },
+        "linkedSection": { "sectionId": "sampling", "headingId": "melodic-sounds" },
+        "ariaLabel": "Pad 7 - Melodic sound 7"
+      },
+      "pad-8": {
+        "id": "pad-8",
+        "label": "8",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 8 (Melodic)",
+          "description": "Triggers melodic sound slot 8. Melodic sounds can be played chromatically.",
+          "tip": "In write mode, this triggers step 8 of the current pattern."
+        },
+        "linkedSection": { "sectionId": "sampling", "headingId": "melodic-sounds" },
+        "ariaLabel": "Pad 8 - Melodic sound 8"
+      },
+      "pad-9": {
+        "id": "pad-9",
+        "label": "9",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 9 (Drum)",
+          "description": "Triggers drum sound slot 9. Drum sounds play at fixed pitch, optimized for percussion.",
+          "tip": "In write mode, this triggers step 9 of the current pattern."
+        },
+        "linkedSection": { "sectionId": "sampling", "headingId": "drum-sounds" },
+        "ariaLabel": "Pad 9 - Drum sound 1"
+      },
+      "pad-10": {
+        "id": "pad-10",
+        "label": "10",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 10 (Drum)",
+          "description": "Triggers drum sound slot 10. Drum sounds play at fixed pitch.",
+          "tip": "In write mode, this triggers step 10 of the current pattern."
+        },
+        "linkedSection": { "sectionId": "sampling", "headingId": "drum-sounds" },
+        "ariaLabel": "Pad 10 - Drum sound 2"
+      },
+      "pad-11": {
+        "id": "pad-11",
+        "label": "11",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 11 (Drum)",
+          "description": "Triggers drum sound slot 11. Drum sounds play at fixed pitch.",
+          "tip": "In write mode, this triggers step 11 of the current pattern."
+        },
+        "linkedSection": { "sectionId": "sampling", "headingId": "drum-sounds" },
+        "ariaLabel": "Pad 11 - Drum sound 3"
+      },
+      "pad-12": {
+        "id": "pad-12",
+        "label": "12",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 12 (Drum)",
+          "description": "Triggers drum sound slot 12. Drum sounds play at fixed pitch.",
+          "tip": "In write mode, this triggers step 12 of the current pattern."
+        },
+        "linkedSection": { "sectionId": "sampling", "headingId": "drum-sounds" },
+        "ariaLabel": "Pad 12 - Drum sound 4"
+      },
+      "pad-13": {
+        "id": "pad-13",
+        "label": "13",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 13 (Drum)",
+          "description": "Triggers drum sound slot 13. Drum sounds play at fixed pitch.",
+          "tip": "In write mode, this triggers step 13 of the current pattern."
+        },
+        "linkedSection": { "sectionId": "sampling", "headingId": "drum-sounds" },
+        "ariaLabel": "Pad 13 - Drum sound 5"
+      },
+      "pad-14": {
+        "id": "pad-14",
+        "label": "14",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 14 (Drum)",
+          "description": "Triggers drum sound slot 14. Drum sounds play at fixed pitch.",
+          "tip": "In write mode, this triggers step 14 of the current pattern."
+        },
+        "linkedSection": { "sectionId": "sampling", "headingId": "drum-sounds" },
+        "ariaLabel": "Pad 14 - Drum sound 6"
+      },
+      "pad-15": {
+        "id": "pad-15",
+        "label": "15",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 15 (Drum)",
+          "description": "Triggers drum sound slot 15. Drum sounds play at fixed pitch.",
+          "tip": "In write mode, this triggers step 15 of the current pattern."
+        },
+        "linkedSection": { "sectionId": "sampling", "headingId": "drum-sounds" },
+        "ariaLabel": "Pad 15 - Drum sound 7"
+      },
+      "pad-16": {
+        "id": "pad-16",
+        "label": "16",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 16 (Drum)",
+          "description": "Triggers drum sound slot 16. Drum sounds play at fixed pitch.",
+          "tip": "In write mode, this triggers step 16 of the current pattern."
+        },
+        "linkedSection": { "sectionId": "sampling", "headingId": "drum-sounds" },
+        "ariaLabel": "Pad 16 - Drum sound 8"
+      },
+      "record-button": {
+        "id": "record-button",
+        "label": "record",
+        "type": "button",
+        "tooltip": {
+          "title": "Record Button",
+          "description": "Arms recording mode. In sample mode, records audio from mic or line input. In write mode, records pad hits to the sequencer in real-time.",
+          "tip": "Hold record + turn Knob A to access trim mode. Hold record + turn Knob B to adjust sample start point."
+        },
+        "linkedSection": { "sectionId": "sampling" },
+        "ariaLabel": "Record button"
+      },
+      "fx-button": {
+        "id": "fx-button",
+        "label": "FX",
+        "type": "button",
+        "tooltip": {
+          "title": "FX Button",
+          "description": "Activates punch-in effects. Hold FX and press pads 1-16 to apply different effects. Each pad triggers a unique effect.",
+          "tip": "Effects include stutter, loop, scratch, filter sweep, and more. Release to stop the effect."
+        },
+        "linkedSection": { "sectionId": "effects" },
+        "ariaLabel": "FX effects button"
+      },
+      "play-button": {
+        "id": "play-button",
+        "label": "play",
+        "type": "button",
+        "tooltip": {
+          "title": "Play Button",
+          "description": "Starts and stops pattern playback. Press once to play, press again to stop.",
+          "tip": "Hold play + turn Knob A to enter pattern chain mode for arranging multiple patterns."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "transport" },
+        "ariaLabel": "Play button"
+      },
+      "write-button": {
+        "id": "write-button",
+        "label": "write",
+        "type": "button",
+        "tooltip": {
+          "title": "Write Button",
+          "description": "Toggles write mode for step-sequencing. In write mode, pads enter notes at the current step. Use Knob A to navigate steps.",
+          "tip": "Hold write + pad to delete that sound from the current step."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "step-recording" },
+        "ariaLabel": "Write mode button"
+      },
+      "lock-switch": {
+        "id": "lock-switch",
+        "label": "lock",
+        "type": "switch",
+        "tooltip": {
+          "title": "Lock Switch",
+          "description": "Prevents accidental button presses. When locked, only the play button and knobs function.",
+          "tip": "Use lock when performing live to prevent accidental changes."
+        },
+        "linkedSection": { "sectionId": "overview", "headingId": "lock" },
+        "ariaLabel": "Lock switch"
+      },
+      "sync-port": {
+        "id": "sync-port",
+        "label": "OUT",
+        "type": "port",
+        "tooltip": {
+          "title": "Line Output / Sync (3.5mm)",
+          "description": "Stereo 3.5mm jack on the top-right edge. Outputs audio and sync signal. Left channel is sync clock (8 PPQ), right channel is audio. Located on the back of the unit.",
+          "tip": "Use a stereo cable for headphones, or a Y-splitter to separate sync and audio for chaining Pocket Operators."
+        },
+        "linkedSection": { "sectionId": "sync" },
+        "ariaLabel": "Line output / Sync port (3.5mm)"
+      },
+      "line-port": {
+        "id": "line-port",
+        "label": "LINE IN",
+        "type": "port",
+        "tooltip": {
+          "title": "Line Input (3.5mm)",
+          "description": "Mono 3.5mm input on the top-left edge for sampling from external audio sources. Located on the back of the unit, facing outward.",
+          "tip": "For best quality, sample from line input rather than the built-in microphone. Disables mic when connected."
+        },
+        "linkedSection": { "sectionId": "connections", "headingId": "line-input" },
+        "ariaLabel": "Line audio input (3.5mm)"
+      },
+      "microphone": {
+        "id": "microphone",
+        "label": "MIC",
+        "type": "port",
+        "tooltip": {
+          "title": "Built-in Microphone",
+          "description": "Internal electret microphone (red icon in top-right corner) for sampling ambient sounds, voice, and instruments without external gear.",
+          "tip": "For cleaner samples, use the line input. The mic is great for quick ideas and lo-fi character."
+        },
+        "linkedSection": { "sectionId": "sampling", "headingId": "microphone" },
+        "ariaLabel": "Built-in microphone"
+      }
+    }
+  },
+  "sections": [
+    { "id": "overview", "title": "Overview", "order": 1, "icon": "info" },
+    { "id": "sampling", "title": "Sampling", "order": 2, "icon": "mic" },
+    { "id": "sound-edit", "title": "Sound Editing", "order": 3, "icon": "wave" },
+    { "id": "sequencer", "title": "Sequencer", "order": 4, "icon": "grid" },
+    { "id": "patterns", "title": "Patterns", "order": 5, "icon": "layers" },
+    { "id": "effects", "title": "Effects", "order": 6, "icon": "sparkles" },
+    { "id": "sync", "title": "Sync", "order": 7, "icon": "plug" },
+    { "id": "connections", "title": "Connections", "order": 8, "icon": "cable" }
+  ],
+  "workflows": [
+    { "id": "first-sample", "title": "Record Your First Sample", "difficulty": "beginner", "estimatedSteps": 5 },
+    { "id": "build-beat", "title": "Build a Beat", "difficulty": "beginner", "estimatedSteps": 7 },
+    { "id": "use-effects", "title": "Apply Punch-In Effects", "difficulty": "beginner", "estimatedSteps": 4 },
+    { "id": "sync-pos", "title": "Sync with Other Pocket Operators", "difficulty": "intermediate", "estimatedSteps": 5 },
+    { "id": "live-sampling", "title": "Live Microphone Sampling", "difficulty": "intermediate", "estimatedSteps": 6 }
+  ],
+  "paths": {
+    "thumbnail": "thumbnail.jpg",
+    "diagram": "diagram.svg",
+    "quickReference": "quick-reference.json",
+    "glossary": "glossary.json"
+  }
+}

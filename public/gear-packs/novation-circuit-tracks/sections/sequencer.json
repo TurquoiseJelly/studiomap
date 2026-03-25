@@ -1,0 +1,175 @@
+{
+  "id": "sequencer",
+  "title": "Sequencer",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Sequencer",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "The sequencer is the heart of Circuit Tracks. Each of the six tracks has its own 32-step sequencer with advanced features like probability, micro-timing, and parameter locks."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Transport Controls",
+      "id": "transport"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the Play and Record buttons to control playback and recording."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["play-button", "record-button"],
+      "caption": "Transport controls"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Play: Start/stop playback. The sequencer loops continuously.",
+        "Record: Enable recording. Notes you play will be quantized to the grid.",
+        "Shift + Play: Stop and reset to step 1.",
+        "Shift + Record: Toggle metronome on/off."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Step Editing",
+      "id": "step-editing"
+    },
+    {
+      "type": "paragraph",
+      "text": "The 32 pads represent the 32 steps in the sequence. Lit pads have notes programmed; dim pads are empty."
+    },
+    {
+      "type": "callout",
+      "calloutType": "note",
+      "text": "By default you see steps 1-16. Press and hold a step on the top row and tap a step on the bottom row to quickly jump to steps 17-32."
+    },
+    {
+      "type": "paragraph",
+      "text": "To add a note: Hold an empty step and play a note on another pad (in note view) or turn the macro knobs to set pitch."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Recording",
+      "id": "recording"
+    },
+    {
+      "type": "paragraph",
+      "text": "With Record enabled, any notes you play will be recorded to the sequencer in real-time. Notes are quantized to the nearest step."
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Pro Tip",
+      "text": "You can record while the sequencer is stopped. Press Record, play your part, then press Play to hear it back."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Velocity",
+      "id": "velocity"
+    },
+    {
+      "type": "paragraph",
+      "text": "Press the Velocity button to view and edit velocity values. Each pad shows the velocity as a color intensity - brighter means louder."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["velocity-button"],
+      "caption": "Velocity view button"
+    },
+    {
+      "type": "paragraph",
+      "text": "To edit: Hold a step and turn Macro 1 to adjust its velocity."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Gate Length",
+      "id": "gate-length"
+    },
+    {
+      "type": "paragraph",
+      "text": "Press the Length button to view and edit gate lengths. This controls how long each note plays."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["length-button"],
+      "caption": "Gate length view button"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Short gates: Staccato, punchy sounds",
+        "Long gates: Sustained, legato sounds",
+        "Tied notes: Hold a step and tap subsequent steps to create long notes"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Tempo",
+      "id": "tempo"
+    },
+    {
+      "type": "paragraph",
+      "text": "Tap the Tempo button repeatedly to set BPM by tapping. Or hold Tempo and turn Macro 1 to dial in a precise tempo."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["tempo-button"],
+      "caption": "Tempo control"
+    },
+    {
+      "type": "callout",
+      "calloutType": "info",
+      "text": "Tempo range: 40-240 BPM. The display shows current BPM when Tempo is held."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Clearing Steps",
+      "id": "clearing"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hold Clear and tap a step to remove the note. Hold Clear and press a track button to clear the entire track. Shift + Clear clears the whole pattern."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["clear-button"],
+      "caption": "Clear button"
+    },
+    {
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Be Careful",
+      "text": "Shift + Clear cannot be undone for some operations. Use with caution!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Duplicate",
+      "id": "duplicate"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Duplicate button copies patterns or steps. Hold Duplicate and select a source, then select a destination."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["duplicate-button"],
+      "caption": "Duplicate button"
+    }
+  ]
+}

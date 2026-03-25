@@ -1,0 +1,110 @@
+{
+  "id": "effects",
+  "title": "Effects",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Effects",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "Circuit Tracks has two global effects: Delay and Reverb. Each track can send its audio to these effects in varying amounts."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["fx-button"],
+      "caption": "FX button accesses effects"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Accessing Effects",
+      "id": "accessing"
+    },
+    {
+      "type": "paragraph",
+      "text": "Press the FX button to enter effects mode. The macro knobs now control the effects parameters, and the pads show send levels for each track."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Delay",
+      "id": "delay"
+    },
+    {
+      "type": "paragraph",
+      "text": "The delay effect creates echoes of your sound. In FX mode, the left side of controls affects delay:"
+    },
+    {
+      "type": "table",
+      "headers": ["Macro", "Parameter"],
+      "rows": [
+        ["1", "Delay Time - Length of the delay"],
+        ["2", "Delay Feedback - Number of repeats"],
+        ["3", "Delay Hi-Pass - Filter out low frequencies from delays"],
+        ["4", "Delay Lo-Pass - Filter out high frequencies from delays"]
+      ]
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Tempo Sync",
+      "text": "Delay time can sync to your project tempo. At certain values, it locks to musical divisions (1/4, 1/8, etc.)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Reverb",
+      "id": "reverb"
+    },
+    {
+      "type": "paragraph",
+      "text": "Reverb adds space and ambience. In FX mode, the right side controls reverb:"
+    },
+    {
+      "type": "table",
+      "headers": ["Macro", "Parameter"],
+      "rows": [
+        ["5", "Reverb Decay - Length of the reverb tail"],
+        ["6", "Reverb Damping - High frequency absorption"],
+        ["7", "Reverb Hi-Pass - Remove low frequencies from reverb"],
+        ["8", "Reverb Lo-Pass - Remove high frequencies from reverb"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Send Levels",
+      "id": "sends"
+    },
+    {
+      "type": "paragraph",
+      "text": "Each track has independent send amounts for both effects. In FX View, the macro knobs (1-8) control send levels for each of the 8 tracks. The pads let you toggle between Reverb and Delay send views."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Top pad row (Reverb): Select this row, then use Macro 1-8 to set reverb send for each track",
+        "Bottom pad row (Delay): Select this row, then use Macro 1-8 to set delay send for each track"
+      ]
+    },
+    {
+      "type": "callout",
+      "calloutType": "info",
+      "text": "Effect sends are saved per-pattern. This lets you have different effect amounts in different sections of your song."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sidechain-Style Effects",
+      "id": "sidechain"
+    },
+    {
+      "type": "paragraph",
+      "text": "While Circuit Tracks doesn't have true sidechain compression, you can achieve similar pumping effects by automating effect sends or filter cutoff in sync with your kick drum pattern."
+    }
+  ]
+}

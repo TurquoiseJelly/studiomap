@@ -1,0 +1,6 @@
+export { HomePage } from './HomePage'
+export { DashboardPage } from './DashboardPage'
+export { BrowsePage } from './BrowsePage'
+export { GearDetailPage } from './GearDetailPage'
+export { SearchPage } from './SearchPage'
+export { SettingsPage } from './SettingsPage'

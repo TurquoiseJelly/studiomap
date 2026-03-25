@@ -1,0 +1,630 @@
+{
+  "id": "novation-circuit-tracks",
+  "version": "1.0.0",
+  "metadata": {
+    "name": "Circuit Tracks",
+    "manufacturer": "Novation",
+    "category": "groovebox",
+    "description": "Standalone groovebox with two synth tracks, four sample tracks, and powerful sequencing capabilities.",
+    "tags": ["groovebox", "synthesizer", "sampler", "sequencer", "drum-machine"],
+    "year": 2021,
+    "website": "https://novationmusic.com/circuit-tracks"
+  },
+  "diagram": {
+    "width": 800,
+    "height": 700,
+    "hotspots": {
+      "master-volume": {
+        "id": "master-volume",
+        "label": "Master Volume",
+        "type": "knob",
+        "tooltip": {
+          "title": "Master Volume",
+          "description": "Controls the overall output level for headphones and line outputs.",
+          "tip": "This is an analog control - it doesn't affect the recorded level."
+        },
+        "linkedSection": { "sectionId": "overview", "headingId": "master-controls" },
+        "ariaLabel": "Master volume knob"
+      },
+      "macro-knob-1": {
+        "id": "macro-knob-1",
+        "label": "Oscillator",
+        "type": "knob",
+        "tooltip": {
+          "title": "Oscillator",
+          "description": "Controls oscillator waveform or character. Effect varies by patch. In FX View, controls reverb/delay send for Track 1.",
+          "tip": "Hold Shift and turn to fine-tune values."
+        },
+        "linkedSection": { "sectionId": "synth-tracks", "headingId": "macros" },
+        "ariaLabel": "Oscillator macro knob"
+      },
+      "macro-knob-2": {
+        "id": "macro-knob-2",
+        "label": "Osc Mod",
+        "type": "knob",
+        "tooltip": {
+          "title": "Oscillator Mod",
+          "description": "Modulates the oscillator - often pulse width, FM amount, or waveshaping. In FX View, controls send for Track 2."
+        },
+        "linkedSection": { "sectionId": "synth-tracks", "headingId": "macros" },
+        "ariaLabel": "Oscillator Mod macro knob"
+      },
+      "macro-knob-3": {
+        "id": "macro-knob-3",
+        "label": "Amp Env",
+        "type": "knob",
+        "tooltip": {
+          "title": "Amp Envelope",
+          "description": "Controls the amplitude envelope shape (attack/decay/sustain/release). In FX View, controls send for Track 3."
+        },
+        "linkedSection": { "sectionId": "synth-tracks", "headingId": "macros" },
+        "ariaLabel": "Amp Envelope macro knob"
+      },
+      "macro-knob-4": {
+        "id": "macro-knob-4",
+        "label": "Filter Envelope",
+        "type": "knob",
+        "tooltip": {
+          "title": "Filter Envelope",
+          "description": "Controls the filter envelope amount/depth. In FX View, controls send for Track 4."
+        },
+        "linkedSection": { "sectionId": "synth-tracks", "headingId": "macros" },
+        "ariaLabel": "Filter Envelope macro knob"
+      },
+      "macro-knob-5": {
+        "id": "macro-knob-5",
+        "label": "Filter Frequency",
+        "type": "knob",
+        "tooltip": {
+          "title": "Filter Frequency",
+          "description": "Controls the filter cutoff frequency. In FX View, controls send for Track 5."
+        },
+        "linkedSection": { "sectionId": "synth-tracks", "headingId": "macros" },
+        "ariaLabel": "Filter Frequency macro knob"
+      },
+      "macro-knob-6": {
+        "id": "macro-knob-6",
+        "label": "Resonance",
+        "type": "knob",
+        "tooltip": {
+          "title": "Resonance",
+          "description": "Controls filter resonance/emphasis at the cutoff frequency. In FX View, controls send for Track 6."
+        },
+        "linkedSection": { "sectionId": "synth-tracks", "headingId": "macros" },
+        "ariaLabel": "Resonance macro knob"
+      },
+      "macro-knob-7": {
+        "id": "macro-knob-7",
+        "label": "Mod",
+        "type": "knob",
+        "tooltip": {
+          "title": "Modulation",
+          "description": "General modulation control - often LFO depth or vibrato amount. In FX View, controls send for Track 7."
+        },
+        "linkedSection": { "sectionId": "synth-tracks", "headingId": "macros" },
+        "ariaLabel": "Modulation macro knob"
+      },
+      "macro-knob-8": {
+        "id": "macro-knob-8",
+        "label": "FX",
+        "type": "knob",
+        "tooltip": {
+          "title": "Effects",
+          "description": "Patch-specific effects control - often distortion or additional modulation. In FX View, controls send for Track 8."
+        },
+        "linkedSection": { "sectionId": "synth-tracks", "headingId": "macros" },
+        "ariaLabel": "Effects macro knob"
+      },
+      "shift-button": {
+        "id": "shift-button",
+        "label": "Shift",
+        "type": "button",
+        "tooltip": {
+          "title": "Shift",
+          "description": "Hold to access secondary functions on other buttons and knobs.",
+          "tip": "Many buttons have a secondary function when Shift is held."
+        },
+        "linkedSection": { "sectionId": "overview", "headingId": "shift-functions" },
+        "ariaLabel": "Shift button"
+      },
+      "octave-down": {
+        "id": "octave-down",
+        "label": "Octave -",
+        "type": "button",
+        "tooltip": {
+          "title": "Octave Down",
+          "description": "Shifts the keyboard/pads down one octave.",
+          "tip": "Shift + Octave Down: Undo last action."
+        },
+        "linkedSection": { "sectionId": "overview", "headingId": "octave-controls" },
+        "ariaLabel": "Octave down button"
+      },
+      "octave-up": {
+        "id": "octave-up",
+        "label": "Octave +",
+        "type": "button",
+        "tooltip": {
+          "title": "Octave Up",
+          "description": "Shifts the keyboard/pads up one octave.",
+          "tip": "Shift + Octave Up: Redo last action."
+        },
+        "linkedSection": { "sectionId": "overview", "headingId": "octave-controls" },
+        "ariaLabel": "Octave up button"
+      },
+      "synth-1-button": {
+        "id": "synth-1-button",
+        "label": "Synth 1",
+        "type": "button",
+        "tooltip": {
+          "title": "Synth Track 1",
+          "description": "Select Synth Track 1 for editing and playback.",
+          "tip": "Double-tap to enter patch browser."
+        },
+        "linkedSection": { "sectionId": "synth-tracks" },
+        "ariaLabel": "Synth 1 track button"
+      },
+      "synth-2-button": {
+        "id": "synth-2-button",
+        "label": "Synth 2",
+        "type": "button",
+        "tooltip": {
+          "title": "Synth Track 2",
+          "description": "Select Synth Track 2 for editing and playback."
+        },
+        "linkedSection": { "sectionId": "synth-tracks" },
+        "ariaLabel": "Synth 2 track button"
+      },
+      "drum-1-button": {
+        "id": "drum-1-button",
+        "label": "Drum 1",
+        "type": "button",
+        "tooltip": {
+          "title": "Sample Track 1 (Drums)",
+          "description": "Select Sample Track 1 for editing. Typically used for kick drums."
+        },
+        "linkedSection": { "sectionId": "sample-tracks" },
+        "ariaLabel": "Drum 1 sample track button"
+      },
+      "drum-2-button": {
+        "id": "drum-2-button",
+        "label": "Drum 2",
+        "type": "button",
+        "tooltip": {
+          "title": "Sample Track 2 (Drums)",
+          "description": "Select Sample Track 2 for editing. Typically used for snares."
+        },
+        "linkedSection": { "sectionId": "sample-tracks" },
+        "ariaLabel": "Drum 2 sample track button"
+      },
+      "drum-3-button": {
+        "id": "drum-3-button",
+        "label": "Drum 3",
+        "type": "button",
+        "tooltip": {
+          "title": "Sample Track 3 (Drums)",
+          "description": "Select Sample Track 3 for editing. Typically used for hi-hats."
+        },
+        "linkedSection": { "sectionId": "sample-tracks" },
+        "ariaLabel": "Drum 3 sample track button"
+      },
+      "drum-4-button": {
+        "id": "drum-4-button",
+        "label": "Drum 4",
+        "type": "button",
+        "tooltip": {
+          "title": "Sample Track 4 (Drums)",
+          "description": "Select Sample Track 4 for editing. Typically used for percussion."
+        },
+        "linkedSection": { "sectionId": "sample-tracks" },
+        "ariaLabel": "Drum 4 sample track button"
+      },
+      "midi-1-button": {
+        "id": "midi-1-button",
+        "label": "MIDI 1",
+        "type": "button",
+        "tooltip": {
+          "title": "MIDI Track 1",
+          "description": "Select MIDI Track 1 for sequencing external gear. Sends MIDI notes and CC data.",
+          "tip": "Configure MIDI channel in the Setup menu."
+        },
+        "linkedSection": { "sectionId": "midi" },
+        "ariaLabel": "MIDI 1 track button"
+      },
+      "midi-2-button": {
+        "id": "midi-2-button",
+        "label": "MIDI 2",
+        "type": "button",
+        "tooltip": {
+          "title": "MIDI Track 2",
+          "description": "Select MIDI Track 2 for sequencing external gear. Sends MIDI notes and CC data.",
+          "tip": "Configure MIDI channel in the Setup menu."
+        },
+        "linkedSection": { "sectionId": "midi" },
+        "ariaLabel": "MIDI 2 track button"
+      },
+      "scales-button": {
+        "id": "scales-button",
+        "label": "Scales",
+        "type": "button",
+        "tooltip": {
+          "title": "Scales",
+          "description": "Enable scale mode to constrain notes to a specific musical scale.",
+          "tip": "Choose from major, minor, and many other scales."
+        },
+        "linkedSection": { "sectionId": "synth-tracks" },
+        "ariaLabel": "Scales button"
+      },
+      "steps-button": {
+        "id": "steps-button",
+        "label": "Steps 1-16 / 17-32",
+        "type": "button",
+        "tooltip": {
+          "title": "Step Page",
+          "description": "Toggle between steps 1-16 and 17-32 in the sequencer view."
+        },
+        "linkedSection": { "sectionId": "sequencer" },
+        "ariaLabel": "Steps 1-16/17-32 button"
+      },
+      "save-button": {
+        "id": "save-button",
+        "label": "Save",
+        "type": "button",
+        "tooltip": {
+          "title": "Save",
+          "description": "Save the current project. Shift+Save opens the Setup menu.",
+          "tip": "Projects auto-save, but manual save ensures your work is preserved."
+        },
+        "linkedSection": { "sectionId": "projects" },
+        "ariaLabel": "Save button"
+      },
+      "preset-button": {
+        "id": "preset-button",
+        "label": "Preset",
+        "type": "button",
+        "tooltip": {
+          "title": "Preset Browser",
+          "description": "Browse and select presets/patches for the currently selected track."
+        },
+        "linkedSection": { "sectionId": "synth-tracks", "headingId": "patches" },
+        "ariaLabel": "Preset button"
+      },
+      "note-button": {
+        "id": "note-button",
+        "label": "Note",
+        "type": "button",
+        "tooltip": {
+          "title": "Note View",
+          "description": "Enter Note view to play and record notes on the pad grid.",
+          "tip": "Shift+Note enters Expand mode for detailed note editing."
+        },
+        "linkedSection": { "sectionId": "sequencer" },
+        "ariaLabel": "Note button"
+      },
+      "pattern-settings-button": {
+        "id": "pattern-settings-button",
+        "label": "Pattern Settings",
+        "type": "button",
+        "tooltip": {
+          "title": "Pattern Settings",
+          "description": "Access pattern-level settings like length and playback direction.",
+          "tip": "Shift+Pattern Settings opens Probability editing."
+        },
+        "linkedSection": { "sectionId": "patterns" },
+        "ariaLabel": "Pattern Settings button"
+      },
+      "fx-button": {
+        "id": "fx-button",
+        "label": "FX",
+        "type": "button",
+        "tooltip": {
+          "title": "Effects",
+          "description": "Access the effects section for delay and reverb controls.",
+          "tip": "Circuit Tracks has delay on the left side and reverb on the right."
+        },
+        "linkedSection": { "sectionId": "effects" },
+        "ariaLabel": "Effects button"
+      },
+      "mixer-button": {
+        "id": "mixer-button",
+        "label": "Mixer",
+        "type": "button",
+        "tooltip": {
+          "title": "Mixer",
+          "description": "View and adjust volume levels for all tracks.",
+          "tip": "Use the pads to see and adjust track levels."
+        },
+        "linkedSection": { "sectionId": "mixer" },
+        "ariaLabel": "Mixer button"
+      },
+      "tempo-button": {
+        "id": "tempo-button",
+        "label": "Tempo",
+        "type": "button",
+        "tooltip": {
+          "title": "Tempo",
+          "description": "Tap to set tempo or hold to view/edit the current BPM.",
+          "tip": "Hold and turn Macro 1 to fine-tune tempo."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "tempo" },
+        "ariaLabel": "Tempo button"
+      },
+      "play-button": {
+        "id": "play-button",
+        "label": "Play",
+        "type": "button",
+        "tooltip": {
+          "title": "Play",
+          "description": "Start playback of the current pattern."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "transport" },
+        "ariaLabel": "Play button"
+      },
+      "record-button": {
+        "id": "record-button",
+        "label": "Record",
+        "type": "button",
+        "tooltip": {
+          "title": "Record",
+          "description": "Enable recording mode. Notes played will be recorded to the sequencer.",
+          "tip": "Recording is quantized to the current step resolution."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "recording" },
+        "ariaLabel": "Record button"
+      },
+      "pattern-button": {
+        "id": "pattern-button",
+        "label": "Pattern",
+        "type": "button",
+        "tooltip": {
+          "title": "Pattern",
+          "description": "Access the pattern view to select and manage patterns.",
+          "tip": "Hold to chain multiple patterns for longer sequences."
+        },
+        "linkedSection": { "sectionId": "patterns" },
+        "ariaLabel": "Pattern button"
+      },
+      "velocity-button": {
+        "id": "velocity-button",
+        "label": "Velocity",
+        "type": "button",
+        "tooltip": {
+          "title": "Velocity",
+          "description": "View and edit velocity values for sequenced notes."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "velocity" },
+        "ariaLabel": "Velocity button"
+      },
+      "length-button": {
+        "id": "length-button",
+        "label": "Length",
+        "type": "button",
+        "tooltip": {
+          "title": "Gate Length",
+          "description": "View and edit gate length/duration for sequenced notes."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "gate-length" },
+        "ariaLabel": "Gate length button"
+      },
+      "projects-button": {
+        "id": "projects-button",
+        "label": "Projects",
+        "type": "button",
+        "tooltip": {
+          "title": "Projects",
+          "description": "Access project management - save, load, and organize your work.",
+          "tip": "Projects contain 8 sessions, each with 8 patterns."
+        },
+        "linkedSection": { "sectionId": "projects" },
+        "ariaLabel": "Projects button"
+      },
+      "clear-button": {
+        "id": "clear-button",
+        "label": "Clear",
+        "type": "button",
+        "tooltip": {
+          "title": "Clear",
+          "description": "Hold and press a step to clear it, or hold and press a track button to clear the track.",
+          "tip": "Shift + Clear: Clear the entire pattern."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "clearing" },
+        "ariaLabel": "Clear button"
+      },
+      "duplicate-button": {
+        "id": "duplicate-button",
+        "label": "Duplicate",
+        "type": "button",
+        "tooltip": {
+          "title": "Duplicate",
+          "description": "Copy and paste patterns, steps, or tracks.",
+          "tip": "Great for creating variations."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "duplicate" },
+        "ariaLabel": "Duplicate button"
+      },
+      "grid-pads": {
+        "id": "grid-pads",
+        "label": "Grid/Pads",
+        "type": "pad",
+        "tooltip": {
+          "title": "32-Pad Grid",
+          "description": "Multi-function pad grid for notes, steps, samples, and more.",
+          "tip": "The function changes based on which mode/view is active."
+        },
+        "linkedSection": { "sectionId": "overview", "headingId": "grid" },
+        "ariaLabel": "32-pad grid"
+      },
+      "master-filter": {
+        "id": "master-filter",
+        "label": "Master Filter",
+        "type": "knob",
+        "tooltip": {
+          "title": "Master Filter",
+          "description": "Large DJ-style filter that sweeps across the entire mix. Turn left for low-pass (bass only), right for high-pass (treble only).",
+          "tip": "Center position (12 o'clock) is neutral/bypass. Great for live performance transitions and drops."
+        },
+        "linkedSection": { "sectionId": "mixer", "headingId": "master-filter" },
+        "ariaLabel": "Master filter knob"
+      },
+      "power-button": {
+        "id": "power-button",
+        "label": "Power",
+        "type": "button",
+        "tooltip": {
+          "title": "Power Button",
+          "description": "Press to turn the unit on or off. Hold for 3 seconds to force power off."
+        },
+        "linkedSection": { "sectionId": "connections" },
+        "ariaLabel": "Power button"
+      },
+      "usb-port": {
+        "id": "usb-port",
+        "label": "USB-C",
+        "type": "port",
+        "tooltip": {
+          "title": "USB-C Port",
+          "description": "Connect to computer for MIDI over USB, firmware updates, and Novation Components software.",
+          "tip": "Also provides power when connected."
+        },
+        "linkedSection": { "sectionId": "connections" },
+        "ariaLabel": "USB-C port"
+      },
+      "sd-card-slot": {
+        "id": "sd-card-slot",
+        "label": "Micro SD",
+        "type": "port",
+        "tooltip": {
+          "title": "Micro SD Card Slot",
+          "description": "Insert a Micro SD card to expand sample storage and backup projects."
+        },
+        "linkedSection": { "sectionId": "connections" },
+        "ariaLabel": "Micro SD card slot"
+      },
+      "midi-thru": {
+        "id": "midi-thru",
+        "label": "MIDI Thru",
+        "type": "port",
+        "tooltip": {
+          "title": "MIDI Thru (5-pin DIN)",
+          "description": "Passes through MIDI data received at MIDI In to chain multiple devices."
+        },
+        "linkedSection": { "sectionId": "midi" },
+        "ariaLabel": "MIDI Thru port"
+      },
+      "midi-out": {
+        "id": "midi-out",
+        "label": "MIDI Out",
+        "type": "port",
+        "tooltip": {
+          "title": "MIDI Out (5-pin DIN)",
+          "description": "Send MIDI to external synthesizers, drum machines, or other gear."
+        },
+        "linkedSection": { "sectionId": "midi" },
+        "ariaLabel": "MIDI Out port"
+      },
+      "midi-in": {
+        "id": "midi-in",
+        "label": "MIDI In",
+        "type": "port",
+        "tooltip": {
+          "title": "MIDI In (5-pin DIN)",
+          "description": "Receive MIDI from external controllers, sequencers, or a DAW."
+        },
+        "linkedSection": { "sectionId": "midi" },
+        "ariaLabel": "MIDI In port"
+      },
+      "sync-port": {
+        "id": "sync-port",
+        "label": "Sync",
+        "type": "port",
+        "tooltip": {
+          "title": "Sync Port",
+          "description": "Connect to modular gear or other devices using analog clock sync."
+        },
+        "linkedSection": { "sectionId": "connections" },
+        "ariaLabel": "Sync port"
+      },
+      "output-right": {
+        "id": "output-right",
+        "label": "Output R",
+        "type": "port",
+        "tooltip": {
+          "title": "Output Right (1/4\" / 6.35mm)",
+          "description": "Right channel of the stereo main output. Connect to mixer, audio interface, or powered speaker."
+        },
+        "linkedSection": { "sectionId": "audio-io" },
+        "ariaLabel": "Output Right port"
+      },
+      "output-left": {
+        "id": "output-left",
+        "label": "Output L/Mono",
+        "type": "port",
+        "tooltip": {
+          "title": "Output Left/Mono (1/4\" / 6.35mm)",
+          "description": "Left channel output. Use alone for mono output, or with Output R for stereo.",
+          "tip": "When only this output is connected, the signal is summed to mono."
+        },
+        "linkedSection": { "sectionId": "audio-io" },
+        "ariaLabel": "Output Left/Mono port"
+      },
+      "headphone-output": {
+        "id": "headphone-output",
+        "label": "Headphones",
+        "type": "port",
+        "tooltip": {
+          "title": "Headphone Output (3.5mm)",
+          "description": "Connect headphones for monitoring. Volume controlled by Master Volume knob."
+        },
+        "linkedSection": { "sectionId": "audio-io" },
+        "ariaLabel": "Headphone output port"
+      },
+      "input-2": {
+        "id": "input-2",
+        "label": "Input 2",
+        "type": "port",
+        "tooltip": {
+          "title": "Input 2 (1/4\" / 6.35mm)",
+          "description": "Audio input for external sources. Route through the mixer and effects."
+        },
+        "linkedSection": { "sectionId": "audio-io" },
+        "ariaLabel": "Input 2 port"
+      },
+      "input-1": {
+        "id": "input-1",
+        "label": "Input 1",
+        "type": "port",
+        "tooltip": {
+          "title": "Input 1 (1/4\" / 6.35mm)",
+          "description": "Audio input for external sources. Route through the mixer and effects."
+        },
+        "linkedSection": { "sectionId": "audio-io" },
+        "ariaLabel": "Input 1 port"
+      }
+    }
+  },
+  "sections": [
+    { "id": "overview", "title": "Overview", "order": 1, "icon": "info" },
+    { "id": "synth-tracks", "title": "Synth Tracks", "order": 2, "icon": "wave" },
+    { "id": "sample-tracks", "title": "Sample Tracks", "order": 3, "icon": "drum" },
+    { "id": "sequencer", "title": "Sequencer", "order": 4, "icon": "grid" },
+    { "id": "patterns", "title": "Patterns & Sessions", "order": 5, "icon": "layers" },
+    { "id": "effects", "title": "Effects", "order": 6, "icon": "sparkles" },
+    { "id": "mixer", "title": "Mixer", "order": 7, "icon": "sliders" },
+    { "id": "projects", "title": "Projects", "order": 8, "icon": "folder" },
+    { "id": "midi", "title": "MIDI", "order": 9, "icon": "plug" },
+    { "id": "audio-io", "title": "Audio I/O", "order": 10, "icon": "speaker" },
+    { "id": "connections", "title": "Connections", "order": 11, "icon": "cable" }
+  ],
+  "workflows": [
+    { "id": "first-beat", "title": "Make Your First Beat", "difficulty": "beginner", "estimatedSteps": 8 },
+    { "id": "record-melody", "title": "Record a Synth Melody", "difficulty": "beginner", "estimatedSteps": 6 },
+    { "id": "use-effects", "title": "Add Delay and Reverb", "difficulty": "beginner", "estimatedSteps": 5 },
+    { "id": "pattern-chaining", "title": "Chain Patterns for a Song", "difficulty": "intermediate", "estimatedSteps": 7 },
+    { "id": "external-midi", "title": "Connect External Synths via MIDI", "difficulty": "intermediate", "estimatedSteps": 6 }
+  ],
+  "paths": {
+    "thumbnail": "thumbnail.webp",
+    "diagram": "diagram.svg",
+    "quickReference": "quick-reference.json",
+    "glossary": "glossary.json"
+  }
+}

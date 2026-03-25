@@ -1,0 +1,127 @@
+{
+  "id": "sound-edit",
+  "title": "Sound Editing",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Sound Editing",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "The PO-33 provides several parameters for shaping your samples beyond basic trimming. You can adjust pitch, volume, filter settings, and playback behavior for each sound slot independently."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Pitch Adjustment",
+      "id": "pitch"
+    },
+    {
+      "type": "paragraph",
+      "text": "Each sound can be tuned up or down from its original pitch. This is especially useful for matching samples to different keys or creating variations."
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Hold the sound's pad (1-16)",
+        "Turn the sound knob while holding",
+        "Clockwise = higher pitch, Counter-clockwise = lower pitch",
+        "Release to set the new default pitch"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Volume Level",
+      "id": "volume"
+    },
+    {
+      "type": "paragraph",
+      "text": "Individual sound volumes can be adjusted to balance your mix. Some samples may be recorded louder or quieter than others."
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Hold FX button",
+        "While holding FX, hold the sound's pad",
+        "Turn sound knob to adjust volume",
+        "Release to confirm the new level"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Filter",
+      "id": "filter"
+    },
+    {
+      "type": "paragraph",
+      "text": "A low-pass filter is available for each sound, useful for removing high frequencies and creating darker tones."
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Hold the sound's pad",
+        "Turn the BPM knob while holding",
+        "Clockwise = brighter (filter open), Counter-clockwise = darker (filter closed)",
+        "Release to set the filter cutoff"
+      ]
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Filter Sweeps",
+      "text": "For real-time filter sweeps during playback, use the filter effect (FX + pad) instead of the static per-sound filter setting."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Play Modes",
+      "id": "play-modes"
+    },
+    {
+      "type": "paragraph",
+      "text": "Samples can be set to different playback behaviors depending on how you want them to respond when triggered."
+    },
+    {
+      "type": "table",
+      "headers": ["Mode", "Behavior"],
+      "rows": [
+        ["Normal", "Sample plays once when triggered"],
+        ["Loop", "Sample loops continuously while held"],
+        ["Slice", "Sample is auto-sliced across multiple pads"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Slice Mode",
+      "id": "slice-mode"
+    },
+    {
+      "type": "paragraph",
+      "text": "Slice mode automatically divides a sample into equal parts and spreads them across the drum pads (9-16). This is useful for chopping breakbeats and drum loops."
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Record or select a sample in slot 1-8 (melodic)",
+        "Hold write + hold the sample's pad",
+        "Press pad 9 to enable slice mode",
+        "The sample is now divided across pads 9-16"
+      ]
+    },
+    {
+      "type": "callout",
+      "calloutType": "note",
+      "title": "Slice Behavior",
+      "text": "Slices share the parent sample's memory. Deleting the parent sample also removes all slices."
+    }
+  ]
+}

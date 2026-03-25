@@ -1,0 +1,158 @@
+{
+  "id": "midi-sync",
+  "title": "MIDI & Sync",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "MIDI & Sync",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "The EP-133 offers comprehensive connectivity options including MIDI, analog sync, and USB for integrating with other gear. OS 2.0 added MIDI Thru and support for up to 16 MIDI devices."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "MIDI",
+      "id": "midi"
+    },
+    {
+      "type": "paragraph",
+      "text": "The MIDI port uses a 3.5mm TRS connector (Type-A, MMA-compliant). Use a TRS-to-DIN adapter cable for standard 5-pin MIDI connections."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["midi-port"],
+      "caption": "MIDI port (3.5mm TRS)"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "MIDI Output",
+      "id": "midi-out"
+    },
+    {
+      "type": "paragraph",
+      "text": "The EP-133 sends MIDI notes when you play pads, allowing you to trigger external synthesizers and drum machines. MIDI clock is also sent to sync external gear to the EP-133's tempo."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "MIDI Input",
+      "id": "midi-in"
+    },
+    {
+      "type": "paragraph",
+      "text": "Receive MIDI notes to trigger EP-133 sounds from external controllers or sequencers. The EP-133 can also receive MIDI clock to sync to an external tempo source."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "MIDI Thru",
+      "id": "midi-thru"
+    },
+    {
+      "type": "paragraph",
+      "text": "OS 2.0 added MIDI Thru functionality. Incoming MIDI messages are passed through to the output, allowing you to chain multiple MIDI devices through the EP-133."
+    },
+    {
+      "type": "callout",
+      "calloutType": "info",
+      "text": "MIDI Thru is configured in the System menu (SHIFT + ERASE). Enable or disable MIDI Thru as needed for your setup."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sync",
+      "id": "sync"
+    },
+    {
+      "type": "paragraph",
+      "text": "The analog SYNC port connects to Pocket Operators and other Teenage Engineering devices. It also supports Eurorack and vintage sync formats."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["sync-port"],
+      "caption": "SYNC port for analog clock"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Sync Modes",
+      "id": "sync-modes"
+    },
+    {
+      "type": "table",
+      "headers": ["Mode", "Description", "Use Case"],
+      "rows": [
+        ["PO-8", "8 pulses per beat (8th notes)", "Pocket Operators (single)"],
+        ["PO-16", "16 pulses per beat (16th notes)", "Pocket Operators (with splitter)"],
+        ["SYNC24", "24 pulses per quarter note", "Vintage Roland/Korg gear"],
+        ["Eurorack", "16 pulses with start/reset", "Modular synthesizers"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Connecting Pocket Operators",
+      "id": "pocket-operators"
+    },
+    {
+      "type": "paragraph",
+      "text": "Connect a Pocket Operator to the SYNC port using a standard 3.5mm stereo cable. The left channel carries audio, the right channel carries sync. Use PO-8 or PO-16 mode depending on your setup."
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Multiple Pocket Operators",
+      "text": "Use a splitter cable to connect two Pocket Operators simultaneously - select PO-16 mode for this configuration."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "USB MIDI",
+      "id": "usb-midi"
+    },
+    {
+      "type": "paragraph",
+      "text": "The USB-C port provides class-compliant MIDI over USB. Connect to a computer, iPad, or other USB host to send/receive MIDI without additional interfaces."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["usb-port"],
+      "caption": "USB-C port for USB MIDI and power"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "MIDI Channel Configuration",
+      "id": "midi-channels"
+    },
+    {
+      "type": "paragraph",
+      "text": "Configure MIDI channels in the System menu (SHIFT + ERASE). You can set:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "MIDI input channel (1-16 or Omni)",
+        "MIDI output channel (1-16)",
+        "Clock source (Internal, MIDI, or USB)",
+        "MIDI Thru enable/disable"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Syncing with a DAW",
+      "id": "daw-sync"
+    },
+    {
+      "type": "paragraph",
+      "text": "To sync the EP-133 with a DAW, connect via USB and configure your DAW to send MIDI clock. Set the EP-133's clock source to USB in the System menu. The EP-133 will follow your DAW's tempo and transport."
+    }
+  ]
+}

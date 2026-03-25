@@ -1,0 +1,140 @@
+{
+  "id": "audio-io",
+  "title": "Audio I/O",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Audio I/O",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "Circuit Tracks features two 1/4\" (6.35mm) audio inputs for external sources, stereo 1/4\" line outputs for speakers or mixers, and a 3.5mm headphone output."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Port Specifications",
+      "id": "port-specs"
+    },
+    {
+      "type": "table",
+      "headers": ["Port", "Connector", "Notes"],
+      "rows": [
+        ["Input 1", "1/4\" (6.35mm) TS mono", "Line level input"],
+        ["Input 2", "1/4\" (6.35mm) TS mono", "Line level input"],
+        ["Output L/Mono", "1/4\" (6.35mm) TS", "Sums to mono when used alone"],
+        ["Output R", "1/4\" (6.35mm) TS", "Right channel of stereo pair"],
+        ["Headphones", "3.5mm TRS stereo", "Controlled by Master Volume"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Audio Inputs",
+      "id": "input"
+    },
+    {
+      "type": "paragraph",
+      "text": "Two 1/4\" (6.35mm) mono inputs (Input 1 and Input 2) accept line-level audio from synthesizers, drum machines, phones, tablets, or other instruments."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["input-1", "input-2"],
+      "caption": "Audio input jacks (1/4\" / 6.35mm)"
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Use Cases",
+      "text": "Connect external synths to process through Circuit Tracks' effects, a phone for backing tracks, or another groovebox for jamming together."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Processing External Audio",
+      "id": "processing"
+    },
+    {
+      "type": "paragraph",
+      "text": "External audio routed through the inputs can be:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Mixed with Circuit Tracks' internal sounds",
+        "Processed through the delay and reverb effects",
+        "Adjusted in volume via the mixer",
+        "Affected by the Master Filter"
+      ]
+    },
+    {
+      "type": "callout",
+      "calloutType": "note",
+      "text": "External audio cannot be recorded or sampled directly - it's for live mixing and effects processing only."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Line Outputs",
+      "id": "line-outputs"
+    },
+    {
+      "type": "paragraph",
+      "text": "The main stereo outputs use separate 1/4\" (6.35mm) jacks for left and right channels. Connect to mixers, audio interfaces, or powered speakers."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["output-left", "output-right"],
+      "caption": "Line output jacks (1/4\" / 6.35mm)"
+    },
+    {
+      "type": "callout",
+      "calloutType": "info",
+      "title": "Mono Output",
+      "text": "When only the L/Mono output is connected, the stereo signal is automatically summed to mono. Use both outputs for stereo."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Headphone Output",
+      "id": "headphones"
+    },
+    {
+      "type": "paragraph",
+      "text": "The 3.5mm stereo headphone output provides a full mix of all internal tracks plus any external audio routed through the inputs. Volume is controlled by the Master Volume knob."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["headphone-output"],
+      "caption": "Headphone output (3.5mm stereo)"
+    },
+    {
+      "type": "callout",
+      "calloutType": "note",
+      "text": "The line outputs and headphone output share the same stereo mix - there's no separate cue/monitor bus."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Audio Levels",
+      "id": "levels"
+    },
+    {
+      "type": "paragraph",
+      "text": "For best audio quality:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Keep individual track levels moderate to avoid digital clipping",
+        "Use the Master Volume knob for final output level",
+        "Watch the visual level meter in the mixer view",
+        "The Master Filter at center position is bypassed (no effect)"
+      ]
+    }
+  ]
+}

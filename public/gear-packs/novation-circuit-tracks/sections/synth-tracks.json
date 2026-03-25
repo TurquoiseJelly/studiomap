@@ -1,0 +1,124 @@
+{
+  "id": "synth-tracks",
+  "title": "Synth Tracks",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Synth Tracks",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "Circuit Tracks features two independent polyphonic synthesizer tracks. Each synth track can play up to 6 notes simultaneously and comes loaded with 128 factory patches."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Selecting a Synth Track",
+      "id": "selecting"
+    },
+    {
+      "type": "paragraph",
+      "text": "Press the Synth 1 or Synth 2 button to select that track. The button will light up to indicate it's selected. Once selected, the pads become a chromatic keyboard and the macro knobs control that synth's parameters."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["synth-1-button", "synth-2-button"],
+      "caption": "Synth track selection buttons"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browsing Patches",
+      "id": "patches"
+    },
+    {
+      "type": "paragraph",
+      "text": "Double-tap a synth track button to enter the patch browser. Use the pads to preview patches, or turn Macro 1 to scroll through the list. Press the synth button again to confirm your selection."
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "text": "Patches are organized into banks. The RGB pad colors indicate the bank and patch location as you browse."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Macro Controls",
+      "id": "macros"
+    },
+    {
+      "type": "paragraph",
+      "text": "The eight macro knobs provide hands-on control of the most important synth parameters. Each patch has unique macro assignments designed by the sound designer."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["macro-knob-1", "macro-knob-2", "macro-knob-3", "macro-knob-4", "macro-knob-5", "macro-knob-6", "macro-knob-7", "macro-knob-8"],
+      "caption": "Eight macro knobs for sound design"
+    },
+    {
+      "type": "table",
+      "headers": ["Knob", "Common Assignments"],
+      "rows": [
+        ["Macro 1-2", "Oscillator parameters (waveform, modulation)"],
+        ["Macro 3-4", "Filter parameters (cutoff, envelope)"],
+        ["Macro 5-6", "Modulation (LFO rate, depth)"],
+        ["Macro 7-8", "Envelope and effects"]
+      ]
+    },
+    {
+      "type": "callout",
+      "calloutType": "info",
+      "text": "Hold Shift while turning a macro knob for fine adjustment."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Filter Controls",
+      "id": "filter"
+    },
+    {
+      "type": "paragraph",
+      "text": "Filter parameters are controlled via the macro knobs. Macro 4 (FILTER) controls cutoff frequency, and Macro 6 (RES) controls resonance in most patches. These are labeled on the hardware panel."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["macro-knob-4", "macro-knob-6"],
+      "caption": "Filter and Resonance macro knobs"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Filter (Macro 4): Controls the cutoff frequency. Turn clockwise to brighten the sound.",
+        "Resonance (Macro 6): Adds emphasis at the cutoff frequency. High values create a whistling effect."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Playing Notes",
+      "id": "playing"
+    },
+    {
+      "type": "paragraph",
+      "text": "With a synth track selected, the pads become a chromatic keyboard. The layout is isomorphic - each row is a fourth above the previous."
+    },
+    {
+      "type": "callout",
+      "calloutType": "note",
+      "text": "The pads are velocity-sensitive. Hit harder for louder, brighter notes."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Custom Patches with Components",
+      "id": "components"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use Novation's free Components software to dive deeper into synthesis. You can edit all synthesizer parameters, create custom patches, and manage your patch library."
+    }
+  ]
+}

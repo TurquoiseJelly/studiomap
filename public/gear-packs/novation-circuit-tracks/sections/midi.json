@@ -1,0 +1,156 @@
+{
+  "id": "midi",
+  "title": "MIDI",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "MIDI",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "Circuit Tracks can send and receive MIDI, making it a powerful hub for your hardware setup. Connect synths, drum machines, and DAWs using its full-size MIDI ports or USB."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "MIDI Connections",
+      "id": "connections"
+    },
+    {
+      "type": "paragraph",
+      "text": "Circuit Tracks features full-size 5-pin DIN MIDI ports (In, Out, and Thru) plus USB-C for MIDI connectivity. No adapters required."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["midi-in", "midi-out", "midi-thru", "usb-port"],
+      "caption": "MIDI connection points"
+    },
+    {
+      "type": "callout",
+      "calloutType": "info",
+      "title": "Full MIDI Implementation",
+      "text": "Circuit Tracks has dedicated 5-pin DIN MIDI In, Out, and Thru ports. The Thru port passes incoming MIDI to other devices for easy daisy-chaining without needing a separate MIDI thru box."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "MIDI Tracks",
+      "id": "midi-tracks"
+    },
+    {
+      "type": "paragraph",
+      "text": "In addition to the synth and sample tracks, Circuit Tracks has two dedicated MIDI tracks designed specifically for sequencing external hardware. These tracks don't produce internal sound - they only output MIDI data."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["midi-1-button", "midi-2-button"],
+      "caption": "MIDI track selection buttons"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Full 32-step sequencing with parameter locks",
+        "Velocity and gate length per step",
+        "Configurable MIDI channel per track (via Components)",
+        "CC automation using the macro knobs",
+        "Polyphonic note entry (up to 6 notes per step)"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "MIDI Channels",
+      "id": "channels"
+    },
+    {
+      "type": "paragraph",
+      "text": "Each track transmits and receives on its own MIDI channel:"
+    },
+    {
+      "type": "table",
+      "headers": ["Track", "Default MIDI Channel"],
+      "rows": [
+        ["Synth 1", "Channel 1"],
+        ["Synth 2", "Channel 2"],
+        ["MIDI Track 1", "Channel 3 (configurable)"],
+        ["MIDI Track 2", "Channel 4 (configurable)"],
+        ["Drum 1-4", "Channel 10"]
+      ]
+    },
+    {
+      "type": "callout",
+      "calloutType": "note",
+      "text": "All drum tracks share channel 10 (standard for drums) but use different note numbers. MIDI track channels can be configured in Novation Components."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Controlling External Synths",
+      "id": "external"
+    },
+    {
+      "type": "paragraph",
+      "text": "To control an external synth with Circuit Tracks:"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Connect MIDI Out to your synth's MIDI In using a standard 5-pin DIN cable",
+        "Set your synth to receive on the matching channel",
+        "Select a synth track or MIDI track and play",
+        "For MIDI tracks only (no internal sound): Use MIDI Track 1 or 2",
+        "To mute internal sound: Set the internal track's mixer level to zero"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "MIDI Clock",
+      "id": "clock"
+    },
+    {
+      "type": "paragraph",
+      "text": "Circuit Tracks sends MIDI clock when playing, keeping external gear in sync. It can also receive clock from an external source to act as a follower in your setup."
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "text": "Use Novation Components to configure clock settings - choose whether to send, receive, or ignore MIDI clock. You can also configure the clock output to only send on play or continuously."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "USB MIDI",
+      "id": "usb-midi"
+    },
+    {
+      "type": "paragraph",
+      "text": "When connected to a computer via USB-C, Circuit Tracks appears as a class-compliant MIDI device in your DAW. No drivers required. This enables:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Recording MIDI into your DAW",
+        "Playing soft synths from Circuit Tracks",
+        "Syncing tempo with your DAW",
+        "Using Circuit Tracks as a MIDI controller",
+        "Accessing Novation Components for deep editing"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "MIDI CC Control",
+      "id": "cc"
+    },
+    {
+      "type": "paragraph",
+      "text": "Circuit Tracks sends and receives MIDI CC for various parameters. The eight macro knobs send CC messages that can be mapped in your DAW or to parameters on external synths. CC values are also recorded when step-recording with parameter locks."
+    }
+  ]
+}

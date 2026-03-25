@@ -1,0 +1,213 @@
+{
+  "categories": ["Transport", "Sampling", "Sound Edit", "Sequencer", "Patterns", "Effects", "Sync"],
+  "entries": [
+    {
+      "id": "play",
+      "category": "Transport",
+      "action": "Play / Stop",
+      "shortcut": "play",
+      "description": "Start or stop pattern playback",
+      "hotspotIds": ["play-button"]
+    },
+    {
+      "id": "record-pattern",
+      "category": "Transport",
+      "action": "Record to Pattern",
+      "shortcut": "play then record",
+      "description": "Record pad hits to sequencer in real-time",
+      "hotspotIds": ["play-button", "record-button"]
+    },
+    {
+      "id": "enter-sample-mode",
+      "category": "Sampling",
+      "action": "Enter Sample Mode",
+      "shortcut": "Hold record",
+      "description": "View input levels and prepare to sample",
+      "hotspotIds": ["record-button"]
+    },
+    {
+      "id": "record-sample",
+      "category": "Sampling",
+      "action": "Record Sample",
+      "shortcut": "Hold record + press pad",
+      "description": "Start/stop recording to selected sound slot",
+      "hotspotIds": ["record-button", "pad-1"]
+    },
+    {
+      "id": "trim-sample",
+      "category": "Sampling",
+      "action": "Trim Sample",
+      "shortcut": "Hold record + hold sound + turn A (start) / turn B (end)",
+      "description": "Adjust sample start and end points",
+      "hotspotIds": ["record-button", "sound-button", "knob-a", "knob-b"]
+    },
+    {
+      "id": "select-sound",
+      "category": "Sound Edit",
+      "action": "Select Sound",
+      "shortcut": "Hold sound + turn Knob A",
+      "description": "Choose sound slot 1-16",
+      "hotspotIds": ["sound-button", "knob-a"]
+    },
+    {
+      "id": "adjust-pitch",
+      "category": "Sound Edit",
+      "action": "Adjust Pitch",
+      "shortcut": "Hold sound + hold pad + turn Knob A",
+      "description": "Change sample pitch up or down",
+      "hotspotIds": ["sound-button", "pad-1", "knob-a"]
+    },
+    {
+      "id": "adjust-volume",
+      "category": "Sound Edit",
+      "action": "Adjust Volume",
+      "shortcut": "Hold sound + hold pad + turn Knob B",
+      "description": "Change individual sound volume",
+      "hotspotIds": ["sound-button", "pad-1", "knob-b"]
+    },
+    {
+      "id": "adjust-filter",
+      "category": "Sound Edit",
+      "action": "Adjust Filter",
+      "shortcut": "Hold sound + turn Knob B",
+      "description": "Low-pass filter cutoff for selected sound",
+      "hotspotIds": ["sound-button", "knob-b"]
+    },
+    {
+      "id": "play-chromatic",
+      "category": "Sound Edit",
+      "action": "Play Chromatically",
+      "shortcut": "Hold melodic pad (1-8) + press other pads",
+      "description": "Change pitch of melodic sounds while playing",
+      "hotspotIds": ["pad-1", "pad-9"]
+    },
+    {
+      "id": "write-mode",
+      "category": "Sequencer",
+      "action": "Enter Write Mode",
+      "shortcut": "write",
+      "description": "Enable step-by-step pattern editing",
+      "hotspotIds": ["write-button"]
+    },
+    {
+      "id": "navigate-steps",
+      "category": "Sequencer",
+      "action": "Navigate Steps",
+      "shortcut": "write mode + turn Knob A",
+      "description": "Move between steps 1-16 in write mode",
+      "hotspotIds": ["write-button", "knob-a"]
+    },
+    {
+      "id": "add-note",
+      "category": "Sequencer",
+      "action": "Add Note to Step",
+      "shortcut": "write mode + press pad",
+      "description": "Place a sound at current step",
+      "hotspotIds": ["write-button", "pad-1"]
+    },
+    {
+      "id": "delete-sound",
+      "category": "Sequencer",
+      "action": "Delete Sound from Pattern",
+      "shortcut": "Hold write + press pad",
+      "description": "Remove all instances of that sound from pattern",
+      "hotspotIds": ["write-button", "pad-1"]
+    },
+    {
+      "id": "clear-pattern",
+      "category": "Sequencer",
+      "action": "Clear Pattern",
+      "shortcut": "Hold write + record",
+      "description": "Delete all notes from current pattern",
+      "hotspotIds": ["write-button", "record-button"]
+    },
+    {
+      "id": "set-tempo",
+      "category": "Sequencer",
+      "action": "Set Tempo",
+      "shortcut": "Hold bpm + turn Knob A",
+      "description": "Adjust tempo 60-240 BPM",
+      "hotspotIds": ["bpm-button", "knob-a"]
+    },
+    {
+      "id": "set-meter",
+      "category": "Sequencer",
+      "action": "Set Pattern Length",
+      "shortcut": "Hold bpm + turn Knob B",
+      "description": "Set steps per pattern: 16, 12, 8, or 4",
+      "hotspotIds": ["bpm-button", "knob-b"]
+    },
+    {
+      "id": "select-pattern",
+      "category": "Patterns",
+      "action": "Select Pattern",
+      "shortcut": "Hold pattern + turn Knob A",
+      "description": "Choose pattern 1-16",
+      "hotspotIds": ["pattern-button", "knob-a"]
+    },
+    {
+      "id": "copy-pattern",
+      "category": "Patterns",
+      "action": "Copy Pattern",
+      "shortcut": "Hold pattern + turn Knob B",
+      "description": "Copy current pattern to destination",
+      "hotspotIds": ["pattern-button", "knob-b"]
+    },
+    {
+      "id": "pattern-chain",
+      "category": "Patterns",
+      "action": "Pattern Chain",
+      "shortcut": "Hold play + turn Knob A",
+      "description": "Set start/end patterns for chain playback",
+      "hotspotIds": ["play-button", "knob-a"]
+    },
+    {
+      "id": "punch-in-fx",
+      "category": "Effects",
+      "action": "Punch-In Effect",
+      "shortcut": "Hold FX + press pad (1-16)",
+      "description": "Apply real-time effect while held",
+      "hotspotIds": ["fx-button", "pad-1"]
+    },
+    {
+      "id": "loop-fx",
+      "category": "Effects",
+      "action": "Loop Effects",
+      "shortcut": "FX + pads 1-4",
+      "description": "Stutter loops of varying lengths",
+      "hotspotIds": ["fx-button", "pad-1", "pad-2", "pad-3", "pad-4"]
+    },
+    {
+      "id": "filter-fx",
+      "category": "Effects",
+      "action": "Filter Sweep FX",
+      "shortcut": "FX + pads 9-10",
+      "description": "Low-pass filter sweep effects",
+      "hotspotIds": ["fx-button", "pad-9", "pad-10"]
+    },
+    {
+      "id": "set-sync-mode",
+      "category": "Sync",
+      "action": "Set Sync Mode",
+      "shortcut": "Hold bpm + press pad 1-5",
+      "description": "Choose sync mode SY0-SY5",
+      "hotspotIds": ["bpm-button", "pad-1"]
+    },
+    {
+      "id": "sync-master",
+      "category": "Sync",
+      "action": "Set as Master",
+      "shortcut": "Hold bpm + pad 1 (SY1)",
+      "description": "Send sync clock to other devices",
+      "hotspotIds": ["bpm-button", "pad-1"]
+    },
+    {
+      "id": "sync-slave",
+      "category": "Sync",
+      "action": "Set as Slave",
+      "shortcut": "Hold bpm + pad 2 (SY2)",
+      "description": "Receive sync clock from other devices",
+      "hotspotIds": ["bpm-button", "pad-2"]
+    }
+  ]
+}

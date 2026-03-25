@@ -1,0 +1,168 @@
+{
+  "id": "sequencer",
+  "title": "Sequencer",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Sequencer",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "The EP-133 features a high-resolution sequencer capable of storing 80,000 notes per project. Record performances in real-time or enter notes step-by-step. Each group can have up to 99 patterns with variable length."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Pads",
+      "id": "pads"
+    },
+    {
+      "type": "paragraph",
+      "text": "The 12 pressure-sensitive pads (0-9, +, -) trigger sounds and record notes into the sequencer. Velocity is captured when recording, affecting how loud each note plays back."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["pad-1", "pad-2", "pad-3", "pad-4", "pad-5", "pad-6", "pad-7", "pad-8", "pad-9", "pad-0", "plus-button", "minus-button"],
+      "caption": "12 pads for triggering sounds and recording"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Transport",
+      "id": "transport"
+    },
+    {
+      "type": "paragraph",
+      "text": "Control playback with the PLAY and RECORD buttons. Press PLAY to start/stop playback. Press RECORD to arm recording mode - notes played while recording will be captured to the sequencer."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "PLAY - Start or stop playback",
+        "SHIFT + PLAY - Restart from beginning without stopping",
+        "RECORD - Toggle recording mode on/off",
+        "RECORD while playing - Live record notes to the sequence"
+      ]
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["play-button", "record-button"],
+      "caption": "PLAY and RECORD buttons control transport"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Recording",
+      "id": "recording"
+    },
+    {
+      "type": "paragraph",
+      "text": "To record a pattern, press RECORD to arm, then PLAY to start the sequencer. Play your pads in time with the beat - your performance is recorded as the pattern loops. Press RECORD again to stop recording but continue playback."
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Overdub Recording",
+      "text": "With recording enabled, each loop adds to the existing pattern rather than replacing it. This allows you to build up complex patterns layer by layer."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Tempo",
+      "id": "tempo"
+    },
+    {
+      "type": "paragraph",
+      "text": "Set the project tempo using the TEMPO/LOOP button. Tap TEMPO repeatedly to set tempo by tapping the beat, or hold TEMPO and turn the Y knob to dial in an exact BPM value."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["tempo-loop-button", "bpm-led"],
+      "caption": "TEMPO button and BPM indicator"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Quantize",
+      "id": "quantize"
+    },
+    {
+      "type": "paragraph",
+      "text": "Quantization automatically aligns recorded notes to the timing grid. Press TIMING/CORRECT and use +/- to select the quantize resolution: OFF (no quantize), 1/8, 1/16, or 1/32 notes."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["timing-correct-button"],
+      "caption": "TIMING/CORRECT button sets quantize resolution"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Metronome",
+      "id": "metronome"
+    },
+    {
+      "type": "paragraph",
+      "text": "Toggle the metronome with SHIFT + TEMPO. The metronome helps you record in time by providing an audible click on each beat. The metronome LED indicates when it's enabled."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["metronome-led"],
+      "caption": "Metronome LED indicator"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Swing",
+      "id": "swing"
+    },
+    {
+      "type": "paragraph",
+      "text": "Swing adds a shuffle feel by delaying every other note. Adjust swing amount with the Y knob while in tempo mode. Swing is applied per-project and affects all groups."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["swing-indicator"],
+      "caption": "Swing indicator shows current swing amount"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Pattern Length",
+      "id": "pattern-length"
+    },
+    {
+      "type": "paragraph",
+      "text": "Patterns can be 1 to 99 bars long. Change pattern length in the pattern settings. Each group can have different pattern lengths, allowing for polyrhythmic arrangements."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Step Sequencing",
+      "id": "step-sequencing"
+    },
+    {
+      "type": "paragraph",
+      "text": "For precise note placement, you can enter notes step-by-step. Select a step using +/- buttons, then press a pad to place a note on that step. This is useful for programming drums and precise melodies."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Erasing Notes",
+      "id": "erasing"
+    },
+    {
+      "type": "paragraph",
+      "text": "To erase notes, hold ERASE and press the pad whose notes you want to remove. While the sequencer is playing, this erases notes in real-time as they pass. Hold ERASE and press a group button to clear that entire group's pattern."
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Selective Erasing",
+      "text": "Hold ERASE during playback and press pads at specific moments to erase only those notes - great for cleaning up a busy pattern."
+    }
+  ]
+}

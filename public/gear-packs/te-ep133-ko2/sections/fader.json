@@ -1,0 +1,127 @@
+{
+  "id": "fader",
+  "title": "Fader",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Fader",
+      "id": "intro"
+    },
+    {
+      "type": "paragraph",
+      "text": "The fader is a multi-purpose control that can be assigned to different parameters per group. Fader movements can be recorded into the sequencer for automation playback."
+    },
+    {
+      "type": "diagram-reference",
+      "hotspotIds": ["fader", "fader-button"],
+      "caption": "Fader slider and FADER mode button"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fader Assignment",
+      "id": "fader-assign"
+    },
+    {
+      "type": "paragraph",
+      "text": "By default, the fader controls group LEVEL (volume). To assign a different parameter, hold the FADER button and press a number key:"
+    },
+    {
+      "type": "table",
+      "headers": ["Key", "Parameter"],
+      "rows": [
+        ["7", "LEVEL - Group volume"],
+        ["8", "PITCH - Group pitch/transpose"],
+        ["9", "TIME - Time stretch amount"],
+        ["4", "LPF - Low pass filter cutoff"],
+        ["5", "HPF - High pass filter cutoff"],
+        ["1", "ATK - Envelope attack"],
+        ["2", "REL - Envelope release"],
+        ["3", "PAN - Stereo panning"],
+        ["-", "TUNE - Fine pitch tuning"],
+        ["+", "VEL - Velocity/volume"],
+        ["0", "MOD - Modulation depth"]
+      ]
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Per-Group Assignment",
+      "text": "Each group can have a different fader assignment. This lets you control volume on one group, filter on another, and pitch on a third."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using the Fader",
+      "id": "using"
+    },
+    {
+      "type": "paragraph",
+      "text": "Simply move the fader up or down to adjust the assigned parameter for the currently selected group. The effect is heard immediately on all sounds in that group."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Recording Fader Automation",
+      "id": "recording"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fader movements can be recorded into the sequencer. Enable RECORD, start playback, and move the fader. Your movements are captured and will play back with the pattern."
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Press RECORD to arm recording",
+        "Press PLAY to start the sequencer",
+        "Move the fader while the pattern plays",
+        "Press RECORD to stop recording",
+        "The fader automation plays back with the pattern"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Erasing Fader Automation",
+      "id": "erasing"
+    },
+    {
+      "type": "paragraph",
+      "text": "To erase fader automation, hold ERASE while moving the fader during playback. This clears recorded fader movements from the current group's pattern."
+    },
+    {
+      "type": "callout",
+      "calloutType": "tip",
+      "title": "Automation Ideas",
+      "text": "Try automating: filter sweeps for build-ups, volume for ducking, pitch for risers, or time stretch for trippy effects."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Resetting the Fader",
+      "id": "resetting"
+    },
+    {
+      "type": "paragraph",
+      "text": "To reset the fader to its default position (typically center or maximum), press SHIFT + FADER. This is useful when you want to return to a neutral state."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Creative Uses",
+      "id": "creative"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Filter automation: Assign LPF and sweep for classic house/techno builds",
+        "Performance volume: Use LEVEL for live mixing between groups",
+        "Pitch effects: Assign PITCH for DJ-style pitch bends",
+        "Time warping: TIME stretch for experimental tempo changes"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,584 @@
+{
+  "id": "te-ep133-ko2",
+  "version": "1.0.0",
+  "metadata": {
+    "name": "EP-133 K.O. II",
+    "manufacturer": "Teenage Engineering",
+    "category": "sampler",
+    "description": "64 MB sampler and composer with 999 sample slots, 16 voice polyphony, song mode, and punch-in FX 2.0. Features hands-free sampling, resampling, and comprehensive MIDI connectivity.",
+    "tags": ["sampler", "drum-machine", "sequencer", "groovebox", "beat-maker"],
+    "year": 2023,
+    "website": "https://teenage.engineering/products/ep-133"
+  },
+  "diagram": {
+    "width": 900,
+    "height": 700,
+    "hotspots": {
+      "output-port": {
+        "id": "output-port",
+        "label": "OUTPUT",
+        "type": "port",
+        "tooltip": {
+          "title": "Output (3.5mm Stereo)",
+          "description": "Main stereo audio output. Connect to speakers, mixer, or audio interface using a 3.5mm TRS cable.",
+          "tip": "This is a line-level output. Use the VOLUME knob to adjust output level."
+        },
+        "linkedSection": { "sectionId": "connections", "headingId": "audio-output" },
+        "ariaLabel": "Audio output port"
+      },
+      "input-port": {
+        "id": "input-port",
+        "label": "INPUT",
+        "type": "port",
+        "tooltip": {
+          "title": "Input (3.5mm Stereo)",
+          "description": "Audio input for sampling. Supports line-level signals and microphone with auto-gain. Orange color indicates input section.",
+          "tip": "Use GAIN knob to adjust input level. The display shows input level during sampling."
+        },
+        "linkedSection": { "sectionId": "sampling", "headingId": "audio-input" },
+        "ariaLabel": "Audio input port"
+      },
+      "sync-port": {
+        "id": "sync-port",
+        "label": "SYNC",
+        "type": "port",
+        "tooltip": {
+          "title": "Sync (3.5mm)",
+          "description": "Analog sync input/output for connecting to Pocket Operators and other Teenage Engineering devices. Supports 8 PPM, 16 PPM, and 24 ppqn modes.",
+          "tip": "Configure sync mode in System menu (SHIFT + ERASE)."
+        },
+        "linkedSection": { "sectionId": "midi-sync", "headingId": "sync" },
+        "ariaLabel": "Sync port"
+      },
+      "midi-port": {
+        "id": "midi-port",
+        "label": "MIDI",
+        "type": "port",
+        "tooltip": {
+          "title": "MIDI (3.5mm TRS)",
+          "description": "MIDI input and output via 3.5mm TRS connector. MMA-compliant Type-A wiring. Use TRS-to-DIN adapters for standard MIDI connections.",
+          "tip": "OS 2.0 adds MIDI Thru functionality and support for up to 16 devices."
+        },
+        "linkedSection": { "sectionId": "midi-sync", "headingId": "midi" },
+        "ariaLabel": "MIDI port"
+      },
+      "usb-port": {
+        "id": "usb-port",
+        "label": "USB",
+        "type": "port",
+        "tooltip": {
+          "title": "USB-C",
+          "description": "USB-C port for power, MIDI over USB, firmware updates, and sample transfer via the EP-133 app.",
+          "tip": "Can be powered via USB while using batteries as backup."
+        },
+        "linkedSection": { "sectionId": "connections", "headingId": "usb" },
+        "ariaLabel": "USB-C port"
+      },
+      "power-switch": {
+        "id": "power-switch",
+        "label": "POWER",
+        "type": "switch",
+        "tooltip": {
+          "title": "Power Switch",
+          "description": "Slide to turn the EP-133 on or off. The device runs on 4x AAA batteries or USB power.",
+          "tip": "Battery life is approximately 8 hours with AAA batteries."
+        },
+        "linkedSection": { "sectionId": "connections", "headingId": "power" },
+        "ariaLabel": "Power switch"
+      },
+      "speaker": {
+        "id": "speaker",
+        "label": "Speaker",
+        "type": "port",
+        "tooltip": {
+          "title": "Built-in Speaker",
+          "description": "Mono speaker for monitoring without headphones. Disabled when headphones or line output is connected.",
+          "tip": "The speaker is useful for quick previews but use headphones or monitors for critical listening."
+        },
+        "linkedSection": { "sectionId": "connections", "headingId": "speaker" },
+        "ariaLabel": "Built-in speaker"
+      },
+      "microphone": {
+        "id": "microphone",
+        "label": "Mic",
+        "type": "port",
+        "tooltip": {
+          "title": "Built-in Microphone",
+          "description": "Internal microphone for quick sampling when no external source is connected.",
+          "tip": "Use the external input for better quality recordings."
+        },
+        "linkedSection": { "sectionId": "sampling", "headingId": "microphone" },
+        "ariaLabel": "Built-in microphone"
+      },
+      "display": {
+        "id": "display",
+        "label": "Display",
+        "type": "display",
+        "tooltip": {
+          "title": "LCD Display",
+          "description": "Shows current bar, tempo (BPM), stereo/mono indicator, sound number, FX status, quantize setting (Q), and swing amount. Display format changes based on current mode.",
+          "tip": "The BAR indicator shows your position in the pattern."
+        },
+        "linkedSection": { "sectionId": "overview", "headingId": "display" },
+        "ariaLabel": "LCD display"
+      },
+      "volume-knob": {
+        "id": "volume-knob",
+        "label": "VOLUME",
+        "type": "knob",
+        "tooltip": {
+          "title": "Volume",
+          "description": "Controls the main output volume. This is a hardware control and does not affect recorded levels or saved settings.",
+          "tip": "White knob indicates it's part of the playback/output section."
+        },
+        "linkedSection": { "sectionId": "overview", "headingId": "main-controls" },
+        "ariaLabel": "Volume knob"
+      },
+      "gain-knob": {
+        "id": "gain-knob",
+        "label": "GAIN",
+        "type": "knob",
+        "tooltip": {
+          "title": "Gain (X)",
+          "description": "Controls the input level for sampling. Also functions as the X parameter knob in certain contexts. Orange color indicates it's part of the input/sampling section.",
+          "tip": "Watch the input meter on the display while adjusting. Aim for strong signal without clipping."
+        },
+        "linkedSection": { "sectionId": "sampling", "headingId": "gain" },
+        "ariaLabel": "Gain knob"
+      },
+      "y-knob": {
+        "id": "y-knob",
+        "label": "Y",
+        "type": "knob",
+        "tooltip": {
+          "title": "Y Parameter",
+          "description": "Multi-purpose parameter knob. Function depends on context: filter frequency, effect parameter, swing amount, or time stretch.",
+          "tip": "In Sound Edit mode, this controls the secondary parameter for the selected function."
+        },
+        "linkedSection": { "sectionId": "sound-edit", "headingId": "y-parameter" },
+        "ariaLabel": "Y parameter knob"
+      },
+      "sound-edit-button": {
+        "id": "sound-edit-button",
+        "label": "SOUND/EDIT",
+        "type": "button",
+        "tooltip": {
+          "title": "Sound / Edit",
+          "description": "Access sound selection (tap) or sound editing mode (hold SHIFT). Edit mode allows trim, envelope, tuning, and time stretch adjustments.",
+          "tip": "In SOUND mode, use number keys + ENTER to select sounds directly."
+        },
+        "linkedSection": { "sectionId": "sound-edit" },
+        "ariaLabel": "Sound/Edit button"
+      },
+      "main-commit-button": {
+        "id": "main-commit-button",
+        "label": "MAIN/COMMIT",
+        "type": "button",
+        "tooltip": {
+          "title": "Main / Commit",
+          "description": "Returns to main view (tap) or commits/saves changes (hold). Use COMMIT after editing to save your changes permanently.",
+          "tip": "Always commit after editing samples or patterns to save your work."
+        },
+        "linkedSection": { "sectionId": "overview", "headingId": "navigation" },
+        "ariaLabel": "Main/Commit button"
+      },
+      "tempo-loop-button": {
+        "id": "tempo-loop-button",
+        "label": "TEMPO/LOOP",
+        "type": "button",
+        "tooltip": {
+          "title": "Tempo / Loop",
+          "description": "Tap repeatedly to set tempo by tapping, or hold to access tempo settings. SHIFT + TEMPO toggles loop mode.",
+          "tip": "Hold TEMPO and turn Y knob for fine tempo adjustment."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "tempo" },
+        "ariaLabel": "Tempo/Loop button"
+      },
+      "keys-button": {
+        "id": "keys-button",
+        "label": "KEYS",
+        "type": "button",
+        "tooltip": {
+          "title": "Keys Mode",
+          "description": "Enter chromatic keyboard mode to play samples across different pitches. The number keys (0-9) become a piano keyboard.",
+          "tip": "Scale modes available: chromatic, major, minor, pentatonic, and more. Use +/- to change octave."
+        },
+        "linkedSection": { "sectionId": "keys-mode" },
+        "ariaLabel": "Keys button"
+      },
+      "fader": {
+        "id": "fader",
+        "label": "FADER",
+        "type": "fader",
+        "tooltip": {
+          "title": "Fader",
+          "description": "Multi-purpose fader for volume, pitch, filter, pan, or effect control. Assignable per group. Movements can be recorded into the sequencer.",
+          "tip": "Hold FADER button and select parameter type: LEVEL, PITCH, TIME, LPF, HPF, ATK, REL, PAN, TUNE, VEL, MOD."
+        },
+        "linkedSection": { "sectionId": "fader" },
+        "ariaLabel": "Fader slider"
+      },
+      "fader-button": {
+        "id": "fader-button",
+        "label": "FADER",
+        "type": "button",
+        "tooltip": {
+          "title": "Fader Mode",
+          "description": "Hold to select which parameter the fader controls. Press number keys to choose: LEVEL, PITCH, TIME, LPF, HPF, ATK, REL, PAN, TUNE, VEL, MOD.",
+          "tip": "SHIFT + FADER resets the fader to its default position."
+        },
+        "linkedSection": { "sectionId": "fader", "headingId": "fader-assign" },
+        "ariaLabel": "Fader mode button"
+      },
+      "group-a-button": {
+        "id": "group-a-button",
+        "label": "A",
+        "type": "button",
+        "tooltip": {
+          "title": "Group A",
+          "description": "Select Group A. Each group contains 12 sounds (pads 0-9, +, -) and can have up to 99 patterns. Groups play simultaneously.",
+          "tip": "SHIFT + A mutes/unmutes Group A during playback."
+        },
+        "linkedSection": { "sectionId": "groups-scenes", "headingId": "groups" },
+        "ariaLabel": "Group A button"
+      },
+      "group-b-button": {
+        "id": "group-b-button",
+        "label": "B",
+        "type": "button",
+        "tooltip": {
+          "title": "Group B",
+          "description": "Select Group B. Each group contains 12 sounds and can have up to 99 patterns.",
+          "tip": "SHIFT + B mutes/unmutes Group B during playback."
+        },
+        "linkedSection": { "sectionId": "groups-scenes", "headingId": "groups" },
+        "ariaLabel": "Group B button"
+      },
+      "group-c-button": {
+        "id": "group-c-button",
+        "label": "C",
+        "type": "button",
+        "tooltip": {
+          "title": "Group C",
+          "description": "Select Group C. Each group contains 12 sounds and can have up to 99 patterns.",
+          "tip": "SHIFT + C mutes/unmutes Group C during playback."
+        },
+        "linkedSection": { "sectionId": "groups-scenes", "headingId": "groups" },
+        "ariaLabel": "Group C button"
+      },
+      "group-d-button": {
+        "id": "group-d-button",
+        "label": "D",
+        "type": "button",
+        "tooltip": {
+          "title": "Group D",
+          "description": "Select Group D. Each group contains 12 sounds and can have up to 99 patterns.",
+          "tip": "SHIFT + D mutes/unmutes Group D during playback."
+        },
+        "linkedSection": { "sectionId": "groups-scenes", "headingId": "groups" },
+        "ariaLabel": "Group D button"
+      },
+      "pad-7": {
+        "id": "pad-7",
+        "label": "7 / LEVEL",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 7 / Level",
+          "description": "Trigger sound 7 in current group. In Edit mode (FADER): sets fader to control LEVEL.",
+          "tip": "Pressure-sensitive for velocity control."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "pads" },
+        "ariaLabel": "Pad 7 / Level"
+      },
+      "pad-8": {
+        "id": "pad-8",
+        "label": "8 / PITCH",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 8 / Pitch",
+          "description": "Trigger sound 8 in current group. In Edit mode (FADER): sets fader to control PITCH.",
+          "tip": "Pressure-sensitive for velocity control."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "pads" },
+        "ariaLabel": "Pad 8 / Pitch"
+      },
+      "pad-9": {
+        "id": "pad-9",
+        "label": "9 / TIME",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 9 / Time",
+          "description": "Trigger sound 9 in current group. In Edit mode (FADER): sets fader to control TIME (time stretch).",
+          "tip": "Pressure-sensitive for velocity control."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "pads" },
+        "ariaLabel": "Pad 9 / Time"
+      },
+      "sample-chop-button": {
+        "id": "sample-chop-button",
+        "label": "SAMPLE/CHOP",
+        "type": "button",
+        "tooltip": {
+          "title": "Sample / Chop",
+          "description": "Enter sampling mode (tap) or chop mode (hold). Chop mode splits a sample into multiple slices automatically based on transient detection.",
+          "tip": "SHIFT + SAMPLE enables resampling - record the EP-133's output as a new sample."
+        },
+        "linkedSection": { "sectionId": "sampling" },
+        "ariaLabel": "Sample/Chop button"
+      },
+      "timing-correct-button": {
+        "id": "timing-correct-button",
+        "label": "TIMING/CORRECT",
+        "type": "button",
+        "tooltip": {
+          "title": "Timing / Correct",
+          "description": "Access quantize settings (tap) or timing correction (hold). Affects how recorded notes snap to the grid.",
+          "tip": "Quantize options: OFF, 1/8, 1/16, 1/32. Use +/- to select."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "quantize" },
+        "ariaLabel": "Timing/Correct button"
+      },
+      "pad-4": {
+        "id": "pad-4",
+        "label": "4 / LPF",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 4 / Low Pass Filter",
+          "description": "Trigger sound 4 in current group. In Edit mode: access Low Pass Filter cutoff. In FADER mode: sets fader to control LPF.",
+          "tip": "Use Y knob to adjust LPF cutoff after selecting."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "pads" },
+        "ariaLabel": "Pad 4 / LPF"
+      },
+      "pad-5": {
+        "id": "pad-5",
+        "label": "5 / HPF",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 5 / High Pass Filter",
+          "description": "Trigger sound 5 in current group. In Edit mode: access High Pass Filter cutoff. In FADER mode: sets fader to control HPF.",
+          "tip": "Use Y knob to adjust HPF cutoff after selecting."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "pads" },
+        "ariaLabel": "Pad 5 / HPF"
+      },
+      "pad-6": {
+        "id": "pad-6",
+        "label": "6 / >FX",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 6 / FX Send",
+          "description": "Trigger sound 6 in current group. In Edit mode: adjust effect send amount for the current sound.",
+          "tip": "Higher values send more signal to the master effect."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "pads" },
+        "ariaLabel": "Pad 6 / FX Send"
+      },
+      "fx-output-button": {
+        "id": "fx-output-button",
+        "label": "FX/OUTPUT",
+        "type": "button",
+        "tooltip": {
+          "title": "FX / Output",
+          "description": "Access master effects (tap) or output routing settings (hold). Effects include delay, reverb, distortion, filter, compression, and chorus.",
+          "tip": "Punch-In FX 2.0: Hold number keys 1-12 during playback to apply instant effects."
+        },
+        "linkedSection": { "sectionId": "effects" },
+        "ariaLabel": "FX/Output button"
+      },
+      "erase-system-button": {
+        "id": "erase-system-button",
+        "label": "ERASE/SYSTEM",
+        "type": "button",
+        "tooltip": {
+          "title": "Erase / System",
+          "description": "Delete notes/sounds (hold + tap pads) or access system settings (SHIFT + ERASE). System settings include MIDI, sync, and global preferences.",
+          "tip": "Hold ERASE and press a group button to clear that group's pattern."
+        },
+        "linkedSection": { "sectionId": "overview", "headingId": "erase" },
+        "ariaLabel": "Erase/System button"
+      },
+      "pad-1": {
+        "id": "pad-1",
+        "label": "1 / ATK",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 1 / Attack",
+          "description": "Trigger sound 1 in current group. In Edit mode: adjust envelope attack time. In FADER mode: sets fader to control ATK.",
+          "tip": "Attack time controls how quickly the sound reaches full volume."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "pads" },
+        "ariaLabel": "Pad 1 / Attack"
+      },
+      "pad-2": {
+        "id": "pad-2",
+        "label": "2 / REL",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 2 / Release",
+          "description": "Trigger sound 2 in current group. In Edit mode: adjust envelope release time. In FADER mode: sets fader to control REL.",
+          "tip": "Release time controls how long the sound takes to fade out after releasing."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "pads" },
+        "ariaLabel": "Pad 2 / Release"
+      },
+      "pad-3": {
+        "id": "pad-3",
+        "label": "3 / PAN",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 3 / Pan",
+          "description": "Trigger sound 3 in current group. In Edit mode: adjust stereo panning. In FADER mode: sets fader to control PAN.",
+          "tip": "Pan left (-) to right (+). Center is 0."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "pads" },
+        "ariaLabel": "Pad 3 / Pan"
+      },
+      "minus-button": {
+        "id": "minus-button",
+        "label": "- / TUNE",
+        "type": "button",
+        "tooltip": {
+          "title": "Minus / Tune",
+          "description": "Decrease value, pattern number, or navigate backward. Triggers sound 10. In Edit mode: access TUNE (pitch) parameter. In FADER mode: sets fader to control TUNE.",
+          "tip": "Tune range is +/- 24 semitones plus fine tuning."
+        },
+        "linkedSection": { "sectionId": "overview", "headingId": "navigation" },
+        "ariaLabel": "Minus / Tune button"
+      },
+      "plus-button": {
+        "id": "plus-button",
+        "label": "+ / VEL",
+        "type": "button",
+        "tooltip": {
+          "title": "Plus / Velocity",
+          "description": "Increase value, pattern number, or navigate forward. Triggers sound 11. In Edit mode: access VEL (velocity) parameter. In FADER mode: sets fader to control VEL.",
+          "tip": "Velocity affects how hard/loud the sound plays."
+        },
+        "linkedSection": { "sectionId": "overview", "headingId": "navigation" },
+        "ariaLabel": "Plus / Velocity button"
+      },
+      "pad-0": {
+        "id": "pad-0",
+        "label": "0 / MOD",
+        "type": "pad",
+        "tooltip": {
+          "title": "Pad 0 / Modulation",
+          "description": "Trigger sound 0 in current group. In Edit mode: access MOD (modulation) parameter. In FADER mode: sets fader to control MOD.",
+          "tip": "Modulation applies LFO-style effects to the sound."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "pads" },
+        "ariaLabel": "Pad 0 / Modulation"
+      },
+      "enter-button": {
+        "id": "enter-button",
+        "label": "ENTER",
+        "type": "button",
+        "tooltip": {
+          "title": "Enter",
+          "description": "Confirm selection or entry. Used after entering numbers to select sounds, patterns, or confirm menu options.",
+          "tip": "Also used to confirm operations in various menus."
+        },
+        "linkedSection": { "sectionId": "overview", "headingId": "navigation" },
+        "ariaLabel": "Enter button"
+      },
+      "record-button": {
+        "id": "record-button",
+        "label": "RECORD",
+        "type": "button",
+        "tooltip": {
+          "title": "Record",
+          "description": "Enable recording mode. Orange color matches the input section. Records pad hits and fader movements to the sequencer in real-time.",
+          "tip": "Recording is quantized based on TIMING settings. Press RECORD again to stop recording."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "recording" },
+        "ariaLabel": "Record button"
+      },
+      "play-button": {
+        "id": "play-button",
+        "label": "PLAY",
+        "type": "button",
+        "tooltip": {
+          "title": "Play / Stop",
+          "description": "Start or stop playback. Press while stopped to start from the beginning of the pattern.",
+          "tip": "SHIFT + PLAY restarts from the beginning without stopping."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "transport" },
+        "ariaLabel": "Play/Stop button"
+      },
+      "shift-button": {
+        "id": "shift-button",
+        "label": "SHIFT",
+        "type": "button",
+        "tooltip": {
+          "title": "Shift",
+          "description": "Hold to access secondary functions on other buttons. Located in the bottom-left corner. Most buttons have a secondary function shown in smaller text.",
+          "tip": "SHIFT + number keys access parameters like EDIT functions and mute groups."
+        },
+        "linkedSection": { "sectionId": "overview", "headingId": "shift-functions" },
+        "ariaLabel": "Shift button"
+      },
+      "bpm-led": {
+        "id": "bpm-led",
+        "label": "BPM",
+        "type": "led",
+        "tooltip": {
+          "title": "BPM Indicator",
+          "description": "Flashes in time with the tempo. Shows current BPM on the display when TEMPO is held."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "tempo" },
+        "ariaLabel": "BPM indicator LED"
+      },
+      "metronome-led": {
+        "id": "metronome-led",
+        "label": "METRONOME",
+        "type": "led",
+        "tooltip": {
+          "title": "Metronome Indicator",
+          "description": "Lit when metronome is enabled. Toggle with SHIFT + TEMPO.",
+          "tip": "The metronome helps you record in time."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "metronome" },
+        "ariaLabel": "Metronome indicator LED"
+      },
+      "swing-indicator": {
+        "id": "swing-indicator",
+        "label": "SWING",
+        "type": "led",
+        "tooltip": {
+          "title": "Swing Indicator",
+          "description": "Shows current swing amount on the display. Swing delays every other note for a groove feel.",
+          "tip": "Adjust swing with Y knob while in tempo mode."
+        },
+        "linkedSection": { "sectionId": "sequencer", "headingId": "swing" },
+        "ariaLabel": "Swing indicator"
+      }
+    }
+  },
+  "sections": [
+    { "id": "overview", "title": "Overview", "order": 1, "icon": "info" },
+    { "id": "sampling", "title": "Sampling", "order": 2, "icon": "mic" },
+    { "id": "sound-edit", "title": "Sound Editing", "order": 3, "icon": "wave" },
+    { "id": "sequencer", "title": "Sequencer", "order": 4, "icon": "grid" },
+    { "id": "groups-scenes", "title": "Groups & Scenes", "order": 5, "icon": "layers" },
+    { "id": "song-mode", "title": "Song Mode", "order": 6, "icon": "music" },
+    { "id": "effects", "title": "Effects", "order": 7, "icon": "sparkles" },
+    { "id": "fader", "title": "Fader", "order": 8, "icon": "sliders" },
+    { "id": "keys-mode", "title": "Keys Mode", "order": 9, "icon": "keyboard" },
+    { "id": "midi-sync", "title": "MIDI & Sync", "order": 10, "icon": "plug" },
+    { "id": "connections", "title": "Connections", "order": 11, "icon": "cable" }
+  ],
+  "workflows": [
+    { "id": "first-sample", "title": "Record Your First Sample", "difficulty": "beginner", "estimatedSteps": 6 },
+    { "id": "build-beat", "title": "Build a Beat", "difficulty": "beginner", "estimatedSteps": 8 },
+    { "id": "use-effects", "title": "Use Punch-In Effects", "difficulty": "beginner", "estimatedSteps": 5 },
+    { "id": "create-song", "title": "Create a Song", "difficulty": "intermediate", "estimatedSteps": 7 },
+    { "id": "connect-gear", "title": "Connect External Gear", "difficulty": "intermediate", "estimatedSteps": 6 }
+  ],
+  "paths": {
+    "thumbnail": "thumbnail.webp",
+    "diagram": "diagram.svg",
+    "quickReference": "quick-reference.json",
+    "glossary": "glossary.json"
+  }
+}

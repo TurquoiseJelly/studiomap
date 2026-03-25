@@ -1,0 +1,62 @@
+{
+  "id": "pattern-chaining",
+  "title": "Chain Patterns for a Song",
+  "description": "Learn to create multiple patterns and chain them together for a complete song arrangement.",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "id": "step-1",
+      "title": "Create Your First Pattern",
+      "instruction": "Start by creating a drum and synth pattern in Pattern 1. This will be your verse or intro.",
+      "diagramHighlights": ["pattern-button"]
+    },
+    {
+      "id": "step-2",
+      "title": "Duplicate to Pattern 2",
+      "instruction": "Hold Duplicate, tap Pattern 1's pad, then tap Pattern 2's pad to copy your pattern.",
+      "diagramHighlights": ["duplicate-button", "grid-pads"],
+      "tip": "This gives you a starting point for a variation."
+    },
+    {
+      "id": "step-3",
+      "title": "Modify Pattern 2",
+      "instruction": "Select Pattern 2 and make changes - add fills, change sounds, or adjust the synth melody.",
+      "diagramHighlights": ["grid-pads"],
+      "substeps": [
+        { "instruction": "Press the Pattern 2 pad to select it" },
+        { "instruction": "Add or remove steps as desired" },
+        { "instruction": "Try adding a different synth patch" }
+      ]
+    },
+    {
+      "id": "step-4",
+      "title": "Create More Patterns",
+      "instruction": "Repeat the duplicate-and-modify process to create patterns 3-8. Consider: verse, chorus, bridge, outro.",
+      "tip": "Each pattern can have completely different sounds and arrangements."
+    },
+    {
+      "id": "step-5",
+      "title": "Enter Pattern View",
+      "instruction": "Press Pattern to see all 8 patterns. They're represented on the first row of pads.",
+      "diagramHighlights": ["pattern-button", "grid-pads"]
+    },
+    {
+      "id": "step-6",
+      "title": "Chain the Patterns",
+      "instruction": "Hold Pattern and tap the patterns in the order you want them to play. For example: 1, 1, 2, 2, 3, 4, 1, 2.",
+      "diagramHighlights": ["pattern-button", "grid-pads"],
+      "tip": "You can use the same pattern multiple times in a chain."
+    },
+    {
+      "id": "step-7",
+      "title": "Play Your Song",
+      "instruction": "Press Play. The patterns will now play in the order you specified, creating a complete song arrangement.",
+      "diagramHighlights": ["play-button"]
+    }
+  ],
+  "outcomes": [
+    "Multiple patterns forming a song structure",
+    "Understanding of pattern duplication",
+    "Ability to chain patterns for live performance or arrangement"
+  ]
+}

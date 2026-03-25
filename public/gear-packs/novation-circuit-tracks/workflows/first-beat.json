@@ -1,0 +1,75 @@
+{
+  "id": "first-beat",
+  "title": "Make Your First Beat",
+  "description": "Learn the basics by creating a simple drum pattern with a kick, snare, and hi-hat.",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "id": "step-1",
+      "title": "Select Drum Track 1",
+      "instruction": "Press the Drum 1 button to select the kick drum track.",
+      "diagramHighlights": ["drum-1-button"],
+      "tip": "The button will light up when selected."
+    },
+    {
+      "id": "step-2",
+      "title": "Enter Step Mode",
+      "instruction": "The 32 pads now represent the steps in your pattern. Empty steps are dim, and steps with notes are lit.",
+      "diagramHighlights": ["grid-pads"]
+    },
+    {
+      "id": "step-3",
+      "title": "Program the Kick",
+      "instruction": "Tap pads 1, 5, 9, and 13 to create a four-on-the-floor kick pattern.",
+      "diagramHighlights": ["grid-pads"],
+      "substeps": [
+        { "instruction": "Tap pad 1 (first beat)" },
+        { "instruction": "Tap pad 5 (second beat)" },
+        { "instruction": "Tap pad 9 (third beat)" },
+        { "instruction": "Tap pad 13 (fourth beat)" }
+      ],
+      "tip": "The pads will light up when you add a step."
+    },
+    {
+      "id": "step-4",
+      "title": "Press Play",
+      "instruction": "Press the Play button to hear your kick pattern loop.",
+      "diagramHighlights": ["play-button"]
+    },
+    {
+      "id": "step-5",
+      "title": "Select Drum Track 2",
+      "instruction": "Press the Drum 2 button to switch to the snare track.",
+      "diagramHighlights": ["drum-2-button"],
+      "tip": "Your kick pattern keeps playing while you switch tracks."
+    },
+    {
+      "id": "step-6",
+      "title": "Program the Snare",
+      "instruction": "Tap pads 5 and 13 to add snare on beats 2 and 4.",
+      "diagramHighlights": ["grid-pads"],
+      "substeps": [
+        { "instruction": "Tap pad 5 (beat 2)" },
+        { "instruction": "Tap pad 13 (beat 4)" }
+      ]
+    },
+    {
+      "id": "step-7",
+      "title": "Select Drum Track 3",
+      "instruction": "Press the Drum 3 button to switch to the hi-hat track.",
+      "diagramHighlights": ["drum-3-button"]
+    },
+    {
+      "id": "step-8",
+      "title": "Program the Hi-Hat",
+      "instruction": "Tap every other pad (1, 3, 5, 7...) to create eighth-note hi-hats.",
+      "diagramHighlights": ["grid-pads"],
+      "tip": "You can hold Clear and tap any step to remove it if you make a mistake."
+    }
+  ],
+  "outcomes": [
+    "A basic drum pattern with kick, snare, and hi-hats",
+    "Understanding of how to select tracks and program steps",
+    "Ability to use the play and clear functions"
+  ]
+}
