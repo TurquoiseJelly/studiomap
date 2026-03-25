@@ -41,7 +41,7 @@ Interactive music gear knowledge base with clickable diagrams, step-by-step work
 ### Installation
 
 ```bash
-git clone https://github.com/your-username/studiomap.git
+git clone https://github.com/TurquoiseJelly/studiomap.git
 cd studiomap
 npm install
 ```
